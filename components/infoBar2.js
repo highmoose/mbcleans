@@ -15,7 +15,7 @@ export default function IntroBar() {
             <img
               alt="MBCleans Logo"
               src="/images/cleaner-basket-mop.png"
-              className="flex my-auto max-h-[0px]  max-w-none "
+              className="flex my-auto max-h-[550px]  max-w-none "
             />
           </div>
           <div className="w-1/2 my-auto p-10">
