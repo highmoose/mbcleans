@@ -28,7 +28,7 @@ export default function HeaderBar() {
         <div className=" flex ">
           <div className=" gap-x-4 my-auto h-[70px] justify-end">
             <p className="text-4xl tracking-tight mt-2 font-bold text-theme3 ">
-              0800 123 4567
+              07710172363
             </p>
             <p className="-m-1.5 text-sm italic font-extralight ">
               Open Hours: Mon-Sat (9am-5pm)

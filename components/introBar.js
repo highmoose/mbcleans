@@ -1,5 +1,5 @@
 import React from "react";
-import { Shadows_Into_Light } from "@next/font/google";
+import { Shadows_Into_Light } from "next/font/google";
 
 const Shadows_Into_Light1 = Shadows_Into_Light({
   subsets: ["latin"],

@@ -1,5 +1,5 @@
-import { Gabarito } from "@next/font/google";
-import { Shadows_Into_Light } from "@next/font/google";
+import { Gabarito } from "next/font/google";
+import { Shadows_Into_Light } from "next/font/google";
 import "./globals.css";
 
 const Gabarito1 = Gabarito({

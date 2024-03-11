@@ -1,13 +1,45 @@
-import React from "react";
-import { Shadows_Into_Light } from "@next/font/google";
+"use client";
+
+import React, { useState } from "react";
+import { Shadows_Into_Light } from "next/font/google";
 import Image from "next/image";
+import { Resend } from "resend";
 
 const Shadows_Into_Light1 = Shadows_Into_Light({
   subsets: ["latin"],
-  weight: ["400"],
+  weight: "400",
 });
 
 export default function EstimateBar() {
+  const [formData, setFormData] = useState({
+    chooseService: "",
+    typeOfClean: "",
+    propertyType: "",
+    companyName: "",
+    roomsSelect: "",
+    hallwaySelect: "",
+    staircaseSelect: "",
+    haveSupplies: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      await fetch("/api/send", { formData });
+      console.log("Email sent successfully!");
+    } catch (error) {
+      console.error("Error sending email:", error);
+    }
+  };
+
   return (
     <div>
       <img
@@ -15,9 +47,13 @@ export default function EstimateBar() {
         src="/images/mbcleans_estimate_image_2.png"
         className="absolute object-cover  w-full h-[770px] "
       />
-      <div className=" relative  flex">
+      <div className=" relative flex">
         <div className="flex gap-x-8 max-w-6xl mx-auto">
-          <div className="w-1/2 bg-white rounded-md my-24 p-6">
+          {/* Estimate Form Section */}
+          <form
+            onSubmit={handleSubmit}
+            className="w-1/2 bg-white rounded-md my-24 p-6"
+          >
             <p className="text-theme2 tracking-tight text-2xl font-bold mb-4">
               Request an estimate:
             </p>
@@ -37,8 +73,11 @@ export default function EstimateBar() {
                   </label>
 
                   <select
+                    required
                     name="chooseService"
                     id="chooseService"
+                    value={formData.chooseService}
+                    onChange={handleChange}
                     class="mt-1.5 w-full p-2 h-14 bg-zinc-100 rounded-lg border-gray-300 text-gray-700 sm:text-base"
                   >
                     <option value="">Please select</option>
@@ -61,8 +100,11 @@ export default function EstimateBar() {
                   </label>
 
                   <select
+                    required
                     name="typeOfClean"
                     id="typeOfClean"
+                    value={formData.typeOfClean}
+                    onChange={handleChange}
                     class="mt-1.5 w-full p-2 h-14 bg-zinc-100 rounded-lg border-gray-300 text-gray-700 sm:text-base"
                   >
                     <option value="">Please select</option>
@@ -73,7 +115,7 @@ export default function EstimateBar() {
                 </div>
               </div>
               <div className="flex text-black">
-                <div className="flex gap-x-4 mb- w-full">
+                <div className="flex gap-x-4 mb- w-full mb-2">
                   <div className="w-1/2">
                     <label
                       for="propertyType"
@@ -83,8 +125,11 @@ export default function EstimateBar() {
                     </label>
 
                     <select
+                      required
                       name="propertyType"
                       id="propertyType"
+                      value={formData.propertyType}
+                      onChange={handleChange}
                       class="mt-1.5 w-full p-2 h-14 bg-zinc-100 rounded-lg border-gray-300 text-gray-700 sm:text-base"
                     >
                       <option value="">Please select</option>
@@ -104,8 +149,11 @@ export default function EstimateBar() {
                     </label>
 
                     <input
-                      name="typeOfClean"
-                      id="typeOfClean"
+                      required
+                      name="companyName"
+                      id="companyName"
+                      value={formData.companyName}
+                      onChange={handleChange}
                       placeholder="Company name?"
                       type="text"
                       class="mt-1.5 w-full p-2 h-14 bg-zinc-100 rounded-lg border-gray-300 text-gray-700 sm:text-base"
@@ -124,18 +172,22 @@ export default function EstimateBar() {
                     </label>
 
                     <select
-                      name="propertyType"
-                      id="propertyType"
+                      required
+                      name="roomsSelect"
+                      id="roomsSelect"
+                      value={formData.roomsSelect}
+                      onChange={handleChange}
                       class="mt-1.5 w-full p-2 h-14 bg-zinc-100 rounded-lg border-gray-300 text-gray-700 sm:text-base"
                     >
-                      <option value="">1</option>
-                      <option value="Home">2</option>
-                      <option value="apartment">3</option>
-                      <option value="office">4</option>
-                      <option value="store">5</option>
-                      <option value="warehouse">6</option>
-                      <option value="store">7</option>
-                      <option value="warehouse">8</option>
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
                     </select>
                   </div>
                 </div>
@@ -149,15 +201,19 @@ export default function EstimateBar() {
                     </label>
 
                     <select
-                      name="propertyType"
-                      id="propertyType"
+                      required
+                      name="hallwaySelect"
+                      id="hallwaySelect"
+                      value={formData.hallwaySelect}
+                      onChange={handleChange}
                       class="mt-1.5 w-full p-2 h-14 bg-zinc-100 rounded-lg border-gray-300 text-gray-700 sm:text-base"
                     >
-                      <option value="">1</option>
-                      <option value="Home">2</option>
-                      <option value="apartment">3</option>
-                      <option value="office">4</option>
-                      <option value="store">5</option>
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
                     </select>
                   </div>
                 </div>
@@ -171,15 +227,18 @@ export default function EstimateBar() {
                     </label>
 
                     <select
-                      name="propertyType"
-                      id="propertyType"
+                      name="staircaseSelect"
+                      id="staircaseSelect"
+                      value={formData.staircaseSelect}
+                      onChange={handleChange}
                       class="mt-1.5 w-full p-2 h-14 bg-zinc-100 rounded-lg border-gray-300 text-gray-700 sm:text-base"
                     >
-                      <option value="">1</option>
-                      <option value="Home">2</option>
-                      <option value="apartment">3</option>
-                      <option value="office">4</option>
-                      <option value="store">5</option>
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
                     </select>
                   </div>
                 </div>
@@ -187,7 +246,7 @@ export default function EstimateBar() {
               <div className="mb-2 font-semibold">
                 Do you have the neccesary cleaning supplies? *
               </div>
-              <div class="control mb-4">
+              <div class="control mb-4" required onChange={handleChange}>
                 <label class="radio pr-4">
                   <input type="radio" name="answer" className="mr-1" />
                   Yes
@@ -197,7 +256,10 @@ export default function EstimateBar() {
                   No
                 </label>
               </div>
-              <button className="bg-theme2 hover:bg-slate-800 flex justify-between font-bold w-full text-left p-4 rounded-md">
+              <button
+                type="submit"
+                className="bg-theme2 hover:bg-slate-800 flex justify-between font-bold w-full text-left p-4 rounded-md"
+              >
                 <p className="text-white ">Submit Request</p>
                 <img
                   alt="right arrow"
@@ -205,7 +267,8 @@ export default function EstimateBar() {
                 />
               </button>
             </div>
-          </div>
+          </form>
+          {/* Contact Information Section */}
           <div className="w-1/2 rounded-md my-auto">
             <p
               className={`text-yellow-300 mb-2 text-3xl ${Shadows_Into_Light1.className}`}
@@ -243,7 +306,7 @@ export default function EstimateBar() {
             </p>
             <div className="items-center gap-x-4">
               <p className="text-2xl font-extralight ">Or call us on:</p>
-              <p className="text-5xl font-bold ">0800 123 4567</p>
+              <p className="text-5xl font-bold ">07710172363</p>
               <p className="text-1xl font-extralight ">
                 Open Hours: Mon-Sat (9am-5pm)
               </p>
