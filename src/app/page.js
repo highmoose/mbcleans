@@ -1,4 +1,5 @@
 import Image from "next/image";
+
 import BannerBar from "../../components/bannerBar";
 import HeaderBar from "../../components/headerBar";
 import HeroBlock from "../../components/heroBlock";

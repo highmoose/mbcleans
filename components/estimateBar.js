@@ -3,7 +3,6 @@
 import React, { useState } from "react";
 import { Shadows_Into_Light } from "next/font/google";
 import Image from "next/image";
-import { Resend } from "resend";
 
 const Shadows_Into_Light1 = Shadows_Into_Light({
   subsets: ["latin"],
@@ -12,6 +11,8 @@ const Shadows_Into_Light1 = Shadows_Into_Light({
 
 export default function EstimateBar() {
   const [formData, setFormData] = useState({
+    names: "",
+    email: "",
     chooseService: "",
     typeOfClean: "",
     propertyType: "",
@@ -19,22 +20,35 @@ export default function EstimateBar() {
     roomsSelect: "",
     hallwaySelect: "",
     staircaseSelect: "",
-    haveSupplies: "",
   });
 
+  const [submitted, setSubmitted] = useState(false);
+
   const handleChange = (e) => {
-    const { name, value } = e.target;
+    const { name, value, type, checked } = e.target;
+    const newValue = type === "checkbox" ? checked : value;
+
     setFormData((prevData) => ({
       ...prevData,
-      [name]: value,
+      [name]: newValue, // Use newValue instead of value ?????????????????????? im not sure
     }));
   };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await fetch("/api/send", { formData });
-      console.log("Email sent successfully!");
+      const response = await fetch("/api/send", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+      if (response.ok) {
+        console.log("Email sent successfully!");
+        setSubmitted(true);
+      } else {
+        console.error("Failed to send email:", response.statusText);
+      }
     } catch (error) {
       console.error("Error sending email:", error);
     }
@@ -64,6 +78,46 @@ export default function EstimateBar() {
             </p>
             <div className="text-black">
               <div className="flex gap-x-4 mb-4">
+                <div className="w-1/2 ">
+                  <label
+                    for="typeOfClean"
+                    class="block text-base font-medium text-gray-900 "
+                  >
+                    Name:
+                  </label>
+
+                  <input
+                    required
+                    name="names"
+                    id="names"
+                    value={formData.names}
+                    onChange={handleChange}
+                    placeholder=""
+                    type="text"
+                    class="mt-1.5 w-full p-2 h-14 bg-zinc-100 rounded-lg border-gray-300 text-gray-700 sm:text-base"
+                  ></input>
+                </div>
+                <div className="w-1/2 ">
+                  <label
+                    for="name"
+                    class="block text-base font-medium text-gray-900 "
+                  >
+                    Email:
+                  </label>
+
+                  <input
+                    required
+                    name="email"
+                    id="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    placeholder=""
+                    type="email"
+                    class="mt-1.5 w-full p-2 h-14 bg-zinc-100 rounded-lg border-gray-300 text-gray-700 sm:text-base"
+                  ></input>
+                </div>
+              </div>
+              <div className="flex gap-x-4 mb-4">
                 <div className="w-1/2">
                   <label
                     for="chooseService"
@@ -81,14 +135,18 @@ export default function EstimateBar() {
                     class="mt-1.5 w-full p-2 h-14 bg-zinc-100 rounded-lg border-gray-300 text-gray-700 sm:text-base"
                   >
                     <option value="">Please select</option>
-                    <option value="otc">One time clean</option>
-                    <option value="wc">Weekly clean</option>
-                    <option value="bwc">Bi weekly clean</option>
-                    <option value="mc">Monthly clean</option>
-                    <option value="mdc">Multi day per week clean</option>
-                    <option value="eotc">End of tenancy clean</option>
-                    <option value="ic">Incident clean</option>
-                    <option value="other">Other</option>
+                    <option value="One time clean">One time clean</option>
+                    <option value="Weekly clean">Weekly clean</option>
+                    <option value="Bi weekly clean">Bi weekly clean</option>
+                    <option value="Monthly clean">Monthly clean</option>
+                    <option value="Multi day per week clean">
+                      Multi day per week clean
+                    </option>
+                    <option value="End of tenancy clean">
+                      End of tenancy clean
+                    </option>
+                    <option value="Incident clean">Incident clean</option>
+                    <option value="Other">Other</option>
                   </select>
                 </div>
                 <div className="w-1/2 ">
@@ -108,9 +166,9 @@ export default function EstimateBar() {
                     class="mt-1.5 w-full p-2 h-14 bg-zinc-100 rounded-lg border-gray-300 text-gray-700 sm:text-base"
                   >
                     <option value="">Please select</option>
-                    <option value="lc">Light clean</option>
-                    <option value="mdc">Medium clean</option>
-                    <option value="dc">Deep clean</option>
+                    <option value="Light clean">Light clean</option>
+                    <option value="Medium clean">Medium clean</option>
+                    <option value="Deep clean">Deep clean</option>
                   </select>
                 </div>
               </div>
@@ -118,7 +176,7 @@ export default function EstimateBar() {
                 <div className="flex gap-x-4 mb- w-full mb-2">
                   <div className="w-1/2">
                     <label
-                      for="propertyType"
+                      for="email"
                       class="block text-base font-medium text-gray-900"
                     >
                       Property type *
@@ -134,10 +192,10 @@ export default function EstimateBar() {
                     >
                       <option value="">Please select</option>
                       <option value="Home">Home</option>
-                      <option value="apartment">Apartment</option>
-                      <option value="office">Office</option>
-                      <option value="store">Store</option>
-                      <option value="warehouse">Warehouse</option>
+                      <option value="Apartment">Apartment</option>
+                      <option value="Office">Office</option>
+                      <option value="Store">Store</option>
+                      <option value="Warehouse">Warehouse</option>
                     </select>
                   </div>
                   <div className="w-1/2 ">
@@ -248,11 +306,21 @@ export default function EstimateBar() {
               </div>
               <div class="control mb-4" required onChange={handleChange}>
                 <label class="radio pr-4">
-                  <input type="radio" name="answer" className="mr-1" />
+                  <input
+                    type="radio"
+                    name="haveSupplies"
+                    value="Yes"
+                    className="mr-1"
+                  />
                   Yes
                 </label>
                 <label class="radio">
-                  <input type="radio" name="answer" className="mr-1" />
+                  <input
+                    type="radio"
+                    name="haveSupplies"
+                    value="No"
+                    className="mr-1"
+                  />
                   No
                 </label>
               </div>

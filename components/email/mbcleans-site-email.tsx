@@ -21,8 +21,16 @@ interface MBCleansSiteEmailProps {
 const baseUrl = process.env.BASE_URL ? `https://${process.env.BASE_URL}` : "";
 
 export const MBCleansSiteEmail = ({
-  validationCode,
-}: MBCleansSiteEmailProps) => (
+  names,
+  chooseService,
+  typeOfClean,
+  propertyType,
+  companyName,
+  roomsSelect,
+  hallwaySelect,
+  staircaseSelect,
+  haveSupplies,
+}) => (
   <Html>
     <Head />
     <Preview>Confirm your email address</Preview>
@@ -35,13 +43,47 @@ export const MBCleansSiteEmail = ({
             alt="MBCleans"
           />
         </Section>
-        <Heading style={h1}>Thank you for your request!</Heading>
+        <Heading style={h1}>Hello {names}!</Heading>
+        <Heading>Thank you for your request!</Heading>
         <Text style={heroText}>
           We have your details and we will be in touch shortly
         </Text>
 
         <Section style={codeBox}>
-          <Text style={confirmationCodeText}>{validationCode}</Text>
+          <Text style={confirmationCodeText}>
+            <div style={{ ...item, color: "deepskyblue" }}>
+              Service:&nbsp;
+              <span style={{ color: "black", fontWeight: "600" }}>
+                {chooseService}
+              </span>
+            </div>
+            <div style={{ ...item, color: "deepskyblue" }}>
+              Type Of Clean:&nbsp;
+              <span style={{ color: "black" }}>{typeOfClean}</span>
+            </div>
+            <div style={{ ...item, color: "deepskyblue" }}>
+              Property Type:&nbsp; {propertyType}
+            </div>
+            <div style={{ ...item, color: "deepskyblue" }}>
+              Company Name:&nbsp;
+              <span style={{ color: "black" }}>{companyName}</span>
+            </div>
+            <div style={{ ...item, color: "deepskyblue" }}>
+              Rooms: <span style={{ color: "black" }}>{roomsSelect}</span>
+            </div>
+            <div style={{ ...item, color: "deepskyblue" }}>
+              Hallway:&nbsp;{" "}
+              <span style={{ color: "black" }}>{hallwaySelect}</span>
+            </div>
+            <div style={{ ...item, color: "deepskyblue" }}>
+              Staircase:&nbsp;{" "}
+              <span style={{ color: "black" }}>{staircaseSelect}</span>
+            </div>
+            <div style={{ ...item, color: "deepskyblue" }}>
+              Have Supplies:&nbsp;{" "}
+              <span style={{ color: "black" }}>{haveSupplies}</span>
+            </div>
+          </Text>
         </Section>
 
         <Text>
@@ -49,7 +91,7 @@ export const MBCleansSiteEmail = ({
           <div>Saturday - Sunday: Closed</div>
         </Text>
 
-        <Section>
+        {/* <Section>
           <Row style={footerLogos}>
             <Column style={{ width: "66%" }}>
               <Img
@@ -99,19 +141,20 @@ export const MBCleansSiteEmail = ({
               </Section>
             </Column>
           </Row>
-        </Section>
+        </Section> */}
 
-        <Section>
+        <Section style={{ flexDirection: "row" }}>
+          <Text style={item2}>Find out more at: &nbsp;</Text>
           <Link
             style={footerLink}
-            href="https://slackhq.com"
+            href="www.mbcleans.co.uk"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Our blog
+            www.mbcleans.co.uk
           </Link>
-          &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-          <Link
+          {/* &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+           <Link
             style={footerLink}
             href="https://slack.com/legal"
             target="_blank"
@@ -138,7 +181,7 @@ export const MBCleansSiteEmail = ({
             data-linkindex="6"
           >
             Slack Community
-          </Link>
+          </Link> */}
           <Text style={footerText}>
             © 2024 MBCleans UK, a cleaning services company. <br />
             Wellingborough, Northants, United Kingdom <br />
@@ -182,6 +225,20 @@ const socialMediaIcon = {
   marginLeft: "32px",
 };
 
+const item = {
+  marginBottom: "2px",
+  fontSize: "16px",
+  fontWeight: "600",
+  textAlign: "center" as const,
+  verticalAlign: "middle",
+};
+
+const item2 = {
+  marginBottom: "-6px",
+  fontSize: "16px",
+  verticalAlign: "middle",
+};
+
 const main = {
   backgroundColor: "#ffffff",
   margin: "0 auto",
@@ -217,7 +274,8 @@ const codeBox = {
   background: "rgb(245, 244, 245)",
   borderRadius: "4px",
   marginBottom: "30px",
-  padding: "40px 10px",
+  padding: "10px 10px",
+  paddingLeft: "20px",
 };
 
 const confirmationCodeText = {
