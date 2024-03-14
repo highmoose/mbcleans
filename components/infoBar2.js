@@ -8,7 +8,7 @@ const Shadows_Into_Light1 = Shadows_Into_Light({
 
 export default function IntroBar() {
   return (
-    <div className="w-full bg-white">
+    <div id="aboutUs" className="w-full bg-white">
       <div className="text-black w-full text-4xl">
         <div className=" max-w-6xl mx-auto flex">
           <div className="w-1/2 pr-10 flex justify-end">

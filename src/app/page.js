@@ -9,7 +9,7 @@ import PartnersBar2 from "../../components/partnersBar2";
 
 import StepsBar from "../../components/stepsBar";
 import EstimateBar from "../../components/estimateBar";
-import FooterBar from "../../components/backups/footerBar";
+import FooterBar from "../../components/footerBar";
 import TestimonialsBar2 from "../../components/testimonialsBar2";
 import ServicesBar from "../../components/servicesBar";
 

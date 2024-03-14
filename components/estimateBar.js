@@ -55,11 +55,11 @@ export default function EstimateBar() {
   };
 
   return (
-    <div>
+    <div id="contact">
       <img
         alt="MBCleans cleaner hoovering floor"
         src="/images/mbcleans_estimate_image_2.png"
-        className="absolute object-cover  w-full h-[770px] "
+        className="absolute object-cover  h-full "
       />
       <div className=" relative flex">
         <div className="flex gap-x-8 max-w-6xl mx-auto">
@@ -212,7 +212,7 @@ export default function EstimateBar() {
                       id="companyName"
                       value={formData.companyName}
                       onChange={handleChange}
-                      placeholder="Company name?"
+                      placeholder=""
                       type="text"
                       class="mt-1.5 w-full p-2 h-14 bg-zinc-100 rounded-lg border-gray-300 text-gray-700 sm:text-base"
                     ></input>

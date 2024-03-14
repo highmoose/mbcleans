@@ -2,7 +2,7 @@ import React from "react";
 
 export default function PartnersBar2() {
   return (
-    <div className="w-full">
+    <div id="partners" className="w-full">
       <div>
         <meta charset="utf-8" />
 
