@@ -156,7 +156,7 @@ export default function HeaderBar() {
             </div>
             <div className="flex items-center justify-center mx-auto w-full bg-zinc-100 ">
               <div
-                className={`flex-col sm:flex-row items-center font-semibold text-2xl sm:text-lg lg:text-md gap-x-2 sm:gap-x-6 ${
+                className={`flex-col sm:flex-row items-center font-semibold text-xl sm:text-lg lg:text-md gap-x-2 sm:gap-x-6 ${
                   menuOpen ? "flex gap-y-2 py-6" : "hidden"
                 }`}
               >
