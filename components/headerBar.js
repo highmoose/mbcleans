@@ -132,23 +132,23 @@ export default function HeaderBar() {
       </div>
       <div className="lg:hidden">
         <div id="home" className="w-full bg-white">
-          <div className="flex-col bg-white  xl:px-0 max-w-6xl mx-auto flex justify-between w-full text-black text-center">
-            <div className="flex justify-between my-6 px-6">
-              <div className="flex my-auto ">
+          <div className="flex-col bg-white pt-4 xl:px-0 max-w-6xl mx-auto flex justify-between w-full text-black text-center">
+            <div className="flex justify-between mb-6 px-6 lg:px-0">
+              <div className="flex my-auto w-1/2">
                 <img
                   alt="MBCleans Logo"
                   src="/logo/mbcleans-logo.svg"
                   className="w-full max-w-[200px] my-auto"
                 />
               </div>
-              <div className=" w-full max-w-[200px] gap-x-4 my-auto justify-end ">
+              <div className=" max-w-[200px] my-auto w-1/2">
                 <a
                   href="tel:07710172363"
-                  className="text-4xl tracking-tight font-bold text-theme3 flex"
+                  className="text-3xl sm:text-4xl tracking-tight font-bold text-theme3 justify-end flex"
                 >
                   07710172363
                 </a>
-                <p className="-m-1.5 text-sm italic font-extralight ">
+                <p className="-m-1.5 text-sm sm:text-sm italic font-extralight ">
                   Open Hours: Mon-Sat (9am-5pm)
                 </p>
               </div>
@@ -159,22 +159,22 @@ export default function HeaderBar() {
                   menuOpen ? "flex gap-y-2 py-6" : "hidden"
                 }`}
               >
-                <div onClick={toggleMenu} className="cursor-pointer">
+                <div onClick={scrollToHome} className="cursor-pointer">
                   Home
                 </div>
-                <div onClick={toggleMenu} className="cursor-pointer">
+                <div onClick={scrollToPlans} className="cursor-pointer">
                   Plans
                 </div>
-                <div onClick={toggleMenu} className="cursor-pointer">
+                <div onClick={scrollToAboutUs} className="cursor-pointer">
                   About Us
                 </div>
-                <div onClick={toggleMenu} className="cursor-pointer">
+                <div onClick={scrollToPartners} className="cursor-pointer">
                   Partners
                 </div>
-                <div onClick={toggleMenu} className="cursor-pointer">
+                <div onClick={scrollToContact} className="cursor-pointer">
                   Contact
                 </div>
-                <div onClick={toggleMenu} className="cursor-pointer">
+                <div onClick={scrollToTestimonials} className="cursor-pointer">
                   Testimonials
                 </div>
               </div>
