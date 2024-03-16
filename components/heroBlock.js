@@ -32,7 +32,7 @@ export default function HeaderBar() {
           className="object-cover hidden-none w-full h-full"
         />
       </div>
-      <div className="flex mx-auto max-w-6xl relative w-full  items-center justify-between px-20">
+      <div className="flex mx-auto max-w-6xl relative w-full  items-center justify-between px-10 sm:px-16 lg:px-20">
         <div className=" ">
           {/* <button className="h-20 w-20 border-4 rounded-full">
             <img
@@ -42,21 +42,21 @@ export default function HeaderBar() {
             />
           </button> */}
         </div>
-        <div className="max-w-6xl mb-12  w-3/5">
+        <div className="max-w-6xl mb-12 w-full lg:w-4/5">
           <p
-            className={`text-yellow-300 text-4xl mb-2 ${Shadows_Into_Light1.className}`}
+            className={`text-yellow-300 text-4xl mb-2 text-center lg:text-start ${Shadows_Into_Light1.className}`}
           >
             Commerical & Domestic
           </p>
-          <p className="text-[90px] mb-6 leading-[75px] font-semibold ">
+          <p className="text-[70px] sm:text-[90px] mb-6 leading-[60px] sm:leading-[75px] font-semibold text-center lg:text-start ">
             Professional Cleaning Specialists.
           </p>
-          <p className="text-md  mb-6 leading-5 ">
+          <p className="text-md  mb-6 leading-5 text-center lg:text-start">
             We work closely with clients in finding the most cost effective
             solutions while still providing a level of service that will produce
             a clean, healthy environment, while saving them time.
           </p>
-          <div className="flex gap-x-3">
+          <div className="flex gap-x-3 justify-center lg:justify-start">
             <div class="relative inline-flex group">
               <div class="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44ffef] via-[#25daf2] to-[#5efffa] rounded-md blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
               <a
@@ -80,10 +80,10 @@ export default function HeaderBar() {
             </div>
           </div>
         </div>
-        <div className="h-full w-2/5">
+        <div className="h-full w-2/5 hidden lg:block">
           <img
             alt="Cleaning cloth"
-            className="h-full w-full object-contain pt-20"
+            className="h-full w-full object-contain pt-20 "
             src="/images/cleaning-cloth.png"
           />
         </div>

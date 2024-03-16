@@ -64,7 +64,7 @@ export default function FooterBar() {
           </div>
         </div>
         <div onClick={backToTop} class="w-80 pt-6 md:pt-0">
-          <a class="bg-theme3 justify-center text-lg text-center rounded-lg shadow px-10 py-3 flex items-center">
+          <a class="bg-theme3 cursor-pointer justify-center text-lg text-center rounded-lg shadow px-10 py-3 flex items-center">
             Back to top
           </a>
         </div>
@@ -80,12 +80,24 @@ export default function FooterBar() {
               />
             </div>
             <div className="w-2/4 flex justify-center gap-x-6">
-              <div onClick={scrollToHome}>Home</div>
-              <div onClick={scrollToPlans}>Plans</div>
-              <div onClick={scrollToAboutUs}>About Us</div>
-              <div onClick={scrollToPartners}>Partners</div>
-              <div onClick={scrollToContact}>Contact</div>
-              <div onClick={scrollToTestimonials}>Testimonials</div>
+              <div className="cursor-pointer" onClick={scrollToHome}>
+                Home
+              </div>
+              <div className="cursor-pointer" onClick={scrollToPlans}>
+                Plans
+              </div>
+              <div className="cursor-pointer" onClick={scrollToAboutUs}>
+                About Us
+              </div>
+              <div className="cursor-pointer" onClick={scrollToPartners}>
+                Partners
+              </div>
+              <div className="cursor-pointer" onClick={scrollToContact}>
+                Contact
+              </div>
+              <div className="cursor-pointer" onClick={scrollToTestimonials}>
+                Testimonials
+              </div>
             </div>
             <div className="w-1/4">
               <div class="flex flex-row space-x-8 items-center justify-end">

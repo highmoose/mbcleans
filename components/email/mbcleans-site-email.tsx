@@ -62,7 +62,8 @@ export const MBCleansSiteEmail = ({
               <span style={{ color: "black" }}>{typeOfClean}</span>
             </div>
             <div style={{ ...item, color: "deepskyblue" }}>
-              Property Type:&nbsp; {propertyType}
+              Property Type:&nbsp;{" "}
+              <span style={{ color: "black" }}>{propertyType}</span>
             </div>
             <div style={{ ...item, color: "deepskyblue" }}>
               Company Name:&nbsp;
@@ -144,15 +145,8 @@ export const MBCleansSiteEmail = ({
         </Section> */}
 
         <Section style={{ flexDirection: "row" }}>
-          <Text style={item2}>Find out more at: &nbsp;</Text>
-          <Link
-            style={footerLink}
-            href="www.mbcleans.co.uk"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            www.mbcleans.co.uk
-          </Link>
+          <Text style={item2}>Find out more at: www.mbcleans.co.uk</Text>
+
           {/* &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
            <Link
             style={footerLink}
@@ -229,14 +223,11 @@ const item = {
   marginBottom: "2px",
   fontSize: "16px",
   fontWeight: "600",
-  textAlign: "center" as const,
-  verticalAlign: "middle",
 };
 
 const item2 = {
   marginBottom: "-6px",
   fontSize: "16px",
-  verticalAlign: "middle",
 };
 
 const main = {
@@ -259,7 +250,7 @@ const h1 = {
   color: "#1d1c1d",
   fontSize: "36px",
   fontWeight: "700",
-  margin: "30px 0",
+  margin: "10px 0",
   padding: "0",
   lineHeight: "42px",
 };
@@ -280,8 +271,6 @@ const codeBox = {
 
 const confirmationCodeText = {
   fontSize: "30px",
-  textAlign: "center" as const,
-  verticalAlign: "middle",
 };
 
 const text = {
