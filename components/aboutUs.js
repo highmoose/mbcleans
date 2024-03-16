@@ -18,7 +18,7 @@ export default function IntroBar() {
               className=" my-auto max-h-[550px] max-w-none  hidden lg:block"
             />
           </div>
-          <div className="lg:w-1/2 my-auto">
+          <div className="lg:w-1/2 my-auto px-10 lg:px-0">
             <p
               className={`text-theme3 text-3xl text-center lg:text-start ${Shadows_Into_Light1.className}`}
             >
@@ -28,7 +28,7 @@ export default function IntroBar() {
               Let us introduce ourselves!
             </p>
 
-            <p className="text-base text-gray-400 mb-8 text-center lg:text-start">
+            <p className="text-base text-gray-400 mb-8 text-center lg:text-start ">
               Welcome to our cleaning haven! We&apos;re two passionate women
               dedicated to transforming spaces into sparkling sanctuaries. With
               meticulous attention to detail and genuine love for our work, we
