@@ -168,7 +168,7 @@ export default function EstimateBar() {
                     for="chooseService"
                     class="block text-base font-medium text-gray-900"
                   >
-                    Choose your service *
+                    Choose service *
                   </label>
 
                   <select
