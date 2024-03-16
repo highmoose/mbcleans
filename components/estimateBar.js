@@ -61,8 +61,8 @@ export default function EstimateBar() {
         src="/images/mbcleans_estimate_image_2.png"
         class="absolute inset-0 w-full h-full object-cover"
       />
-      <div className=" relative flex py-20">
-        <div className="lg:flex gap-x-8 px-6 sm:px-8 md:px-10 max-w-6xl mx-auto">
+      <div className=" relative flex my-16 md:my-20 lg:my-10 xl:my-8">
+        <div className="lg:flex gap-x-8 px-6 sm:px-8 md:px-10 max-w-6xl mx-auto ">
           {/* Contact Information Section */}
           <div className="lg:w-1/2 rounded-md lg:my-auto px-4 sm:px-16 lg:px-0  mb-8">
             <p

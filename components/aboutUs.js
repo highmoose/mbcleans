@@ -8,9 +8,9 @@ const Shadows_Into_Light1 = Shadows_Into_Light({
 
 export default function IntroBar() {
   return (
-    <div id="aboutUs" className="w-full bg-white">
-      <div className="text-black w-full text-4xl">
-        <div className=" max-w-6xl mx-auto lg:flex">
+    <div id="aboutUs" className="w-full bg-white ">
+      <div className="text-black w-full text-4xl my-16 md:my-20 lg:my-10 xl:my-8">
+        <div className=" max-w-6xl mx-auto lg:flex ">
           <div className="lg:w-1/2 pr-10 flex justify-end">
             <img
               alt="MBCleans Logo"
@@ -18,7 +18,7 @@ export default function IntroBar() {
               className=" my-auto max-h-[550px] max-w-none  hidden lg:block"
             />
           </div>
-          <div className="lg:w-1/2 my-auto p-10 ">
+          <div className="lg:w-1/2 my-auto">
             <p
               className={`text-theme3 text-3xl text-center lg:text-start ${Shadows_Into_Light1.className}`}
             >
