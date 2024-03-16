@@ -29,7 +29,7 @@ export default function IntroBar() {
             </p>
 
             <p className="text-base text-gray-400 mb-8 text-center lg:text-start">
-              Welcome to our cleaning haven! We're two passionate women
+              Welcome to our cleaning haven! We&apos;re two passionate women
               dedicated to transforming spaces into sparkling sanctuaries. With
               meticulous attention to detail and genuine love for our work, we
               go beyond the surface to clean homes, offices, and more. Trust us
