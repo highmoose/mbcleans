@@ -10,7 +10,7 @@ export default function ServicesBar() {
               <img
                 src="/icons/house.svg"
                 alt="house"
-                className=" w-12 mb-2 mx-auto md:mx-0 flex justify-center md:justify-start"
+                className=" w-20 mb-2 mx-auto md:mx-0 flex justify-center md:justify-start"
               />
               <p className="text-theme2 text-sm sm:text-lg font-semibold mb-1">
                 House Cleaning
@@ -26,9 +26,9 @@ export default function ServicesBar() {
           <div className="flex items-center justify-center rounded-md  w-1/4 p-4  bg-white shadow-sm">
             <div className="flex-col text-center md:text-start">
               <img
-                src="/icons/house.svg"
-                alt="house"
-                className=" w-12 mb-2 mx-auto md:mx-0 flex justify-center md:justify-start"
+                src="/icons/office.svg"
+                alt="office"
+                className=" w-20 mb-2 mx-auto md:mx-0 flex justify-center md:justify-start"
               />
               <p className="text-theme2 text-sm sm:text-lg font-semibold mb-1">
                 Office Cleaning
@@ -44,9 +44,9 @@ export default function ServicesBar() {
           <div className="flex items-center justify-center rounded-md  w-1/4 p-4  bg-white shadow-sm">
             <div className="flex-col text-center md:text-start">
               <img
-                src="/icons/house.svg"
-                alt="house"
-                className=" w-12 mb-2 mx-auto md:mx-0 flex justify-center md:justify-start"
+                src="/icons/commercial.svg"
+                alt="commercial"
+                className=" w-20 mb-2 mx-auto md:mx-0 flex justify-center md:justify-start"
               />
               <p className="text-theme2 text-sm sm:text-lg font-semibold mb-1">
                 Commercial Cleaning
@@ -62,9 +62,9 @@ export default function ServicesBar() {
           <div className="flex items-center justify-center rounded-md  w-1/4 p-4  bg-white shadow-sm">
             <div className="flex-col text-center md:text-start">
               <img
-                src="/icons/house.svg"
-                alt="house"
-                className=" w-12 mb-2 mx-auto md:mx-0 flex justify-center md:justify-start"
+                src="/icons/bucket.svg"
+                alt="bucket"
+                className=" w-20 mb-2 mx-auto md:mx-0 flex justify-center md:justify-start"
               />
               <p className="text-theme2 text-sm sm:text-lg font-semibold mb-1">
                 Deep Cleaning
@@ -83,9 +83,9 @@ export default function ServicesBar() {
           <div className="flex items-center justify-center rounded-md  w-1/4 p-4  bg-white shadow-sm">
             <div className="flex-col text-center md:text-start">
               <img
-                src="/icons/house.svg"
-                alt="house"
-                className=" w-12 mb-2 mx-auto md:mx-0 flex justify-center md:justify-start"
+                src="/icons/truck.svg"
+                alt="truck"
+                className=" w-20 mb-2 mx-auto md:mx-0 flex justify-center md:justify-start"
               />
               <p className="text-theme2 text-sm sm:text-lg font-semibold mb-1">
                 Move-In/Out Clean
@@ -101,9 +101,9 @@ export default function ServicesBar() {
           <div className="flex items-center justify-center rounded-md  w-1/4 p-4  bg-white shadow-sm">
             <div className="flex-col text-center md:text-start">
               <img
-                src="/icons/house.svg"
-                alt="house"
-                className=" w-12 mb-2 mx-auto md:mx-0 flex justify-center md:justify-start"
+                src="/icons/bubbles.svg"
+                alt="bubbles"
+                className=" w-20 mb-2 mx-auto md:mx-0 flex justify-center md:justify-start"
               />
               <p className="text-theme2 text-sm sm:text-lg font-semibold mb-1">
                 Eco-Friendly Cleaning{" "}
@@ -119,9 +119,9 @@ export default function ServicesBar() {
           <div className="flex items-center justify-center rounded-md  w-1/4 p-4  bg-white shadow-sm">
             <div className="flex-col text-center md:text-start">
               <img
-                src="/icons/house.svg"
-                alt="house"
-                className=" w-12 mb-2 mx-auto md:mx-0 flex justify-center md:justify-start"
+                src="/icons/window.svg"
+                alt="window"
+                className=" w-20 mb-2 mx-auto md:mx-0 flex justify-center md:justify-start"
               />
               <p className="text-theme2 text-sm sm:text-lg font-semibold mb-1">
                 Window Cleaning
@@ -138,9 +138,9 @@ export default function ServicesBar() {
           <div className="flex items-center justify-center rounded-md  w-1/4 p-4  bg-white shadow-sm">
             <div className="flex-col text-center md:text-start">
               <img
-                src="/icons/house.svg"
-                alt="house"
-                className=" w-12 mb-2 mx-auto md:mx-0 flex justify-center md:justify-start"
+                src="/icons/sofa.svg"
+                alt="sofa"
+                className=" w-20 mb-2 mx-auto md:mx-0 flex justify-center md:justify-start"
               />
               <p className="text-theme2 text-sm sm:text-lg font-semibold mb-1">
                 Specialist Cleaning{" "}

@@ -27,8 +27,8 @@ export default function IntroBar() {
         </div>
         <div className="w-full max-w-6xl px-6 2xl:p-0 mx-auto mb-12">
           <div className="md:flex gap-x-4">
-            <div className="md:w-1/3 hover:scale-105 hover:shadow-2xl transition duration-100 ease-in-out">
-              <div className="flex-col rounded-md  group relative inline-block overflow-hidden border-gray-100 bg-white pt-10 text-sm font-medium   active:text-white">
+            <div className="md:w-1/3 hover:scale-105  transition duration-100 ease-in-out">
+              <div className="flex-col rounded-md  h-full group relative inline-block overflow-hidden border-gray-100 bg-white pt-10 text-sm font-medium   active:text-white">
                 <span class="ease absolute left-0 top-0 h-0 w-0 border-t-[3px] border-[#009FE3] transition-all duration-200 group-hover:w-full"></span>{" "}
                 <p
                   className={`text-theme2 text-center text-2xl mb-2 ${Shadows_Into_Light1.className}`}
@@ -117,14 +117,9 @@ export default function IntroBar() {
                   </div>
                 </div>
               </div>
-              <img
-                src="/images/image-1.png"
-                alt="residential cleaning"
-                className="-mt-4 rounded-b-lg w-full object-cover"
-              />
             </div>
-            <div className="md:w-1/3 hover:scale-105 hover:shadow-2xl transition duration-100 ease-in-out">
-              <div className="flex-col rounded-md  group relative inline-block overflow-hidden border-gray-100 bg-white pt-10 text-sm font-medium   active:text-white">
+            <div className="md:w-1/3 hover:scale-105  transition duration-100 ease-in-out">
+              <div className="flex-col rounded-md  h-full group relative inline-block overflow-hidden border-gray-100 bg-white pt-10 text-sm font-medium   active:text-white">
                 <span class="ease absolute left-0 top-0 h-0 w-0 border-t-[3px] border-[#009FE3] transition-all duration-200 group-hover:w-full"></span>{" "}
                 <p
                   className={`text-theme2 text-center text-2xl mb-2 ${Shadows_Into_Light1.className}`}
@@ -213,14 +208,9 @@ export default function IntroBar() {
                   </div>
                 </div>
               </div>
-              <img
-                src="/images/image-2.png"
-                alt="residential cleaning"
-                className="-mt-4 rounded-b-lg w-full object-cover"
-              />
             </div>
-            <div className="md:w-1/3 hover:scale-105 hover:shadow-2xl transition duration-100 ease-in-out">
-              <div className="flex-col rounded-md group relative inline-block overflow-hidden border-gray-100 bg-white pt-10 text-sm font-medium   active:text-white">
+            <div className="md:w-1/3 hover:scale-105  transition duration-100 ease-in-out">
+              <div className="flex-col rounded-md group relative inline-block overflow-hidden border-gray-100 bg-white h-full pt-10 text-sm font-medium   active:text-white">
                 <span class="ease absolute left-0 top-0 h-0 w-0 border-t-[3px] border-[#009FE3] transition-all duration-200 group-hover:w-full"></span>{" "}
                 <p
                   className={`text-theme2 text-center text-2xl mb-2 ${Shadows_Into_Light1.className}`}
@@ -309,11 +299,6 @@ export default function IntroBar() {
                   </div>
                 </div>
               </div>
-              <img
-                src="/images/image-4.png"
-                alt="residential cleaning"
-                className="-mt-4 rounded-b-lg w-full object-cover"
-              />
             </div>
           </div>
         </div>
