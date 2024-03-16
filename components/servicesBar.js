@@ -88,7 +88,7 @@ export default function ServicesBar() {
                 className=" w-12 mb-2 mx-auto md:mx-0 flex justify-center md:justify-start"
               />
               <p className="text-theme2 text-sm sm:text-lg font-semibold mb-1">
-                Move-In/Move-Out Clean
+                Move-In/Out Clean
               </p>
               <div className="">
                 <p className="text-zinc-400 text-sm leading-4 hidden md:block">

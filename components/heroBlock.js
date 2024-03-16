@@ -24,15 +24,15 @@ const scrollToPlans = () => {
 
 export default function HeaderBar() {
   return (
-    <section class="flex bg-gray-900 w-full items-stretch h-[700px]">
-      <div className="absolute w-full h-[700px]">
+    <section class="flex bg-gray-900 w-full items-stretch ">
+      <div className="absolute w-full h-full">
         <img
           alt="MBCleans cleaner hoovering floor"
           src="/images/mbcleans_hero_image_2.png"
           className="object-cover hidden-none w-full h-full"
         />
       </div>
-      <div className="flex mx-auto max-w-6xl relative w-full  items-center justify-between px-10 sm:px-16 lg:px-20">
+      <div className="flex mx-auto max-w-6xl relative w-full  items-center justify-between px-10 sm:px-16 lg:px-20 my-16">
         <div className=" ">
           {/* <button className="h-20 w-20 border-4 rounded-full">
             <img
