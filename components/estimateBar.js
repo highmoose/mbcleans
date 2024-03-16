@@ -62,7 +62,7 @@ export default function EstimateBar() {
         class="absolute inset-0 w-full h-full object-cover"
       />
       <div className=" relative flex my-16 md:my-20 lg:my-10 xl:my-8">
-        <div className="lg:flex gap-x-8 px-6 sm:px-8 md:px-10 max-w-6xl mx-auto ">
+        <div className="lg:flex gap-x-8 px-3 sm:px-8 md:px-10 max-w-6xl mx-auto ">
           {/* Contact Information Section */}
           <div className="lg:w-1/2 rounded-md lg:my-auto px-4 sm:px-16 lg:px-0  mb-8">
             <p
@@ -111,7 +111,7 @@ export default function EstimateBar() {
           {/* Estimate Form Section */}
           <form
             onSubmit={handleSubmit}
-            className="lg:w-1/2 bg-white rounded-md p-6 "
+            className="lg:w-1/2 bg-white rounded-md p-4 sm:p-6 "
           >
             <p className="text-theme2 tracking-tight text-2xl text-center lg:text-start font-bold mb-2 lg:mb-4">
               Request an estimate:
