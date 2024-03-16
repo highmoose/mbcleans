@@ -24,12 +24,12 @@ const scrollToPlans = () => {
 
 export default function HeaderBar() {
   return (
-    <section class="flex bg-gray-900 w-full md:max-h-[600px] z-0">
+    <section class="flex bg-gray-900 w-full max-h-[500px] sm:max-h-[700px] lg:max-h-[600px]">
       <div className="absolute w-full h-full">
         <img
           alt="MBCleans cleaner hoovering floor"
           src="/images/mbcleans_hero_image_2.png"
-          className="object-cover w-full h-full md:max-h-[600px]"
+          className="object-cover w-full h-full  max-h-[500px] sm:max-h-[700px] lg:max-h-[600px]"
         />
       </div>
       <div className=" flex pb-10 mx-auto max-w-6xl relative w-full  items-center justify-between px-10 sm:px-16 lg:px-20 my-16 md:my-20 lg:my-10 xl:my-8">
@@ -71,7 +71,7 @@ export default function HeaderBar() {
             </div>
           </div>
         </div>
-        <div className="hidden lg:block overflow-hidden">
+        <div className="hidden lg:block overflow-hidden pt-8">
           <img
             alt="Cleaning cloth"
             className=""
