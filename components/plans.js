@@ -20,7 +20,7 @@ export default function IntroBar() {
             Customised Cleaning Plans!
           </p>
           <div className="flex items-center">
-            <p className="flex mx-auto text-4xl  font-medium tracking-tight text-theme2">
+            <p className="flex mx-auto text-4xl text-center  font-medium tracking-tight text-theme2">
               Tailored to fit your specific needs!
             </p>
           </div>
