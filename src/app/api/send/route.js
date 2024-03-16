@@ -23,7 +23,7 @@ export async function POST(request) {
     const data = await resend.emails.send({
       from: "support@mbcleans.co.uk",
       to: ["admin@mbcleans.co.uk", email],
-      subject: "Stage 2 Test",
+      subject: "MBCleans | ",
       react: MBCleansSiteEmail({
         names: names,
         email: email,

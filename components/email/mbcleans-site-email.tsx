@@ -33,7 +33,7 @@ export const MBCleansSiteEmail = ({
 }) => (
   <Html>
     <Head />
-    <Preview>Confirm your email address</Preview>
+    <Preview>Estimate Request</Preview>
     <Body style={main}>
       <Container style={container}>
         <Section style={logoContainer}>
