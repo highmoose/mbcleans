@@ -55,31 +55,31 @@ export default function EstimateBar() {
   };
 
   return (
-    <div id="contact">
+    <div id="contact" class="relative">
       <img
         alt="MBCleans cleaner hoovering floor"
         src="/images/mbcleans_estimate_image_2.png"
-        className="absolute object-cover h-full "
+        class="absolute inset-0 w-full h-full object-cover"
       />
-      <div className=" relative flex">
-        <div className="lg:flex gap-x-8 px-10 lg:px-0 max-w-6xl mx-auto">
+      <div className=" relative flex py-20">
+        <div className="lg:flex gap-x-8 px-6 sm:px-8 md:px-10 max-w-6xl mx-auto">
           {/* Contact Information Section */}
-          <div className="lg:w-1/2 rounded-md lg:my-auto my-16 md:my-20">
+          <div className="lg:w-1/2 rounded-md lg:my-auto px-4 sm:px-16 lg:px-0  mb-8">
             <p
               className={`text-yellow-300 text-3xl sm:text-4xl mb-2 text-center lg:text-start ${Shadows_Into_Light1.className}`}
             >
               We&lsquo;re the best in the business!
             </p>
-            <p className="text-white font-medium tracking-tight text-4xl leading-8 md:text-5xl mb-2  lg:mb-6 text-center lg:text-start">
+            <p className="text-white font-medium tracking-tight text-4xl leading-8 md:text-5xl mb-2  lg:mb-4 text-center lg:text-start">
               Your clients & employees deserve a clean, safe and healthy
               environment!
             </p>
 
-            <p className="text-white text-sm mb-2  lg:mb-6 text-center lg:text-start">
+            <p className="text-white text-sm mb-2  lg:mb-4 text-center lg:text-start">
               Hiring someone to clean your property can feel like a big decision
               as your want to hire the best house cleaning service you can.
             </p>
-            <div className="flex gap-x-4 items-center mb-2  lg:mb-6 justify-center lg:justify-start">
+            <div className="flex gap-x-4 items-center mb-2  lg:mb-4 justify-center lg:justify-start">
               <div className=" border-4 rounded-full p-2">
                 <Image
                   src="/icons/check-white.svg"
@@ -92,7 +92,7 @@ export default function EstimateBar() {
                 Worry Free Services
               </p>
             </div>
-            <p className="text-white text-sm mb-2  lg:mb-6 text-center lg:text-start">
+            <p className="text-white text-sm mb-2  lg:mb-4 text-center lg:text-start">
               We do everything we can to make out services as affordable as
               possible. Our budget flexability extends all the way to employing
               the right amount of help at the right times to make a positive
@@ -113,10 +113,10 @@ export default function EstimateBar() {
             onSubmit={handleSubmit}
             className="lg:w-1/2 bg-white rounded-md p-6 "
           >
-            <p className="text-theme2 tracking-tight text-2xl font-bold mb-2 lg:mb-4">
+            <p className="text-theme2 tracking-tight text-2xl text-center lg:text-start font-bold mb-2 lg:mb-4">
               Request an estimate:
             </p>
-            <p className=" font-regular text-sm mb-4 text-zinc-400 ">
+            <p className=" font-regular text-sm mb-4 text-zinc-400 text-center lg:text-start">
               For a cleaning that meets your highest standards, you need a
               dedicated team of trained specialists with all supplies needed to
               thoroughly clean your home.

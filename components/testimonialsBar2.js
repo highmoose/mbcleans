@@ -69,14 +69,14 @@ export default function CirclesAndRectangles() {
                     />
                   </svg> */}
 
-                  <p class="text-3xl font-medium text-gray-800 ">
+                  <p class="text-3xl font-medium text-gray-800 text-center lg:text-start ">
                     &quot;I cannot recommend MB cleans enough. Melissa and Becki
                     were impeccably professional, communicative and the standard
                     was beyond excellent.&quot;
                   </p>
 
                   <footer class="mt-6 mb-16">
-                    <div class="flex items-center">
+                    <div class="flex items-center justify-center">
                       <div class="lg:hidden flex-shrink-0">
                         <img
                           class="h-24 w-24 rounded-full"
@@ -123,14 +123,14 @@ export default function CirclesAndRectangles() {
                     />
                   </svg> */}
 
-                  <p class="text-3xl font-medium text-gray-800 ">
+                  <p class="text-3xl font-medium text-gray-800 text-center lg:text-start ">
                     &quot;MB Cleans is the secret weapon for turning your place
                     into a sanctuary of cleanliness without any stress. Total
                     game-changer&quot;
                   </p>
 
                   <footer class="mt-6 mb-16">
-                    <div class="flex items-center">
+                    <div class="flex items-center justify-center">
                       <div class="lg:hidden flex-shrink-0">
                         <img
                           class="h-24 w-24 rounded-full"
@@ -177,14 +177,14 @@ export default function CirclesAndRectangles() {
                     />
                   </svg> */}
 
-                  <p class="text-3xl font-medium text-gray-800">
+                  <p class="text-3xl font-medium text-gray-800 text-center lg:text-start">
                     &quot;A huge shoutout to MB Cleans for their outstanding
                     service! Melissa and Becki&apos;s expertise and cheerful
                     demeanor made the whole cleaning process a breeze.&quot;
                   </p>
 
                   <footer class="mt-6 mb-16">
-                    <div class="flex items-center">
+                    <div class="flex items-center justify-center">
                       <div class="lg:hidden flex-shrink-0">
                         <img
                           class="h-24 w-24 rounded-full"
