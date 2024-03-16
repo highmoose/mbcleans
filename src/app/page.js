@@ -3,8 +3,8 @@ import Image from "next/image";
 import BannerBar from "../../components/bannerBar";
 import HeaderBar from "../../components/headerBar";
 import HeroBlock from "../../components/heroBlock";
-import IntroBar from "../../components/introBar";
-import InfoBar2 from "../../components/infoBar2";
+import Plans from "../../components/plans";
+import AboutUs from "../../components/aboutUs";
 import PartnersBar2 from "../../components/partnersBar2";
 
 import StepsBar from "../../components/stepsBar";
@@ -20,8 +20,8 @@ export default function Home() {
       <HeaderBar />
       <HeroBlock />
       <ServicesBar />
-      <IntroBar />
-      <InfoBar2 />
+      <Plans />
+      <AboutUs />
       <StepsBar />
       <PartnersBar2 />
       <EstimateBar />
