@@ -50,20 +50,20 @@ const backToTop = () => {
 export default function FooterBar() {
   return (
     <div className="bg-white">
-      <div class="w-full px-8 2xl:px-0 flex items-center justify-center my-20 mx-auto max-w-6xl">
-        <div class="max-w-6xl w-full text-white flex flex-col">
+      <div class="w-full px-8 2xl:px-0 sm:flex items-center justify-center my-20 mx-auto max-w-6xl gap-x-8 ">
+        <div class="max-w-6xl w-full text-white flex flex-col gap-x-2 ">
           <div class="w-full text-7xl font-bold">
-            <h1 class="w-full text-4xl md:text-4xl mb-1 text-theme2">
+            <h1 class="w-full text-4xl md:text-4xl mb-1 text-theme2 text-center sm:text-start">
               We&lsquo;re happy to help!
             </h1>
           </div>
           <div class="flex flex-col md:flex-row md:justify-between">
-            <p class="w-full md:w-2/3 text-base text-gray-400">
+            <p class="w-full md:w-2/3 text-base text-gray-400  text-center sm:text-start">
               Need some assistance? The MBCleans team have you covered.
             </p>
           </div>
         </div>
-        <div onClick={backToTop} class="w-80 pt-6 md:pt-0">
+        <div onClick={backToTop} class="w-80 pt-6 md:pt-0 mx-auto sm:mx-0">
           <a class="bg-theme3 cursor-pointer justify-center text-lg text-center rounded-lg shadow px-10 py-3 flex items-center">
             Back to top
           </a>
@@ -79,7 +79,7 @@ export default function FooterBar() {
                 className="h-7 my-auto"
               />
             </div>
-            <div className="w-2/4 flex justify-center gap-x-6">
+            <div className=" hidden md:flex justify-center gap-x-4 lg:gap-x-6">
               <div className="cursor-pointer" onClick={scrollToHome}>
                 Home
               </div>

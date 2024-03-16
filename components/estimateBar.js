@@ -59,16 +59,61 @@ export default function EstimateBar() {
       <img
         alt="MBCleans cleaner hoovering floor"
         src="/images/mbcleans_estimate_image_2.png"
-        className="absolute object-cover  h-full "
+        className="absolute object-cover h-full "
       />
       <div className=" relative flex">
-        <div className="flex gap-x-8 max-w-6xl mx-auto">
+        <div className="lg:flex gap-x-8 px-10 lg:px-0 max-w-6xl mx-auto">
+          {/* Contact Information Section */}
+          <div className="lg:w-1/2 rounded-md lg:my-auto my-16 md:my-20">
+            <p
+              className={`text-yellow-300 text-3xl sm:text-4xl mb-2 text-center lg:text-start ${Shadows_Into_Light1.className}`}
+            >
+              We&lsquo;re the best in the business!
+            </p>
+            <p className="text-white font-medium tracking-tight text-4xl leading-8 md:text-5xl mb-2  lg:mb-6 text-center lg:text-start">
+              Your clients & employees deserve a clean, safe and healthy
+              environment!
+            </p>
+
+            <p className="text-white text-sm mb-2  lg:mb-6 text-center lg:text-start">
+              Hiring someone to clean your property can feel like a big decision
+              as your want to hire the best house cleaning service you can.
+            </p>
+            <div className="flex gap-x-4 items-center mb-2  lg:mb-6 justify-center lg:justify-start">
+              <div className=" border-4 rounded-full p-2">
+                <Image
+                  src="/icons/check-white.svg"
+                  width={25}
+                  height={25}
+                  className="text-white"
+                />
+              </div>
+              <p className="text-white font-semibold text-2xl ">
+                Worry Free Services
+              </p>
+            </div>
+            <p className="text-white text-sm mb-2  lg:mb-6 text-center lg:text-start">
+              We do everything we can to make out services as affordable as
+              possible. Our budget flexability extends all the way to employing
+              the right amount of help at the right times to make a positive
+              difference in our customers lives and give confidence in our
+              services.
+            </p>
+            <div className="items-center gap-x-4 text-center lg:text-start">
+              <p className="text-3xl ">You can call us on:</p>
+
+              <p className="text-5xl font-bold ">07710172363</p>
+              <p className="text-1xl font-extralight ">
+                Open Hours: Mon-Sat (9am-5pm)
+              </p>
+            </div>
+          </div>
           {/* Estimate Form Section */}
           <form
             onSubmit={handleSubmit}
-            className="w-1/2 bg-white rounded-md my-24 p-6"
+            className="lg:w-1/2 bg-white rounded-md p-6 "
           >
-            <p className="text-theme2 tracking-tight text-2xl font-bold mb-4">
+            <p className="text-theme2 tracking-tight text-2xl font-bold mb-2 lg:mb-4">
               Request an estimate:
             </p>
             <p className=" font-regular text-sm mb-4 text-zinc-400 ">
@@ -336,50 +381,6 @@ export default function EstimateBar() {
               </button>
             </div>
           </form>
-          {/* Contact Information Section */}
-          <div className="w-1/2 rounded-md my-auto">
-            <p
-              className={`text-yellow-300 mb-2 text-3xl ${Shadows_Into_Light1.className}`}
-            >
-              We&lsquo;re the best in the business!
-            </p>
-            <p className="text-white font-medium  tracking-tight  text-5xl  mb-6">
-              Your clients & employees deserve a clean, safe and healthy
-              environment!
-            </p>
-
-            <p className="text-white text-sm mb-4">
-              Hiring someone to clean your property can feel like a big decision
-              as your want to hire the best house cleaning service you can.
-            </p>
-            <div className="flex gap-x-4 items-center mb-6">
-              <div className=" border-4 rounded-full p-2">
-                <Image
-                  src="/icons/check-white.svg"
-                  width={25}
-                  height={25}
-                  className="text-white"
-                />
-              </div>
-              <p className="text-white font-semibold text-2xl">
-                Worry Free Services
-              </p>
-            </div>
-            <p className="text-white text-sm mb-8">
-              We do everything we can to make out services as affordable as
-              possible. Our budget flexability extends all the way to employing
-              the right amount of help at the right times to make a positive
-              difference in our customers lives and give confidence in our
-              services.
-            </p>
-            <div className="items-center gap-x-4">
-              <p className="text-2xl font-extralight ">Or call us on:</p>
-              <p className="text-5xl font-bold ">07710172363</p>
-              <p className="text-1xl font-extralight ">
-                Open Hours: Mon-Sat (9am-5pm)
-              </p>
-            </div>
-          </div>
         </div>
       </div>
     </div>
