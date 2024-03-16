@@ -2,7 +2,7 @@ import React from "react";
 
 export default function ServicesBar() {
   return (
-    <div className="-mt-12 z-0 bg-zinc">
+    <div className=" z-0 -mt-10">
       <div className="max-w-6xl gap-2 items-center mx-auto px-2 sm:px-4 md:px-6">
         <div className="flex gap-1 sm:gap-2 md:gap-4 pb-1 sm:pb-2 md:pb-4">
           <div className="flex items-center justify-center rounded-md  w-1/4 p-4  bg-white shadow-sm">

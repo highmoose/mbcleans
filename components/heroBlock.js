@@ -24,25 +24,16 @@ const scrollToPlans = () => {
 
 export default function HeaderBar() {
   return (
-    <section class="flex bg-gray-900 w-full items-stretch ">
+    <section class="flex bg-gray-900 w-full md:max-h-[600px] z-0">
       <div className="absolute w-full h-full">
         <img
           alt="MBCleans cleaner hoovering floor"
           src="/images/mbcleans_hero_image_2.png"
-          className="object-cover hidden-none w-full h-full"
+          className="object-cover w-full h-full md:max-h-[600px]"
         />
       </div>
-      <div className="flex mx-auto max-w-6xl relative w-full  items-center justify-between px-10 sm:px-16 lg:px-20 my-16">
-        <div className=" ">
-          {/* <button className="h-20 w-20 border-4 rounded-full">
-            <img
-              src="/icons/arrow-left.svg"
-              alt="arrow left"
-              className=" w-6 flex m-auto h-full"
-            />
-          </button> */}
-        </div>
-        <div className="max-w-6xl mb-12 w-full lg:w-4/5">
+      <div className=" flex pb-10 mx-auto max-w-6xl relative w-full  items-center justify-between px-10 sm:px-16 lg:px-20 my-16 md:my-20 lg:my-10 xl:my-8">
+        <div className="max-w-6xl w-full lg:w-4/5 ">
           <p
             className={`text-yellow-300 text-3xl sm:text-4xl mb-2 text-center lg:text-start ${Shadows_Into_Light1.className}`}
           >
@@ -62,7 +53,7 @@ export default function HeaderBar() {
               <a
                 onClick={scrollToPlans}
                 title="Get quote now"
-                class="relative inline-flex items-center justify-center px-5 py-3 sm:px-8 sm:py-4 text-lg font-bold text-white transition-all duration-200 bg-slate-900 font-pj rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+                class="relative inline-flex items-center justify-center px-5 p-3 sm:px-8 sm:py-4 text-lg font-bold text-white transition-all duration-200 bg-slate-900 font-pj rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
                 role="button"
               >
                 Our Services
@@ -80,10 +71,10 @@ export default function HeaderBar() {
             </div>
           </div>
         </div>
-        <div className="h-full w-2/5 hidden lg:block">
+        <div className="hidden lg:block overflow-hidden">
           <img
             alt="Cleaning cloth"
-            className="h-full w-full object-contain pt-20 "
+            className=""
             src="/images/cleaning-cloth.png"
           />
         </div>
