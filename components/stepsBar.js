@@ -9,7 +9,7 @@ const Shadows_Into_Light1 = Shadows_Into_Light({
 export default function StepsBar() {
   return (
     <div>
-      <div className="text-black bg-slate-50 w-full text-4xl py-16 flex-col mx-auto">
+      <div className="text-black bg-slate-50 w-full text-4xl py-16 flex-col mx-auto px-10 lg:px-0">
         <div className=" max-w-6xl mx-auto gap-x-4 mb-10">
           <p
             className={`text-theme3 text-center text-3xl mb-1 ${Shadows_Into_Light1.className}`}
