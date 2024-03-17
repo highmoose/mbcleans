@@ -37,7 +37,7 @@ export default function HeaderBar() {
           <p
             className={`text-yellow-300 text-3xl sm:text-4xl mb-2 text-center lg:text-start ${Shadows_Into_Light1.className}`}
           >
-            Commerical & Domestic
+            Commercial & Domestic
           </p>
           <p className="text-[55px] sm:text-[90px] mb-6 leading-[50px] sm:leading-[75px] font-semibold text-center lg:text-start ">
             Professional Cleaning Specialists.

@@ -110,7 +110,7 @@ export default function HeaderBar() {
                   07710172363
                 </a>
                 <p className="-mt-1.5 text-sm italic font-extralight ">
-                  Open Hours: Mon-Sat (9am-5pm)
+                  Open Hours: 24/7
                 </p>
               </div>
             </div>
