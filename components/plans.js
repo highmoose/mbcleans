@@ -36,7 +36,7 @@ export default function IntroBar() {
                   For Homes
                 </p>
                 <p className="text-xl text-theme2 text-center font-semibold">
-                  Resedential Plans
+                  Residential Plans
                 </p>
                 {/* <div className="flex my-6 justify-center">
                   <div className=" bg-gray-100 w-16 h-16 rounded-full">

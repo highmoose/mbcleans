@@ -76,7 +76,7 @@ export default function CirclesAndRectangles() {
                   </p>
 
                   <footer class="mt-6 mb-16">
-                    <div class="flex items-center justify-center">
+                    <div class="flex items-center justify-center  lg:justify-start">
                       <div class="lg:hidden flex-shrink-0">
                         <img
                           class="h-24 w-24 rounded-full"
@@ -130,7 +130,7 @@ export default function CirclesAndRectangles() {
                   </p>
 
                   <footer class="mt-6 mb-16">
-                    <div class="flex items-center justify-center">
+                    <div class="flex items-center justify-center lg:justify-start">
                       <div class="lg:hidden flex-shrink-0">
                         <img
                           class="h-24 w-24 rounded-full"
@@ -184,7 +184,7 @@ export default function CirclesAndRectangles() {
                   </p>
 
                   <footer class="mt-6 mb-16">
-                    <div class="flex items-center justify-center">
+                    <div class="flex items-center justify-center lg:justify-start">
                       <div class="lg:hidden flex-shrink-0">
                         <img
                           class="h-24 w-24 rounded-full"
