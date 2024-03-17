@@ -39,19 +39,24 @@ export default function HeaderBar() {
           >
             Commercial & Domestic
           </p>
-          <p className="text-[55px] sm:text-[90px] mb-6 leading-[50px] sm:leading-[75px] font-semibold text-center lg:text-start ">
+          <p className="text-[55px] sm:text-[90px] mb-4 lg:mb-6 leading-[50px] sm:leading-[75px] font-semibold text-center lg:text-start ">
             Professional Cleaning Specialists.
           </p>
-          <div className="flex mb-6 gap-x-3 justify-center lg:justify-start">
+          <div className="flex mb-4 lg:mb-6 gap-x-3 justify-center lg:justify-start">
             <img
               src="/icons/dbs-checked.svg"
-              className="h-14 md:h-16 z-20"
+              className="h-14 z-20"
               alt="DBS Check"
             />
             <img
               src="/icons/fully-insured.svg"
-              className="h-14 md:h-16 z-20"
+              className="h-14 z-20"
               alt="Fully Insured"
+            />
+            <img
+              src="/icons/public-liability.svg"
+              className="h-14 z-20"
+              alt="Public Liability Insurance"
             />
           </div>
           <div className="flex gap-x-3 justify-center lg:justify-start">
