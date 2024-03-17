@@ -18,7 +18,7 @@ export default function PartnersBar2() {
       <div class="relative font-inter antialiased">
         <div class="relative max-h-[280px] flex flex-col justify-center bg-slate-900 overflow-hidden">
           <div class="w-full max-w-5xl mx-auto px-4 md:px-6 py-24">
-            <p className="text-center text-xl mb-12">
+            <p className="text-center text-white text-xl mb-12">
               We work with amazing people, here are some you may already know...
             </p>
             <div class="text-center">

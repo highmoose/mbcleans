@@ -29,7 +29,7 @@ export default function HeaderBar() {
         <img
           alt="MBCleans cleaner hoovering floor"
           src="/images/mbcleans_hero_image_2.png"
-          className="object-cover w-full h-full  max-h-[500px] :max-h-[700px] lg:max-h-[600px]"
+          className="object-cover w-full h-full text-white max-h-[500px] :max-h-[700px] lg:max-h-[600px]"
         />
       </div>
       <div className=" flex pb-10 mx-auto max-w-6xl relative w-full  items-center justify-between px-10 sm:px-16 lg:px-20 my-16 md:my-20 lg:my-10 xl:my-8">

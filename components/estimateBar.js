@@ -104,7 +104,7 @@ export default function EstimateBar() {
             </p>
             <a
               href="tel:07710172363"
-              className="items-center gap-x-4 text-center lg:text-start"
+              className="items-center gap-x-4 text-white text-center lg:text-start"
             >
               <p className="text-3xl ">You can call us on:</p>
 
