@@ -49,14 +49,14 @@ export default function HeaderBar() {
               alt="DBS Check"
             />
             <img
+              src="/icons/public-liability.svg"
+              className="h-14 z-20 pb-1"
+              alt="Public Liability Insurance"
+            />
+            <img
               src="/icons/fully-insured.svg"
               className="h-14 z-20"
               alt="Fully Insured"
-            />
-            <img
-              src="/icons/public-liability.svg"
-              className="h-14 z-20"
-              alt="Public Liability Insurance"
             />
           </div>
           <div className="flex gap-x-3 justify-center lg:justify-start">
