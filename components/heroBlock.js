@@ -24,12 +24,12 @@ const scrollToPlans = () => {
 
 export default function HeaderBar() {
   return (
-    <section class="flex bg-gray-900 w-full max-h-[500px] :max-h-[700px] lg:max-h-[600px]">
+    <section class="flex bg-gray-900 w-full max-h-[550px] sm:max-h-[600px]  lg:max-h-[650px]">
       <div className="absolute w-full h-full">
         <img
           alt="MBCleans cleaner hoovering floor"
           src="/images/mbcleans_hero_image_2.png"
-          className="object-cover w-full h-full max-h-[500px] :max-h-[700px] lg:max-h-[600px] "
+          className="object-cover w-full h-full max-h-[550px] sm:max-h-[600px] lg:max-h-[650px] "
         />
       </div>
       <div className=" flex pb-10 text-white mx-auto max-w-6xl relative w-full  items-center justify-between px-10 sm:px-16 lg:px-20 my-16 md:my-20 lg:my-10 xl:my-8">
@@ -42,22 +42,24 @@ export default function HeaderBar() {
           <p className="text-[55px] sm:text-[90px] mb-6 leading-[50px] sm:leading-[75px] font-semibold text-center lg:text-start ">
             Professional Cleaning Specialists.
           </p>
+          <div className="flex mb-6 gap-x-3 justify-center lg:justify-start">
+            <img
+              src="/icons/dbs-checked.svg"
+              className="h-14 md:h-16 z-20"
+              alt="DBS Check"
+            />
+            <img
+              src="/icons/fully-insured.svg"
+              className="h-14 md:h-16 z-20"
+              alt="Fully Insured"
+            />
+          </div>
           <div className="flex gap-x-3 justify-center lg:justify-start">
             <p className="text-md  mb-6 leading-5 text-center lg:text-start">
               We work closely with clients in finding the most cost effective
               solutions that will produce a clean, healthy environment, while
               saving them time.
             </p>
-            <img
-              src="/icons/dbs-checked.svg"
-              className="h-16 z-20"
-              alt="DBS Check"
-            />
-            <img
-              src="/icons/fully-insured.svg"
-              className="h-16 z-20"
-              alt="Fully Insured"
-            />
           </div>
           <div className="flex gap-x-3 justify-center lg:justify-start">
             <div class="relative inline-flex group">
