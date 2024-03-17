@@ -42,11 +42,23 @@ export default function HeaderBar() {
           <p className="text-[55px] sm:text-[90px] mb-6 leading-[50px] sm:leading-[75px] font-semibold text-center lg:text-start ">
             Professional Cleaning Specialists.
           </p>
-          <p className="text-md  mb-6 leading-5 text-center lg:text-start">
-            We work closely with clients in finding the most cost effective
-            solutions while still providing a level of service that will produce
-            a clean, healthy environment, while saving them time.
-          </p>
+          <div className="flex gap-x-3 justify-center lg:justify-start">
+            <p className="text-md  mb-6 leading-5 text-center lg:text-start">
+              We work closely with clients in finding the most cost effective
+              solutions that will produce a clean, healthy environment, while
+              saving them time.
+            </p>
+            <img
+              src="/icons/dbs-checked.svg"
+              className="h-16 z-20"
+              alt="DBS Check"
+            />
+            <img
+              src="/icons/fully-insured.svg"
+              className="h-16 z-20"
+              alt="Fully Insured"
+            />
+          </div>
           <div className="flex gap-x-3 justify-center lg:justify-start">
             <div class="relative inline-flex group">
               <div class="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44ffef] via-[#25daf2] to-[#5efffa] rounded-md blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
