@@ -126,7 +126,7 @@ export default function EstimateBar() {
               <div className="flex gap-x-4 mb-2">
                 <div className="w-1/2 ">
                   <label
-                    for="typeOfClean"
+                    for="names"
                     q
                     class="block text-base font-medium text-gray-900 "
                   >
@@ -242,7 +242,7 @@ export default function EstimateBar() {
                   </div>
                   <div className="w-1/2">
                     <label
-                      for="email"
+                      for="propertyType"
                       class="block text-base font-medium text-gray-900"
                     >
                       Property type *
@@ -271,7 +271,7 @@ export default function EstimateBar() {
                 <div className="w-1/4 ">
                   <div className="">
                     <label
-                      for="propertyType"
+                      for="roomsSelect"
                       class="block text-base font-medium text-gray-900"
                     >
                       Room(s)
