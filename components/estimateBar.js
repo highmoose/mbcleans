@@ -102,14 +102,17 @@ export default function EstimateBar() {
               difference in our customers lives and give confidence in our
               services.
             </p>
-            <div className="items-center gap-x-4 text-center lg:text-start">
+            <a
+              href="tel:07710172363"
+              className="items-center gap-x-4 text-center lg:text-start"
+            >
               <p className="text-3xl ">You can call us on:</p>
 
               <p className="text-5xl font-bold ">07710172363</p>
               <p className="text-1xl font-extralight ">
                 Open Hours: Mon-Sat (9am-5pm)
               </p>
-            </div>
+            </a>
           </div>
           {/* Estimate Form Section */}
           <form

@@ -102,10 +102,10 @@ export default function HeaderBar() {
               </div>
             </div>
             <div className="flex">
-              <div className="flex-col justify-center my-auto w-full">
+              <div className="flex-col justify-center my-auto w-full z-20">
                 <a
                   href="tel:07710172363"
-                  className="text-4xl tracking-tight font-bold text-theme3"
+                  className="text-4xl tracking-tight font-bold text-theme3 w-full h-full"
                 >
                   07710172363
                 </a>
