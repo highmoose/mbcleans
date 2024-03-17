@@ -78,10 +78,6 @@ export const MBCleansSiteEmail = ({
               <span style={{ color: "black" }}>{propertyType}</span>
             </div>
             <div style={{ ...item, color: "deepskyblue" }}>
-              Company Name:&nbsp;
-              <span style={{ color: "black" }}>{companyName}</span>
-            </div>
-            <div style={{ ...item, color: "deepskyblue" }}>
               Rooms: <span style={{ color: "black" }}>{roomsSelect}</span>
             </div>
             <div style={{ ...item, color: "deepskyblue" }}>

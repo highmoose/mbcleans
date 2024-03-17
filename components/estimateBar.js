@@ -23,6 +23,7 @@ export default function EstimateBar() {
     staircaseSelect: "",
   });
 
+  const [emailSuccess, setEmailSuccess] = useState(false);
   const [submitted, setSubmitted] = useState(false);
 
   const handleChange = (e) => {
@@ -46,6 +47,7 @@ export default function EstimateBar() {
       });
       if (response.ok) {
         console.log("Email sent successfully!");
+        setEmailSuccess(true);
         setSubmitted(true);
       } else {
         console.error("Failed to send email:", response.statusText);
@@ -399,16 +401,26 @@ export default function EstimateBar() {
                   No
                 </label>
               </div>
-              <button
-                type="submit"
-                className="bg-theme2 hover:bg-slate-800 flex justify-between font-bold w-full text-left p-4 rounded-md"
-              >
-                <p className="text-white ">Submit Request</p>
-                <img
-                  alt="right arrow"
-                  src="/icons/arrow-right-circle-white.svg"
-                />
-              </button>
+              {emailSuccess ? (
+                <button
+                  type="submit"
+                  className="bg-green-600 hover:bg-slate-800 flex justify-between font-bold w-full text-left p-4 rounded-md"
+                >
+                  <p className="text-white">Request Sent Successfully!</p>
+                  <img alt="right arrow" src="/icons/circle-check.svg" />
+                </button>
+              ) : (
+                <button
+                  type="submit"
+                  className="bg-theme2 hover:bg-slate-800 flex justify-between font-bold w-full text-left p-4 rounded-md"
+                >
+                  <p className="text-white">Submit Request</p>
+                  <img
+                    alt="right arrow"
+                    src="/icons/arrow-right-circle-white.svg"
+                  />
+                </button>
+              )}
             </div>
           </form>
         </div>

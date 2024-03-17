@@ -24,7 +24,7 @@ export async function POST(request) {
     const data = await resend.emails.send({
       from: "support@mbcleans.co.uk",
       to: ["admin@mbcleans.co.uk", email],
-      subject: "MBCleans | ",
+      subject: "MBCleans",
       react: MBCleansSiteEmail({
         names: names,
         email: email,
