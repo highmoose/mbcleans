@@ -38,7 +38,7 @@ export default function IntroBar() {
                 <p className="text-xl text-theme2 text-center font-semibold">
                   Resedential Plans
                 </p>
-                <div className="flex my-6 justify-center">
+                {/* <div className="flex my-6 justify-center">
                   <div className=" bg-gray-100 w-16 h-16 rounded-full">
                     <img
                       src="/icons/trash.svg"
@@ -60,7 +60,7 @@ export default function IntroBar() {
                       className=" w-10 flex m-auto h-full"
                     />
                   </div>
-                </div>
+                </div> */}
                 <p className="text-sm text-gray-400 mb-6 px-10">
                   Residential house cleaning services always focus on cleaning
                   for health, while our extensive industry experience gives us
@@ -129,7 +129,7 @@ export default function IntroBar() {
                 <p className="text-xl text-theme2 text-center font-semibold">
                   Commercial Plans
                 </p>
-                <div className="flex my-6 justify-center">
+                {/* <div className="flex my-6 justify-center">
                   <div className=" bg-gray-100 w-16 h-16 rounded-full">
                     <img
                       src="/icons/bin.svg"
@@ -151,7 +151,7 @@ export default function IntroBar() {
                       className=" w-10 flex m-auto h-full"
                     />
                   </div>
-                </div>
+                </div> */}
                 <p className="text-sm text-gray-400 mb-6 tracking-tight px-10">
                   Commercial cleaning services will help you protect and care
                   for your customers and employees, we care about clean, and it
@@ -220,7 +220,7 @@ export default function IntroBar() {
                 <p className="text-xl text-theme2 text-center font-semibold">
                   Incident Plans
                 </p>
-                <div className="flex my-6 justify-center">
+                {/* <div className="flex my-6 justify-center">
                   <div className=" bg-gray-100 w-16 h-16 rounded-full">
                     <img
                       src="/icons/bucket.svg"
@@ -242,7 +242,7 @@ export default function IntroBar() {
                       className=" w-10 flex m-auto h-full"
                     />
                   </div>
-                </div>
+                </div> */}
                 <p className="text-sm text-gray-400 mb-6 tracking-tight px-10">
                   In the case of an emergency an urgent clean up may be
                   required. We have the tools, chemicals and skills to provide
