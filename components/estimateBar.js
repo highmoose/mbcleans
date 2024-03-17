@@ -13,11 +13,12 @@ export default function EstimateBar() {
   const [formData, setFormData] = useState({
     names: "",
     email: "",
+    telephone: "",
     chooseService: "",
     typeOfClean: "",
     propertyType: "",
-    companyName: "",
     roomsSelect: "",
+    bathroomSelect: "",
     hallwaySelect: "",
     staircaseSelect: "",
   });
@@ -122,13 +123,14 @@ export default function EstimateBar() {
               thoroughly clean your home.
             </p>
             <div className="text-black">
-              <div className="flex gap-x-4 mb-4">
+              <div className="flex gap-x-4 mb-2">
                 <div className="w-1/2 ">
                   <label
                     for="typeOfClean"
+                    q
                     class="block text-base font-medium text-gray-900 "
                   >
-                    Name:
+                    Name: *
                   </label>
 
                   <input
@@ -147,7 +149,7 @@ export default function EstimateBar() {
                     for="name"
                     class="block text-base font-medium text-gray-900 "
                   >
-                    Email:
+                    Email: *
                   </label>
 
                   <input
@@ -162,7 +164,26 @@ export default function EstimateBar() {
                   ></input>
                 </div>
               </div>
-              <div className="flex gap-x-4 mb-4">
+              <div className="flex gap-x-4 mb-2">
+                <div className="w-1/2 ">
+                  <label
+                    for="telephone"
+                    class="block text-base font-medium text-gray-900 "
+                  >
+                    Contact No. *
+                  </label>
+
+                  <input
+                    required
+                    name="telephone"
+                    id="telephone"
+                    value={formData.telephone}
+                    onChange={handleChange}
+                    placeholder=""
+                    type="tel"
+                    class="mt-1.5 w-full p-2 h-14 bg-zinc-100 rounded-lg border-gray-300 text-gray-700 sm:text-base"
+                  ></input>
+                </div>
                 <div className="w-1/2">
                   <label
                     for="chooseService"
@@ -194,31 +215,31 @@ export default function EstimateBar() {
                     <option value="Other">Other</option>
                   </select>
                 </div>
-                <div className="w-1/2 ">
-                  <label
-                    for="typeOfClean"
-                    class="block text-base font-medium text-gray-900 "
-                  >
-                    Type of clean *
-                  </label>
-
-                  <select
-                    required
-                    name="typeOfClean"
-                    id="typeOfClean"
-                    value={formData.typeOfClean}
-                    onChange={handleChange}
-                    class="mt-1.5 w-full p-2 h-14 bg-zinc-100 rounded-lg border-gray-300 text-gray-700 sm:text-base"
-                  >
-                    <option value="">Please select</option>
-                    <option value="Light clean">Light clean</option>
-                    <option value="Medium clean">Medium clean</option>
-                    <option value="Deep clean">Deep clean</option>
-                  </select>
-                </div>
               </div>
-              <div className="flex text-black">
+              <div className="flex text-black  mb-2">
                 <div className="flex gap-x-4 mb- w-full mb-2">
+                  <div className="w-1/2 ">
+                    <label
+                      for="typeOfClean"
+                      class="block text-base font-medium text-gray-900 "
+                    >
+                      Type of clean *
+                    </label>
+
+                    <select
+                      required
+                      name="typeOfClean"
+                      id="typeOfClean"
+                      value={formData.typeOfClean}
+                      onChange={handleChange}
+                      class="mt-1.5 w-full p-2 h-14 bg-zinc-100 rounded-lg border-gray-300 text-gray-700 sm:text-base"
+                    >
+                      <option value="">Please select</option>
+                      <option value="Light clean">Light clean</option>
+                      <option value="Medium clean">Medium clean</option>
+                      <option value="Deep clean">Deep clean</option>
+                    </select>
+                  </div>
                   <div className="w-1/2">
                     <label
                       for="email"
@@ -241,37 +262,19 @@ export default function EstimateBar() {
                       <option value="Office">Office</option>
                       <option value="Store">Store</option>
                       <option value="Warehouse">Warehouse</option>
+                      <option value="Other">Other</option>
                     </select>
-                  </div>
-                  <div className="w-1/2 ">
-                    <label
-                      for="typeOfClean"
-                      class="block text-base font-medium text-gray-900 "
-                    >
-                      Company?
-                    </label>
-
-                    <input
-                      required
-                      name="companyName"
-                      id="companyName"
-                      value={formData.companyName}
-                      onChange={handleChange}
-                      placeholder=""
-                      type="text"
-                      class="mt-1.5 w-full p-2 h-14 bg-zinc-100 rounded-lg border-gray-300 text-gray-700 sm:text-base"
-                    ></input>
                   </div>
                 </div>
               </div>
               <div className="flex text-black mb-6 gap-x-4">
-                <div className="w-1/3 ">
+                <div className="w-1/4 ">
                   <div className="">
                     <label
                       for="propertyType"
                       class="block text-base font-medium text-gray-900"
                     >
-                      Rooms(s)
+                      Room(s)
                     </label>
 
                     <select
@@ -291,13 +294,40 @@ export default function EstimateBar() {
                       <option value="6">6</option>
                       <option value="7">7</option>
                       <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
                     </select>
                   </div>
                 </div>
-                <div className="w-1/3 ">
+                <div className="w-1/4 ">
                   <div className="">
                     <label
-                      for="propertyType"
+                      for="bathroomSelect"
+                      class="block text-base font-medium text-gray-900"
+                    >
+                      Bathroom(s)
+                    </label>
+
+                    <select
+                      name="bathroomSelect"
+                      id="bathroomSelect"
+                      value={formData.bathroomSelect}
+                      onChange={handleChange}
+                      class="mt-1.5 w-full p-2 h-14 bg-zinc-100 rounded-lg border-gray-300 text-gray-700 sm:text-base"
+                    >
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                  </div>
+                </div>
+                <div className="w-1/4 ">
+                  <div className="">
+                    <label
+                      for="hallwaySelect"
                       class="block text-base font-medium text-gray-900"
                     >
                       Hallway(s)
@@ -320,10 +350,10 @@ export default function EstimateBar() {
                     </select>
                   </div>
                 </div>
-                <div className="w-1/3 ">
+                <div className="w-1/4 ">
                   <div className="">
                     <label
-                      for="propertyType"
+                      for="staircaseSelect"
                       class="block text-base font-medium text-gray-900"
                     >
                       Staircase(s)

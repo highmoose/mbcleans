@@ -22,11 +22,13 @@ const baseUrl = process.env.BASE_URL ? `https://${process.env.BASE_URL}` : "";
 
 export const MBCleansSiteEmail = ({
   names,
+  email,
+  telephone,
   chooseService,
   typeOfClean,
   propertyType,
-  companyName,
   roomsSelect,
+  bathroomSelect,
   hallwaySelect,
   staircaseSelect,
   haveSupplies,
@@ -52,6 +54,16 @@ export const MBCleansSiteEmail = ({
         <Section style={codeBox}>
           <Text style={confirmationCodeText}>
             <div style={{ ...item, color: "deepskyblue" }}>
+              Email:&nbsp;
+              <span style={{ color: "black", fontWeight: "600" }}>{email}</span>
+            </div>
+            <div style={{ ...item, color: "deepskyblue" }}>
+              Contact No:&nbsp;
+              <span style={{ color: "black", fontWeight: "600" }}>
+                {telephone}
+              </span>
+            </div>
+            <div style={{ ...item, color: "deepskyblue" }}>
               Service:&nbsp;
               <span style={{ color: "black", fontWeight: "600" }}>
                 {chooseService}
@@ -71,6 +83,10 @@ export const MBCleansSiteEmail = ({
             </div>
             <div style={{ ...item, color: "deepskyblue" }}>
               Rooms: <span style={{ color: "black" }}>{roomsSelect}</span>
+            </div>
+            <div style={{ ...item, color: "deepskyblue" }}>
+              Bathrooms:{" "}
+              <span style={{ color: "black" }}>{bathroomSelect}</span>
             </div>
             <div style={{ ...item, color: "deepskyblue" }}>
               Hallway:&nbsp;{" "}
