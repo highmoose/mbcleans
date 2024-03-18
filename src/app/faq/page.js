@@ -103,7 +103,7 @@ export default function FAQ() {
     <div className="bg-slate-50">
       <SubHeaderBar />
       <div className="py-6">
-        <div className="text-black max-w-6xl bg-white rounded-md mx-auto px-10 py-16  ">
+        <div className="text-black max-w-6xl bg-white rounded-md mx-auto px-6 lg:px-10 py-16  ">
           <div className="max-w-3xl flex-row mx-auto cursor-pointer">
             <p className="text-xl mb-5 text-center font-semibold">
               Quick answers to your cleaning service questions. Can&apos;t find
