@@ -106,7 +106,7 @@ export default function FAQ() {
         <div className="text-black max-w-6xl bg-white rounded-md mx-auto px-10 py-16  ">
           <div className="max-w-3xl flex-row mx-auto cursor-pointer">
             <p className="text-xl mb-5 text-center font-semibold">
-              Quick answers to your cleaning service questions.Can&apos;t find
+              Quick answers to your cleaning service questions. Can&apos;t find
               what you need? Just ask!
             </p>
             {questions.map((faq, index) => (
