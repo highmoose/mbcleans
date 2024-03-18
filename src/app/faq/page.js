@@ -122,7 +122,7 @@ export default function FAQ() {
                     src={
                       isOpen[index] ? "/icons/x.svg" : "/icons/chevron-down.svg"
                     }
-                    className={`transform transition-transform duration-300 ${
+                    className={`transform transition-transform duration-300 ml-6 ${
                       isOpen[index] ? "rotate-180" : ""
                     }`}
                     alt={isOpen[index] ? "Close" : "Open"}
