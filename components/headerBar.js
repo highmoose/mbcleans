@@ -58,7 +58,7 @@ export default function HeaderBar() {
         <div id="home" className="w-full bg-white">
           <div className="bg-white px-6 xl:px-0 max-w-6xl mx-auto flex justify-between w-full text-black text-end">
             <div className=" flex">
-              <div className="flex my-auto h-[70px]  ">
+              <div href="/" className="flex my-auto h-[70px] cursor-pointer">
                 <img
                   alt="MBCleans Logo"
                   src="/logo/mbcleans-logo.svg"
