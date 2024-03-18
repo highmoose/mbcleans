@@ -102,32 +102,34 @@ export default function FAQ() {
   return (
     <div className="bg-slate-50">
       <SubHeaderBar />
-      <div className="text-black max-w-6xl bg-white mx-auto px-10 py-16 ">
-        <div className="max-w-3xl flex-row mx-auto cursor-pointer">
-          <p className="text-xl mb-5 text-center font-semibold">
-            Quick answers to your cleaning service questions.Can't find what you
-            need? Just ask!
-          </p>
-          {questions.map((faq, index) => (
-            <div key={faq.question}>
-              <div
-                onClick={() => toggleFAQ(index)}
-                className={`flex justify-between ${
-                  isOpen[index] ? "bg-theme1" : "bg-theme2"
-                } rounded-md mb-1 text-white py-3 px-6 `}
-              >
-                <div>{faq.question}</div>
-                {isOpen[index] ? (
-                  <img src="/icons/x.svg" />
-                ) : (
-                  <img src="/icons/chevron-down.svg" />
+      <div className="py-6">
+        <div className="text-black max-w-6xl bg-white rounded-md mx-auto px-10 py-16  ">
+          <div className="max-w-3xl flex-row mx-auto cursor-pointer">
+            <p className="text-xl mb-5 text-center font-semibold">
+              Quick answers to your cleaning service questions.Can't find what
+              you need? Just ask!
+            </p>
+            {questions.map((faq, index) => (
+              <div key={faq.question}>
+                <div
+                  onClick={() => toggleFAQ(index)}
+                  className={`flex justify-between ${
+                    isOpen[index] ? "bg-theme1" : "bg-theme2"
+                  } rounded-md mb-1 text-white py-3 px-6 `}
+                >
+                  <div>{faq.question}</div>
+                  {isOpen[index] ? (
+                    <img src="/icons/x.svg" />
+                  ) : (
+                    <img src="/icons/chevron-down.svg" />
+                  )}
+                </div>
+                {isOpen[index] && (
+                  <div className="py-5 px-6 text-black">{faq.answer}</div>
                 )}
               </div>
-              {isOpen[index] && (
-                <div className="py-5 px-6 text-black">{faq.answer}</div>
-              )}
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </div>
