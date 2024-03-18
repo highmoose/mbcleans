@@ -115,18 +115,28 @@ export default function FAQ() {
                   onClick={() => toggleFAQ(index)}
                   className={`flex justify-between ${
                     isOpen[index] ? "bg-theme1" : "bg-theme2"
-                  } rounded-md mb-1 text-white py-3 px-6 `}
+                  } rounded-md mb-1 text-white py-3 px-6 cursor-pointer`}
                 >
                   <div>{faq.question}</div>
-                  {isOpen[index] ? (
-                    <img src="/icons/x.svg" />
-                  ) : (
-                    <img src="/icons/chevron-down.svg" />
-                  )}
+                  <img
+                    src={
+                      isOpen[index] ? "/icons/x.svg" : "/icons/chevron-down.svg"
+                    }
+                    className={`transform transition-transform duration-300 ${
+                      isOpen[index] ? "rotate-180" : ""
+                    }`}
+                    alt={isOpen[index] ? "Close" : "Open"}
+                  />
                 </div>
-                {isOpen[index] && (
+                <div
+                  className={`overflow-hidden transition-opacity transition-height duration-1000 ${
+                    isOpen[index]
+                      ? "opacity-100 max-h-full"
+                      : "opacity-0 max-h-0"
+                  }`}
+                >
                   <div className="py-5 px-6 text-black">{faq.answer}</div>
-                )}
+                </div>
               </div>
             ))}
           </div>
