@@ -1,7 +1,4 @@
 import Image from "next/image";
-
-import BannerBar from "../../components/bannerBar";
-import HeaderBar from "../../components/headerBar";
 import HeroBlock from "../../components/heroBlock";
 import Plans from "../../components/plans";
 import AboutUs from "../../components/aboutUs";
@@ -16,8 +13,6 @@ import ServicesBar from "../../components/servicesBar";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col  bg-gray-100">
-      <BannerBar />
-      <HeaderBar />
       <HeroBlock />
       <ServicesBar />
       <Plans />

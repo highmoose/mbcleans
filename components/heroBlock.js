@@ -44,14 +44,14 @@ export default function HeaderBar() {
           </p>
           <div className="flex mb-4 lg:mb-6 gap-x-3 justify-center lg:justify-start">
             <img
-              src="/icons/dbs-checked.svg"
-              className="h-14 z-20"
-              alt="DBS Check"
-            />
-            <img
               src="/icons/fully-insured.svg"
               className="h-14 z-20"
               alt="Fully Insured"
+            />
+            <img
+              src="/icons/dbs-checked.svg"
+              className="h-14 z-20"
+              alt="DBS Check"
             />
             <img
               src="/icons/public-liability.svg"

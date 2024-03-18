@@ -50,7 +50,7 @@ const backToTop = () => {
 export default function FooterBar() {
   return (
     <div className="bg-white">
-      <div class="w-full px-8 2xl:px-0 sm:flex items-center justify-center my-20 mx-auto max-w-6xl gap-x-8 ">
+      <div class="w-full px-8 xl:px-0 sm:flex items-center justify-center py-20 mx-auto max-w-6xl gap-x-8 ">
         <div class="max-w-6xl w-full text-white flex flex-col gap-x-2 ">
           <div class="w-full text-7xl font-bold">
             <h1 class="w-full text-4xl md:text-4xl mb-1 text-theme2 text-center sm:text-start">
