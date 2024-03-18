@@ -102,9 +102,9 @@ export default function FAQ() {
   return (
     <div className="bg-slate-50">
       <SubHeaderBar />
-      <div className="text-black max-w-6xl bg-white mx-auto px-10 py-10 ">
+      <div className="text-black max-w-6xl bg-white mx-auto px-10 py-16 ">
         <div className="max-w-3xl flex-row mx-auto cursor-pointer">
-          <p className="text-xl mb-5 text-center">
+          <p className="text-xl mb-5 text-center font-semibold">
             Quick answers to your cleaning service questions.Can't find what you
             need? Just ask!
           </p>
@@ -112,7 +112,9 @@ export default function FAQ() {
             <div key={faq.question}>
               <div
                 onClick={() => toggleFAQ(index)}
-                className="flex justify-between bg-theme2 rounded-md mb-1 text-white py-3 px-6 "
+                className={`flex justify-between ${
+                  isOpen[index] ? "bg-theme1" : "bg-theme2"
+                } rounded-md mb-1 text-white py-3 px-6 `}
               >
                 <div>{faq.question}</div>
                 {isOpen[index] ? (
