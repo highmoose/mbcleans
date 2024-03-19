@@ -6,7 +6,6 @@ import PartnersBar2 from "../../components/partnersBar2";
 
 import StepsBar from "../../components/stepsBar";
 import EstimateBar from "../../components/estimateBar";
-import FooterBar from "../../components/footerBar";
 import TestimonialsBar2 from "../../components/testimonialsBar2";
 import ServicesBar from "../../components/servicesBar";
 
@@ -21,7 +20,6 @@ export default function Home() {
       <PartnersBar2 />
       <EstimateBar />
       <TestimonialsBar2 />
-      <FooterBar />
     </main>
   );
 }

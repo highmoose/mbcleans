@@ -107,13 +107,20 @@ export default function HeaderBar() {
               <div className="flex-col justify-center my-auto w-full z-20">
                 <a
                   href="tel:07710172363"
-                  className="text-4xl tracking-tight font-bold text-theme3 w-full h-full"
+                  className="flex gap-x-1 items-center  text-end text-3xl tracking-tight font-bold text-theme3 w-full h-full"
                 >
-                  07710172363
+                  <div>
+                    <p>07710172363</p>
+                    <p className="-mt-1.5 text-sm text-end text-black font-light italic ">
+                      Open Hours: 24/7&nbsp;&nbsp;
+                    </p>
+                  </div>
+                  <img
+                    src="/icons/phone-circle-blue.svg"
+                    className="h-12 w-12 scale-x-[-1]"
+                    alt="Contact Us Phone"
+                  />
                 </a>
-                <p className="-mt-1.5 text-sm italic font-extralight ">
-                  Open Hours: 24/7
-                </p>
               </div>
             </div>
           </div>
@@ -131,17 +138,25 @@ export default function HeaderBar() {
                   className="w-full max-w-[200px] my-auto"
                 />
               </Link>
-              <div className=" max-w-[200px] my-auto w-1/2">
-                <a
-                  href="tel:07710172363"
-                  className="text-3xl sm:text-4xl tracking-tight font-bold text-theme3 justify-end flex"
-                >
-                  07710172363
-                </a>
-
-                <p className="-mt-1.5 text-sm text-end sm:text-sm italic font-extralight">
-                  Open Hours: 24/7
-                </p>
+              <div className="flex">
+                <div className="flex-col justify-center my-auto w-full z-20">
+                  <a
+                    href="tel:07710172363"
+                    className="flex gap-x-1 items-center  text-end text-3xl tracking-tight font-bold text-theme3 w-full h-full"
+                  >
+                    <div>
+                      <p>07710172363</p>
+                      <p className="-mt-1.5 text-sm text-end text-black font-light italic ">
+                        Open Hours: 24/7&nbsp;&nbsp;
+                      </p>
+                    </div>
+                    <img
+                      src="/icons/phone-circle-blue.svg"
+                      className="h-12 w-12 scale-x-[-1]"
+                      alt="Contact Us Phone"
+                    />
+                  </a>
+                </div>
               </div>
             </div>
             <div className="flex items-center justify-center mx-auto w-full bg-slate-50">
@@ -185,17 +200,25 @@ export default function HeaderBar() {
                   className="w-full max-w-[200px] my-auto"
                 />
               </Link>
-              <div className=" max-w-[200px] my-auto w-1/2">
-                <a
-                  href="tel:07710172363"
-                  className="text-3xl sm:text-4xl tracking-tight font-bold text-theme3 justify-end flex"
-                >
-                  07710172363
-                </a>
-
-                <p className="-mt-1.5 text-sm text-end sm:text-sm italic font-extralight">
-                  Open Hours: 24/7
-                </p>
+              <div className="flex">
+                <div className="flex-col justify-center my-auto w-full z-20">
+                  <a
+                    href="tel:07710172363"
+                    className="flex gap-x-1 items-center  text-end text-3xl tracking-tight font-bold text-theme3 w-full h-full"
+                  >
+                    <div>
+                      <p>07710172363</p>
+                      <p className="-mt-1.5 text-sm text-end text-black font-light italic ">
+                        Open Hours: 24/7&nbsp;&nbsp;
+                      </p>
+                    </div>
+                    <img
+                      src="/icons/phone-circle-blue.svg"
+                      className="h-12 w-12 scale-x-[-1]"
+                      alt="Contact Us Phone"
+                    />
+                  </a>
+                </div>
               </div>
             </div>
             <div className="flex items-center justify-center mx-auto w-full bg-slate-50 ">

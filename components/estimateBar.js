@@ -79,38 +79,33 @@ export default function EstimateBar() {
             </p>
 
             <p className="text-white text-sm mb-2  lg:mb-4 text-center lg:text-start">
-              Hiring someone to clean your property can feel like a big decision
-              as your want to hire the best house cleaning service you can.
-            </p>
-            <div className="flex gap-x-4 items-center mb-2  lg:mb-4 justify-center lg:justify-start">
-              <div className=" border-4 rounded-full p-2">
-                <Image
-                  src="/icons/check-white.svg"
-                  width={25}
-                  height={25}
-                  className="text-white"
-                />
-              </div>
-              <p className="text-white font-semibold text-2xl ">
-                Worry Free Services
-              </p>
-            </div>
-            <p className="text-white text-sm mb-2  lg:mb-4 text-center lg:text-start">
               We do everything we can to make out services as affordable as
               possible. Our budget flexability extends all the way to employing
               the right amount of help at the right times to make a positive
               difference in our customers lives and give confidence in our
               services.
             </p>
-            <a
-              href="tel:07710172363"
-              className="items-center gap-x-4 text-white text-center lg:text-start"
-            >
-              <p className="text-3xl ">You can call us on:</p>
+            <div>
+              <a href="tel:07710172363">
+                <div className="flex items-center gap-x-4 justify-center lg:justify-start">
+                  <img
+                    src="/icons/phone-circle.svg"
+                    className="h-20 w-20"
+                    alt="Contact Us Phone"
+                  />
+                  <div className="items-center gap-x-4 text-white text-center lg:text-start">
+                    <p className="text-2xl md:text-3xl ">You can call us on:</p>
 
-              <p className="text-5xl font-bold ">07710172363</p>
-              <p className="text-1xl font-extralight ">Open Hours: 24/7</p>
-            </a>
+                    <p className="text-4xl md:text-5xl font-bold ">
+                      07710172363
+                    </p>
+                    <p className="text-lg md:text-xl font-extralight ">
+                      Open Hours: 24/7
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
           </div>
           {/* Estimate Form Section */}
           <form
