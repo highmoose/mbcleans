@@ -207,19 +207,19 @@ export default function HeaderBar() {
       <div className="sm:hidden">
         <div id="home" className="w-full bg-white">
           <div className="flex-col bg-white pt-4 xl:px-0 max-w-6xl mx-auto flex justify-between w-full text-black text-center">
-            <div className="flex justify-between mb-6 px-6 lg:px-0">
-              <Link href="/" className="flex my-auto w-1/2">
+            <div className="flex justify-between mb-6 px-2 lg:px-0">
+              <Link href="/" className="flex my-auto">
                 <img
                   alt="MBCleans Logo"
                   src="/logo/mbcleans-logo.svg"
-                  className="w-full max-w-[200px] my-auto"
+                  className="w-full max-w-[160px] my-auto"
                 />
               </Link>
               <div className="flex">
                 <div className="flex-col justify-center my-auto w-full z-20">
                   <a
                     href="tel:07710172363"
-                    className="flex gap-x-1 items-center  text-end text-3xl tracking-tight font-bold text-theme3 w-full h-full"
+                    className="flex gap-x-1 items-center  text-end text-[26px] leading-7 tracking-tight font-bold text-theme3 w-full h-full"
                   >
                     <div>
                       <p>07710172363</p>
@@ -229,7 +229,7 @@ export default function HeaderBar() {
                     </div>
                     <img
                       src="/icons/phone-circle-blue.svg"
-                      className="h-12 w-12 scale-x-[-1]"
+                      className="h-10 w-10 scale-x-[-1]"
                       alt="Contact Us Phone"
                     />
                   </a>
