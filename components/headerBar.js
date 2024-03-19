@@ -2,6 +2,7 @@
 
 import React from "react";
 import { useState } from "react";
+import Link from "next/link";
 
 const scrollToHome = () => {
   const contactSection = document.getElementById("home");
@@ -58,13 +59,13 @@ export default function HeaderBar() {
         <div id="home" className="w-full bg-white">
           <div className="bg-white px-6 xl:px-0 max-w-6xl mx-auto flex justify-between w-full text-black text-end">
             <div className=" flex">
-              <div href="/" className="flex my-auto h-[70px] cursor-pointer">
+              <Link href="/" className="flex my-auto h-[70px] cursor-pointer">
                 <img
                   alt="MBCleans Logo"
                   src="/logo/mbcleans-logo.svg"
                   className="h-9 my-auto"
                 />
-              </div>
+              </Link>
             </div>
             <div className="">
               <div className="flex items-center h-[85px] justify-center">
@@ -98,6 +99,7 @@ export default function HeaderBar() {
                   >
                     Testimonials
                   </div>
+                  <Link href="/faq">FAQ&apos;s</Link>
                 </div>
               </div>
             </div>
@@ -122,13 +124,13 @@ export default function HeaderBar() {
         <div id="home" className="w-full bg-white">
           <div className="flex-col bg-white pt-4 xl:px-0 max-w-6xl mx-auto flex justify-between w-full text-black text-center">
             <div className="flex justify-between mb-6 px-6 lg:px-0">
-              <div className="flex my-auto w-1/2">
+              <Link href="/" className="flex my-auto w-1/2 cursor-pointer">
                 <img
                   alt="MBCleans Logo"
                   src="/logo/mbcleans-logo.svg"
                   className="w-full max-w-[200px] my-auto"
                 />
-              </div>
+              </Link>
               <div className=" max-w-[200px] my-auto w-1/2">
                 <a
                   href="tel:07710172363"
@@ -165,6 +167,7 @@ export default function HeaderBar() {
                 <div onClick={scrollToTestimonials} className="cursor-pointer">
                   Testimonials
                 </div>
+                <Link href="/faq">FAQ&apos;s</Link>
               </div>
             </div>
           </div>
@@ -175,13 +178,13 @@ export default function HeaderBar() {
         <div id="home" className="w-full bg-white">
           <div className="flex-col bg-white pt-4 xl:px-0 max-w-6xl mx-auto flex justify-between w-full text-black text-center">
             <div className="flex justify-between mb-6 px-6 lg:px-0">
-              <div className="flex my-auto w-1/2">
+              <Link href="/" className="flex my-auto w-1/2">
                 <img
                   alt="MBCleans Logo"
                   src="/logo/mbcleans-logo.svg"
                   className="w-full max-w-[200px] my-auto"
                 />
-              </div>
+              </Link>
               <div className=" max-w-[200px] my-auto w-1/2">
                 <a
                   href="tel:07710172363"
@@ -237,6 +240,7 @@ export default function HeaderBar() {
                 >
                   <p className="text-center w-full">Testimonials</p>
                 </div>
+                <Link href="/faq">FAQ&apos;s</Link>
               </div>
             </div>
           </div>
