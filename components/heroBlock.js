@@ -42,23 +42,7 @@ export default function HeaderBar() {
           <p className="text-[55px] sm:text-[90px] mb-4 lg:mb-6 leading-[50px] sm:leading-[75px] font-semibold text-center lg:text-start ">
             Professional Cleaning Specialists.
           </p>
-          <div className="flex mb-2 lg:mb-2 gap-x-3 justify-center lg:justify-start">
-            <img
-              src="/icons/fully-insured.svg"
-              className="h-12 z-20"
-              alt="Fully Insured"
-            />
-            <img
-              src="/icons/dbs-checked.svg"
-              className="h-12 z-20"
-              alt="DBS Check"
-            />
-            <img
-              src="/icons/public-liability.svg"
-              className="h-12 z-20 pb-1"
-              alt="Public Liability Insurance"
-            />
-          </div>
+
           <div className="flex gap-x-3 justify-center lg:justify-start">
             <p className="text-md  mb-6 leading-5 text-center lg:text-start">
               We work closely with clients in finding the most cost effective

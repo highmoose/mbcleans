@@ -143,12 +143,12 @@ export default function HeaderBar() {
       <div className="hidden sm:block lg:hidden">
         <div id="home" className="w-full bg-white">
           <div className="flex-col bg-white pt-4 xl:px-0 max-w-6xl mx-auto flex justify-between w-full text-black text-center">
-            <div className="flex justify-between mb-6 px-6 lg:px-0">
+            <div className="flex justify-between mb-3 px-6 lg:px-0">
               <Link href="/" className="flex my-auto w-1/2 cursor-pointer">
                 <img
                   alt="MBCleans Logo"
                   src="/logo/mbcleans-logo.svg"
-                  className="w-full max-w-[200px] my-auto"
+                  className=" h-9 my-auto"
                 />
               </Link>
               <div className="flex">
@@ -229,7 +229,7 @@ export default function HeaderBar() {
       <div className="sm:hidden">
         <div id="home" className="w-full bg-white">
           <div className="flex-col bg-white pt-4 xl:px-0 max-w-6xl mx-auto flex justify-between w-full text-black text-center">
-            <div className="flex justify-between mb-6 px-2 lg:px-0">
+            <div className="flex justify-between mb-3 px-2 lg:px-0">
               <Link href="/" className="flex my-auto">
                 <img
                   alt="MBCleans Logo"

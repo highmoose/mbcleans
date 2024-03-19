@@ -73,7 +73,7 @@ export default function EstimateBar() {
             >
               We&lsquo;re the best in the business!
             </p>
-            <p className="text-white font-medium tracking-tight text-4xl leading-8 md:text-5xl mb-2  lg:mb-4 text-center lg:text-start">
+            <p className="text-white font-medium tracking-tight text-4xl leading-8 md:leading-[44px] md:text-5xl mb-2  lg:mb-4 text-center lg:text-start">
               Your clients & employees deserve a clean, safe and healthy
               environment!
             </p>
@@ -112,13 +112,11 @@ export default function EstimateBar() {
             onSubmit={handleSubmit}
             className="lg:w-1/2 bg-white rounded-md p-4 sm:p-6 "
           >
-            <p className="text-theme2 tracking-tight text-2xl text-center lg:text-start font-bold mb-2 lg:mb-4">
+            <p className="text-theme2 tracking-tight text-2xl text-center lg:text-start font-bold">
               Request an estimate:
             </p>
-            <p className=" font-regular text-sm mb-4 text-zinc-400 text-center lg:text-start">
-              For a cleaning that meets your highest standards, you need a
-              dedicated team of trained specialists with all supplies needed to
-              thoroughly clean your home.
+            <p className=" font-regular text-md mb-2 text-zinc-400 text-center lg:text-start">
+              Fill out the form below or call us directly.
             </p>
             <div className="text-black">
               <div className="flex gap-x-4 mb-2">

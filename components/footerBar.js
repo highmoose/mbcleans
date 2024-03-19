@@ -80,7 +80,7 @@ export default function FooterBar() {
                 className="h-7 my-auto"
               />
             </div>
-            <div className=" hidden md:flex justify-center gap-x-4 lg:gap-x-6">
+            <div className="w-2/4 hidden md:flex justify-center gap-x-3 lg:gap-x-4">
               <div className="cursor-pointer" onClick={scrollToHome}>
                 Home
               </div>
