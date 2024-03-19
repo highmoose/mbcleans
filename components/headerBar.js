@@ -73,7 +73,6 @@ export default function HeaderBar() {
                   <Link
                     href="/"
                     onClick={scrollToHome}
-                    href="#home"
                     className="cursor-pointer"
                   >
                     Home
@@ -88,7 +87,6 @@ export default function HeaderBar() {
                   <Link
                     href="/"
                     onClick={scrollToAboutUs}
-                    href="#aboutus"
                     className="cursor-pointer"
                   >
                     About Us
