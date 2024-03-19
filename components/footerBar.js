@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Link from "next/link";
 
 const scrollToHome = () => {
   const contactSection = document.getElementById("home");
@@ -98,6 +99,7 @@ export default function FooterBar() {
               <div className="cursor-pointer" onClick={scrollToTestimonials}>
                 Testimonials
               </div>
+              <Link href="/faq">FAQ&apos;s</Link>
             </div>
             <div className="w-1/4">
               <div class="flex flex-row space-x-8 items-center justify-end">
