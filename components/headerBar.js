@@ -70,35 +70,50 @@ export default function HeaderBar() {
             <div className="">
               <div className="flex items-center h-[85px] justify-center">
                 <div className="flex items-center font-semibold text-md gap-x-2 md:gap-x-6">
-                  <div
+                  <Link
+                    href="/"
                     onClick={scrollToHome}
                     href="#home"
                     className="cursor-pointer"
                   >
                     Home
-                  </div>
-                  <div onClick={scrollToPlans} className="cursor-pointer">
+                  </Link>
+                  <Link
+                    href="/"
+                    onClick={scrollToPlans}
+                    className="cursor-pointer"
+                  >
                     Plans
-                  </div>
-                  <div
+                  </Link>
+                  <Link
+                    href="/"
                     onClick={scrollToAboutUs}
                     href="#aboutus"
                     className="cursor-pointer"
                   >
                     About Us
-                  </div>
-                  <div onClick={scrollToPartners} className="cursor-pointer">
+                  </Link>
+                  <Link
+                    href="/"
+                    onClick={scrollToPartners}
+                    className="cursor-pointer"
+                  >
                     Partners
-                  </div>
-                  <div onClick={scrollToContact} className="cursor-pointer">
+                  </Link>
+                  <Link
+                    href="/"
+                    onClick={scrollToContact}
+                    className="cursor-pointer"
+                  >
                     Contact
-                  </div>
-                  <div
+                  </Link>
+                  <Link
+                    href="/"
                     onClick={scrollToTestimonials}
                     className="cursor-pointer"
                   >
                     Testimonials
-                  </div>
+                  </Link>
                   <Link href="/faq">FAQ&apos;s</Link>
                 </div>
               </div>
