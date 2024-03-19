@@ -177,24 +177,48 @@ export default function HeaderBar() {
                 className="flex-col sm:flex-row items-center font-semibold text-md gap-x-2 sm:gap-x-6 ${
                   flex gap-y-2 py-4"
               >
-                <div onClick={scrollToHome} className="cursor-pointer">
+                <Link
+                  href="/"
+                  onClick={scrollToHome}
+                  className="cursor-pointer"
+                >
                   Home
-                </div>
-                <div onClick={scrollToPlans} className="cursor-pointer">
+                </Link>
+                <Link
+                  href="/"
+                  onClick={scrollToPlans}
+                  className="cursor-pointer"
+                >
                   Plans
-                </div>
-                <div onClick={scrollToAboutUs} className="cursor-pointer">
+                </Link>
+                <Link
+                  href="/"
+                  onClick={scrollToAboutUs}
+                  className="cursor-pointer"
+                >
                   About Us
-                </div>
-                <div onClick={scrollToPartners} className="cursor-pointer">
+                </Link>
+                <Link
+                  href="/"
+                  onClick={scrollToPartners}
+                  className="cursor-pointer"
+                >
                   Partners
-                </div>
-                <div onClick={scrollToContact} className="cursor-pointer">
+                </Link>
+                <Link
+                  href="/"
+                  onClick={scrollToContact}
+                  className="cursor-pointer"
+                >
                   Contact
-                </div>
-                <div onClick={scrollToTestimonials} className="cursor-pointer">
+                </Link>
+                <Link
+                  href="/"
+                  onClick={scrollToTestimonials}
+                  className="cursor-pointer"
+                >
                   Testimonials
-                </div>
+                </Link>
                 <Link href="/faq">FAQ&apos;s</Link>
               </div>
             </div>
@@ -240,42 +264,48 @@ export default function HeaderBar() {
                   menuOpen ? "flex  py-6 w-full" : "hidden"
                 }`}
               >
-                <div
+                <Link
+                  href="/"
                   onClick={scrollToHome}
-                  className="cursor-pointer flex w-full active:bg-slate-300 py-1"
+                  className="cursor-pointer"
                 >
-                  <p className="text-center w-full">Home</p>
-                </div>
-                <div
+                  Home
+                </Link>
+                <Link
+                  href="/"
                   onClick={scrollToPlans}
-                  className="cursor-pointer flex w-full active:bg-slate-300  py-1"
+                  className="cursor-pointer"
                 >
-                  <p className="text-center w-full">Plans</p>
-                </div>
-                <div
+                  Plans
+                </Link>
+                <Link
+                  href="/"
                   onClick={scrollToAboutUs}
-                  className="cursor-pointer flex w-full active:bg-slate-300  py-1"
+                  className="cursor-pointer"
                 >
-                  <p className="text-center w-full">About Us</p>
-                </div>
-                <div
+                  About Us
+                </Link>
+                <Link
+                  href="/"
                   onClick={scrollToPartners}
-                  className="cursor-pointer flex w-full active:bg-slate-300  py-1"
+                  className="cursor-pointer"
                 >
-                  <p className="text-center w-full">Partners</p>
-                </div>
-                <div
+                  Partners
+                </Link>
+                <Link
+                  href="/"
                   onClick={scrollToContact}
-                  className="cursor-pointer flex w-full active:bg-slate-300  py-1"
+                  className="cursor-pointer"
                 >
-                  <p className="text-center w-full">Contact</p>
-                </div>
-                <div
+                  Contact
+                </Link>
+                <Link
+                  href="/"
                   onClick={scrollToTestimonials}
-                  className="cursor-pointer flex w-full active:bg-slate-300  py-1"
+                  className="cursor-pointer"
                 >
-                  <p className="text-center w-full">Testimonials</p>
-                </div>
+                  Testimonials
+                </Link>
                 <Link href="/faq">FAQ&apos;s</Link>
               </div>
             </div>
