@@ -82,7 +82,7 @@ export default function StepsBar() {
           </div>
         </div>
         <div className="flex items-center">
-          <p className="flex mx-auto text-lg mt-10 lg:mt-0 font-semibold leading-5 tracking-tight text-theme2  text-center lg:text-start">
+          <p className="flex mx-auto text-base mt-10 lg:mt-0 leading-5 tracking-tight text-theme2  text-center lg:text-start">
             We keep the cleaning process as simple as possible!
           </p>
         </div>

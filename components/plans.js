@@ -302,7 +302,7 @@ export default function IntroBar() {
             </div>
           </div>
         </div>
-        <p className="max-w-2xl mb-20 flex mx-auto text-sm leading-5  tracking-tight text-center text-theme2">
+        <p className="max-w-2xl mb-20 flex mx-auto text-base leading-5  tracking-tight text-center text-theme2">
           For a clean that meets your highest standards, you need a dedicated
           team of trained specialists. We arrive at each visit with all supplies
           needed to thoroughly clean your premises.
