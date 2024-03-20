@@ -53,7 +53,7 @@ export default function HeaderBar() {
         <MenuItem href="/" onClick={() => scrollToSection("testimonials")}>
           Testimonials
         </MenuItem>
-        <MenuItem href="/faq">FAQ's</MenuItem>
+        <MenuItem href="/faq">FAQ&apos;s</MenuItem>
       </div>
     );
   }
@@ -64,7 +64,7 @@ export default function HeaderBar() {
         <div class="grid  px-4 py-5 mx-auto text-gray-900  sm:grid-cols-2 md:px-6">
           <ul>
             <li>
-              <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 ">
+              <a href="#" class="block p-3 rounded-lg hover:bg-gray-100  ">
                 <div class="font-semibold">Home Cleaning</div>
                 <span class="text-sm text-gray-500 ">
                   Bringing cleanliness and comfort to your doorstep.
