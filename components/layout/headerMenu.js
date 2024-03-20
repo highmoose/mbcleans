@@ -114,6 +114,12 @@ export default function HeaderBar() {
               </a>
             </li>
           </ul>
+          <div
+            onClick={() => setShowServices(false)}
+            className="sm:hidden px-5 pt-4 cursor-pointer "
+          >
+            <p className="text-center">Close ✖</p>
+          </div>
         </div>
       </div>
     );
@@ -174,7 +180,7 @@ export default function HeaderBar() {
     <div className="bg-white">
       {/* Wide Menu */}
       <div className="hidden lg:block ">
-        <div className="max-w-6xl mx-auto lg:px-6 xl:px-0 flex justify-between items-center">
+        <div className="max-w-6xl mx-auto px-4 flex justify-between items-center">
           <Logo />
           <div className="hidden lg:block">
             <Menu />
@@ -220,7 +226,7 @@ export default function HeaderBar() {
         >
           <ToggleMenu />
         </div>
-        <div className="absolute z-10 bg-slate-50 left-1/2 w-4/5 -translate-x-1/2 rounded-b-md">
+        <div className="absolute z-10 bg-slate-50 left-1/2 w-full -translate-x-1/2 rounded-b-md">
           {showServices ? <ServicesDropDown /> : null}
         </div>
       </div>
