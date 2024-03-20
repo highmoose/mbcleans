@@ -85,27 +85,35 @@ export default function EstimateBar() {
               difference in our customers lives and give confidence in our
               services.
             </p>
-            <div>
-              <a href="tel:07710172363">
-                <div className="flex items-center gap-x-4 justify-center lg:justify-start">
-                  <img
-                    src="/icons/phone-circle.svg"
-                    className="h-20 w-20"
-                    alt="Contact Us Phone"
-                  />
-                  <div className="items-center gap-x-4 text-white text-center lg:text-start">
-                    <p className="text-2xl md:text-3xl ">You can call us on:</p>
+            <a href="tel:07710172363">
+              <div className="flex mb-4 items-center gap-x-4 justify-center lg:justify-start">
+                <div className="items-center gap-x-4 text-white text-center lg:text-start">
+                  <p className="text-2xl md:text-3xl ">You can call us on:</p>
 
-                    <p className="text-4xl md:text-5xl font-bold ">
+                  <div className="flex">
+                    <p className="text-4xl md:text-5xl font-bold mr-3 ">
                       07710172363
                     </p>
-                    <p className="text-lg md:text-xl font-extralight ">
-                      Open Hours: 24/7
-                    </p>
+                    <img
+                      src="/icons/phone-circle.svg"
+                      className="h-12 w-12 scale-x-[-1]"
+                      alt="Contact Us Phone"
+                    />
                   </div>
+                  {/* <p className="text-lg md:text-xl font-extralight ">
+                    Open Hours: 24/7
+                  </p> */}
                 </div>
-              </a>
-            </div>
+              </div>
+            </a>
+            <a>
+              <p className="text-white text-base  text-center lg:text-start">
+                Alternatively, you can email us at:
+              </p>
+              <p className="text-white text-3xl text-center lg:text-start">
+                support@mbcleans.co.uk
+              </p>
+            </a>
           </div>
           {/* Estimate Form Section */}
           <form

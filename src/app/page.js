@@ -1,7 +1,7 @@
 import Image from "next/image";
 import HeroBlock from "../../components/heroBlock";
 import Plans from "../../components/plans";
-import AboutUs from "../../components/aboutUs";
+// import AboutUs from "../../components/aboutUs";
 import PartnersBar2 from "../../components/partnersBar2";
 
 import StepsBar from "../../components/stepsBar";
@@ -15,7 +15,7 @@ export default function Home() {
       <HeroBlock />
       <ServicesBar />
       <Plans />
-      <AboutUs />
+      {/* <AboutUs /> */}
       <StepsBar />
       <PartnersBar2 />
       <EstimateBar />

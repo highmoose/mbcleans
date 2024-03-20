@@ -2,8 +2,8 @@ import { Gabarito } from "next/font/google";
 import { Shadows_Into_Light } from "next/font/google";
 import "./globals.css";
 import BannerBar from "../../components/bannerBar";
-import HeaderBar from "../../components/headerBar";
 import FooterBar from "../../components/footerBar";
+import HeaderMenu from "../../components/layout/headerMenu";
 
 const Gabarito1 = Gabarito({
   subsets: ["latin"],
@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={Gabarito1.className}>
         <BannerBar />
-        <HeaderBar />
+        <HeaderMenu />
         {children}
         <FooterBar />
       </body>
