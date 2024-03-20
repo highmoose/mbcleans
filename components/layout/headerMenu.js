@@ -65,17 +65,17 @@ export default function HeaderBar() {
           <ul>
             <li>
               <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 ">
-                <div class="font-semibold">Office Cleaning</div>
+                <div class="font-semibold">Home Cleaning</div>
                 <span class="text-sm text-gray-500 ">
-                  Boosting productivity with spotless workspaces.
+                  Bringing cleanliness and comfort to your doorstep.
                 </span>
               </a>
             </li>
             <li>
               <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 ">
-                <div class="font-semibold">Home Cleaning</div>
+                <div class="font-semibold">Office Cleaning</div>
                 <span class="text-sm text-gray-500 ">
-                  Bringing cleanliness and comfort to your doorstep.
+                  Boosting productivity with spotless workspaces.
                 </span>
               </a>
             </li>
