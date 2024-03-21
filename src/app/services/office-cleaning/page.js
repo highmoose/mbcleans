@@ -28,7 +28,7 @@ export default function FAQ() {
             Maintaining a clean home can be challenging. Let us transform your
             space into a pristine sanctuary.
           </p>
-          <div className="flex px-8 font-thin mb-4 w-full  gap-x-4 ">
+          <div className="flex px-8 font-thin mb-16 w-full  gap-x-4 ">
             <div className="w-auto bg-white p-8 rounded-md">
               <p className="text-2xl mb-2 text-theme3 font-bold">
                 Key Benefits of Hiring a Home Cleaner:
