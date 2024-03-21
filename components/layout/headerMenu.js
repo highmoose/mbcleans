@@ -106,7 +106,7 @@ export default function HeaderBar() {
               <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 ">
                 <div class="font-semibold">Retail Store Cleaning</div>
                 <span class="text-sm text-gray-500 ">
-                  Ensuring pristine hygiene in healthcare settings.
+                  Keeping stores sparkling for seamless shopping.
                 </span>
               </a>
             </li>
@@ -114,7 +114,7 @@ export default function HeaderBar() {
               <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 ">
                 <div class="font-semibold">Medical Facility Cleaning</div>
                 <span class="text-sm text-gray-500 ">
-                  Keeping stores sparkling for seamless shopping.
+                  Ensuring pristine hygiene in healthcare settings.
                 </span>
               </a>
             </li>

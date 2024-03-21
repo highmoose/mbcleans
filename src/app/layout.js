@@ -10,6 +10,11 @@ const Gabarito1 = Gabarito({
   weights: [400, 500, 600, 700, 800, 900, 1000],
 });
 
+const Shadows_Into_Light1 = Shadows_Into_Light({
+  subsets: ["latin"],
+  weight: ["400"],
+});
+
 export const metadata = {
   title: "Welcome | MBCleans",
   description: "Your one-stop solution for all your cleaning needs.",
