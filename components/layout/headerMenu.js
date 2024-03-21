@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import { Chonburi } from "next/font/google";
+import { useEffect } from "react";
 
 export default function HeaderBar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -20,6 +20,21 @@ export default function HeaderBar() {
     }
   };
 
+  useEffect(() => {
+    const closeMenuOnOutsideClick = (event) => {
+      const dropdownMenu = document.getElementById("services-dropdown");
+      if (dropdownMenu && !dropdownMenu.contains(event.target)) {
+        setShowServices(false);
+      }
+    };
+
+    document.addEventListener("click", closeMenuOnOutsideClick);
+
+    return () => {
+      document.removeEventListener("click", closeMenuOnOutsideClick);
+    };
+  }, []);
+
   function Menu() {
     return (
       <div className="sm:flex text-center sm:text-start items-center font-semibold text-black text-lg sm:text-md gap-x-4 xl:gap-x-6">
@@ -27,7 +42,6 @@ export default function HeaderBar() {
           Home
         </MenuItem>
         <MenuItem
-          href="/"
           onClick={() => {
             toggleServices();
             toggleMenu();
@@ -117,12 +131,12 @@ export default function HeaderBar() {
               </a>
             </li>
           </ul>
-          <div
-            onClick={() => setShowServices(false)}
-            className="sm:hidden px-5 pt-4 cursor-pointer "
-          >
-            <p className="text-center">Close ✖</p>
-          </div>
+        </div>
+        <div
+          onClick={() => setShowServices(false)}
+          className="flex justify-center px-5 pt-4 cursor-pointer "
+        >
+          <p className="text-center text-theme2">Close ✖</p>
         </div>
       </div>
     );
@@ -185,7 +199,7 @@ export default function HeaderBar() {
       <div className="hidden lg:block ">
         <div className="max-w-6xl mx-auto px-4 flex justify-between items-center">
           <Logo />
-          <div className="hidden lg:block">
+          <div className="hidden lg:block z-40">
             <Menu />
           </div>
           <Contact />
