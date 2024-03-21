@@ -1,4 +1,10 @@
 import React from "react";
+import { Shadows_Into_Light } from "next/font/google";
+
+const Shadows_Into_Light1 = Shadows_Into_Light({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 export default function SubHeaderBar({ title, description, image }) {
   return (
@@ -15,7 +21,11 @@ export default function SubHeaderBar({ title, description, image }) {
             <p className="text-4xl md:text-5xl font-bold leading-45 text-center">
               {title}
             </p>
-            <p className="text-2xl text-center leading-6">{description}</p>
+            <p
+              className={`text-yellow-300 text-3xl sm:text-3xl mb-2 text-center ${Shadows_Into_Light1.className}`}
+            >
+              {description}
+            </p>
           </div>
         </div>
       </div>
