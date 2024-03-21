@@ -66,7 +66,10 @@ export default function HeaderBar() {
         <div class="grid mx-auto text-gray-900  sm:grid-cols-2 md:px-6">
           <ul>
             <li>
-              <a href="#" class="block p-3 rounded-lg hover:bg-gray-100  ">
+              <a
+                href="/services/home-cleaning"
+                class="block p-3 rounded-lg hover:bg-gray-100  "
+              >
                 <div class="font-semibold">Home Cleaning</div>
                 <span class="text-sm text-gray-500 ">
                   Bringing cleanliness and comfort to your doorstep.

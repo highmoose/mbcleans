@@ -101,7 +101,11 @@ export default function FAQ() {
 
   return (
     <div className="bg-slate-50">
-      <SubHeaderBar />
+      <SubHeaderBar
+        title={"Frequently Asked Questions (FAQ's)"}
+        description={"Have some questions? You might find the answers here!"}
+        image={"/images/sub_banner_1.png"}
+      />
       <div className="py-6">
         <div className="text-black max-w-6xl bg-white rounded-md mx-auto px-6 lg:px-10 py-16  ">
           <div className="max-w-3xl flex-row mx-auto cursor-pointer">
