@@ -20,21 +20,6 @@ export default function HeaderBar() {
     }
   };
 
-  useEffect(() => {
-    const closeMenuOnOutsideClick = (event) => {
-      const dropdownMenu = document.getElementById("services-dropdown");
-      if (dropdownMenu && !dropdownMenu.contains(event.target)) {
-        setShowServices(false);
-      }
-    };
-
-    document.addEventListener("click", closeMenuOnOutsideClick);
-
-    return () => {
-      document.removeEventListener("click", closeMenuOnOutsideClick);
-    };
-  }, []);
-
   function Menu() {
     return (
       <div className="sm:flex text-center sm:text-start items-center font-semibold text-black leading-9 sm:leading-none text-xl sm:text-lg sm:text-md gap-x-4 xl:gap-x-6">
