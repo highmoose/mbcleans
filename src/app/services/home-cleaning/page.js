@@ -26,11 +26,11 @@ export default function FAQ() {
         <div className="text-black text-lg max-w-6xl bg-white rounded-md mx-auto px-6 lg:px-10 py-16 ">
           <p className="px-8 mb-8 leading-[22px]">
             Maintaining a clean and organized home is essential for your
-            well-being and peace of mind. However, with today's busy lifestyles,
-            finding the time and energy to keep up with household chores can be
-            challenging. That's where professional home cleaning services come
-            in. Let us take the burden off your shoulders and transform your
-            living space into a pristine sanctuary.
+            well-being and peace of mind. However, with today&apos;s busy
+            lifestyles, finding the time and energy to keep up with household
+            chores can be challenging. That&apos;s where professional home
+            cleaning services come in. Let us take the burden off your shoulders
+            and transform your living space into a pristine sanctuary.
           </p>
           <div className="flex px-8 gap-x-4">
             <p className="w-1/2">
