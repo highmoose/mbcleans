@@ -37,7 +37,7 @@ export default function HeaderBar() {
 
   function Menu() {
     return (
-      <div className="sm:flex text-center sm:text-start items-center font-semibold text-black text-lg sm:text-md gap-x-4 xl:gap-x-6">
+      <div className="sm:flex text-center sm:text-start items-center font-semibold text-black leading-9 sm:leading-none text-xl sm:text-lg sm:text-md gap-x-4 xl:gap-x-6">
         <MenuItem href="/" onClick={() => scrollToSection("home")}>
           Home
         </MenuItem>
@@ -75,7 +75,7 @@ export default function HeaderBar() {
   function ServicesDropDown() {
     return (
       <div class="border-gray-200 shadow-xl bg-gray-50  border-y max-w-5xl rounded-b-md px-4 py-5">
-        <p className="text-3xl px-3 pb-2 mb-4 md:px-8 text-theme2 font-semibold border-b-[1px]">
+        <p className="text-xl px-3 pb-2 mb-4 md:px-8 text-theme2 font-semibold border-b-[1px]">
           Services
         </p>
         <div class="grid mx-auto text-gray-900  sm:grid-cols-2 md:px-6">
