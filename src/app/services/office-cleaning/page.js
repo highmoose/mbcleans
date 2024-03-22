@@ -3,6 +3,7 @@
 import React from "react";
 import { useState } from "react";
 import SubHeaderBar from "../../../../components/subHeaderBar";
+import ServicesIntro from "../../../../components/services/servicesIntro";
 
 export default function FAQ() {
   const [isOpen, setIsOpen] = useState(Array.from({ length: 10 }, () => false));
@@ -18,11 +19,20 @@ export default function FAQ() {
   return (
     <div className="bg-slate-50">
       <SubHeaderBar
-        title={"Home Cleaning Services"}
-        description={"Why Choose Professional Home Cleaning Services?"}
+        title={"Office Cleaning Services"}
+        description={"Why Choose Professional Office Cleaning Services?"}
         image={"/images/sub_banner_1.png"}
       />
-      <div className="flex justify-between">
+      {/* <ServicesIntro
+        title={"Let us transform your space into a clean and tidy sanctuary."}
+        body1={"TLet us transform your space into a clean and tidy sanctuary."}
+        body2={"Let us transform your space into a clean and tidy sanctuary."}
+        image1="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-2.png"
+        alt1={"Image 1 alt"}
+        image2="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-1.png"
+        alt2={"Image 1 alt"}
+      /> */}
+      {/* <div className="flex justify-between">
         <div className="text-theme2 font-bold text-2xl max-w-6xl rounded-md mx-auto px-6 lg:px-10 py-16 ">
           <p className="px-28 mb-16 text-5xl tracking-tighter leading-[40px] font-semibold text-center mx-auto">
             Maintaining a clean home can be challenging. Let us transform your
@@ -178,7 +188,7 @@ export default function FAQ() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

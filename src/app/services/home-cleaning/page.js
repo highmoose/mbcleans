@@ -3,6 +3,7 @@
 import React from "react";
 import { useState } from "react";
 import SubHeaderBar from "../../../../components/subHeaderBar";
+import ServiceIntro from "../../../../components/services/servicesIntro";
 
 export default function FAQ() {
   const [isOpen, setIsOpen] = useState(Array.from({ length: 10 }, () => false));
@@ -22,6 +23,19 @@ export default function FAQ() {
         description={"Why Choose Professional Home Cleaning Services?"}
         image={"/images/sub_banner_1.png"}
       />
+      {/* <ServiceIntro
+        title={"Let us transform your space into a clean and tidy sanctuary."}
+        body1={
+          "Invest in professional home cleaning for a stress-free, healthier, and more enjoyable living space. Reclaim your time and experience the difference!"
+        }
+        body2={
+          "Tailor your cleaning schedule for a spotless home, weekly, bi-weekly, or monthly. Say goodbye to cleaning stress and hello to a consistently fresh living space."
+        }
+        image1="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-2.png"
+        alt1={"Image 1 alt"}
+        image2="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-1.png"
+        alt2={"Image 1 alt"}
+      /> */}
       <div className="flex justify-between">
         <div className="text-theme2 font-bold text-2xl max-w-6xl rounded-md mx-auto px-6 lg:px-10 py-16 ">
           <p className="px-28 mb-16 text-5xl tracking-tighter leading-[40px] font-semibold text-center mx-auto">

@@ -77,7 +77,10 @@ export default function HeaderBar() {
               </a>
             </li>
             <li>
-              <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 ">
+              <a
+                href="/services/office-cleaning"
+                class="block p-3 rounded-lg hover:bg-gray-100 "
+              >
                 <div class="font-semibold">Office Cleaning</div>
                 <span class="text-sm text-gray-500 ">
                   Boosting productivity with spotless workspaces.
