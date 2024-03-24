@@ -78,7 +78,7 @@ export default function EstimateBar() {
               environment!
             </p>
 
-            <p className="text-white text-sm mb-2  lg:mb-4 text-center lg:text-start">
+            <p className="text-white text-base mb-2  lg:mb-4 text-center lg:text-start">
               We do everything we can to make out services as affordable as
               possible. Our budget flexability extends all the way to employing
               the right amount of help at the right times to make a positive

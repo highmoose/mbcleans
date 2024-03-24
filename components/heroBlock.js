@@ -3,7 +3,7 @@
 import React from "react";
 import { Shadows_Into_Light } from "next/font/google";
 
-const Shadows_Into_Light1 = Shadows_Into_Light({
+const shadows_Into_Light = Shadows_Into_Light({
   subsets: ["latin"],
   weight: "400",
 });
@@ -35,16 +35,16 @@ export default function HeaderBar() {
       <div className=" flex pb-10 text-white mx-auto max-w-6xl relative w-full  items-center justify-between px-10 sm:px-16 lg:px-20 my-16 md:my-20 lg:my-10 xl:my-8">
         <div className="max-w-6xl w-full lg:w-4/5 ">
           <p
-            className={`text-yellow-300 text-3xl sm:text-4xl mb-2 text-center lg:text-start ${Shadows_Into_Light1.className}`}
+            className={`text-yellow-300 text-3xl sm:text-4xl mb-2 text-center lg:text-start ${shadows_Into_Light.className}`}
           >
             Commercial & Domestic
           </p>
-          <p className="text-[55px] sm:text-[90px] mb-4 lg:mb-6 leading-[50px] sm:leading-[75px] font-semibold text-center lg:text-start ">
+          <p className="text-[55px] sm:text-[90px] mb-4 lg:mb-6 leading-[50px] sm:leading-[75px] font-semibold tracking-tight text-center lg:text-start ">
             Professional Cleaning Specialists.
           </p>
 
           <div className="flex gap-x-3 justify-center lg:justify-start">
-            <p className="text-md  mb-6 leading-5 text-center lg:text-start">
+            <p className="text-md font-se  mb-6 leading-5 text-center lg:text-start">
               We work closely with clients in finding the most cost effective
               solutions that will produce a clean, healthy environment, while
               saving them time.

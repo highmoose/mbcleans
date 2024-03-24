@@ -28,7 +28,7 @@ export default function IntroBar() {
         <div className="w-full max-w-6xl px-6 2xl:p-0 mx-auto mb-12">
           <div className="md:flex gap-x-4">
             <div className="md:w-1/3 hover:scale-105  transition duration-100 ease-in-out">
-              <div className="flex-col rounded-md  h-full group relative inline-block overflow-hidden border-gray-100 bg-white pt-10 text-sm font-medium   active:text-white">
+              <div className="flex-col rounded-md  h-full group relative inline-block overflow-hidden border-gray-100 bg-white pt-10 text-base font-medium   active:text-white">
                 <span class="ease absolute left-0 top-0 h-0 w-0 border-t-[3px] border-[#009FE3] transition-all duration-200 group-hover:w-full"></span>{" "}
                 <p
                   className={`text-theme2 text-center text-2xl mb-2 ${Shadows_Into_Light1.className}`}
@@ -61,7 +61,7 @@ export default function IntroBar() {
                     />
                   </div>
                 </div> */}
-                <p className="text-sm text-gray-400 mb-6 px-10">
+                <p className="text-base text-gray-400 mb-6 px-10">
                   Residential house cleaning services always focus on cleaning
                   for health, while our extensive industry experience gives us
                   the upperhand.
@@ -75,7 +75,7 @@ export default function IntroBar() {
                         className="h-3"
                       />
                     </div>
-                    <p className="font-semibold text-gray-400 text-sm">
+                    <p className="font-semibold text-gray-400 text-base">
                       Window sills & ledges
                     </p>
                   </div>
@@ -87,7 +87,7 @@ export default function IntroBar() {
                         className="h-3"
                       />
                     </div>
-                    <p className="font-semibold text-gray-400 text-sm">
+                    <p className="font-semibold text-gray-400 text-base">
                       Hard surface floors
                     </p>
                   </div>
@@ -99,7 +99,7 @@ export default function IntroBar() {
                         className="h-3"
                       />
                     </div>
-                    <p className="font-semibold text-gray-400 text-sm">
+                    <p className="font-semibold text-gray-400 text-base">
                       Remove cobwebs
                     </p>
                   </div>
@@ -111,7 +111,7 @@ export default function IntroBar() {
                         className="h-3"
                       />
                     </div>
-                    <p className="font-semibold text-gray-400 text-sm">
+                    <p className="font-semibold text-gray-400 text-base">
                       Empty trash
                     </p>
                   </div>
@@ -119,7 +119,7 @@ export default function IntroBar() {
               </div>
             </div>
             <div className="md:w-1/3 hover:scale-105  transition duration-100 ease-in-out">
-              <div className="flex-col rounded-md  h-full group relative inline-block overflow-hidden border-gray-100 bg-white pt-10 text-sm font-medium   active:text-white">
+              <div className="flex-col rounded-md  h-full group relative inline-block overflow-hidden border-gray-100 bg-white pt-10 text-base font-medium   active:text-white">
                 <span class="ease absolute left-0 top-0 h-0 w-0 border-t-[3px] border-[#009FE3] transition-all duration-200 group-hover:w-full"></span>{" "}
                 <p
                   className={`text-theme2 text-center text-2xl mb-2 ${Shadows_Into_Light1.className}`}
@@ -152,7 +152,7 @@ export default function IntroBar() {
                     />
                   </div>
                 </div> */}
-                <p className="text-sm text-gray-400 mb-6 tracking-tight px-10">
+                <p className="text-base text-gray-400 mb-6 tracking-tight px-10">
                   Commercial cleaning services will help you protect and care
                   for your customers and employees, we care about clean, and it
                   shows in our work.
@@ -166,7 +166,7 @@ export default function IntroBar() {
                         className="h-3"
                       />
                     </div>
-                    <p className="font-semibold text-gray-400 text-sm">
+                    <p className="font-semibold text-gray-400 text-base">
                       Office Building
                     </p>
                   </div>
@@ -178,7 +178,7 @@ export default function IntroBar() {
                         className="h-3"
                       />
                     </div>
-                    <p className="font-semibold text-gray-400 text-sm">
+                    <p className="font-semibold text-gray-400 text-base">
                       Manufacturing Facilities
                     </p>
                   </div>
@@ -190,7 +190,7 @@ export default function IntroBar() {
                         className="h-3"
                       />
                     </div>
-                    <p className="font-semibold text-gray-400 text-sm">
+                    <p className="font-semibold text-gray-400 text-base">
                       Educational Facilities
                     </p>
                   </div>
@@ -202,7 +202,7 @@ export default function IntroBar() {
                         className="h-3"
                       />
                     </div>
-                    <p className="font-semibold text-gray-400 text-sm">
+                    <p className="font-semibold text-gray-400 text-base">
                       Medical Facilities
                     </p>
                   </div>
@@ -210,7 +210,7 @@ export default function IntroBar() {
               </div>
             </div>
             <div className="md:w-1/3 hover:scale-105  transition duration-100 ease-in-out">
-              <div className="flex-col rounded-md group relative inline-block overflow-hidden border-gray-100 bg-white h-full pt-10 text-sm font-medium   active:text-white">
+              <div className="flex-col rounded-md group relative inline-block overflow-hidden border-gray-100 bg-white h-full pt-10 text-base font-medium   active:text-white">
                 <span class="ease absolute left-0 top-0 h-0 w-0 border-t-[3px] border-[#009FE3] transition-all duration-200 group-hover:w-full"></span>{" "}
                 <p
                   className={`text-theme2 text-center text-2xl mb-2 ${Shadows_Into_Light1.className}`}
@@ -243,7 +243,7 @@ export default function IntroBar() {
                     />
                   </div>
                 </div> */}
-                <p className="text-sm text-gray-400 mb-6 tracking-tight px-10">
+                <p className="text-base text-gray-400 mb-6 tracking-tight px-10">
                   In the case of an emergency an urgent clean up may be
                   required. We have the tools, chemicals and skills to provide
                   the fast clean up you need.
@@ -257,7 +257,7 @@ export default function IntroBar() {
                         className="h-3"
                       />
                     </div>
-                    <p className="font-semibold text-gray-400 text-sm">
+                    <p className="font-semibold text-gray-400 text-base">
                       Fire Damage
                     </p>
                   </div>
@@ -269,7 +269,7 @@ export default function IntroBar() {
                         className="h-3"
                       />
                     </div>
-                    <p className="font-semibold text-gray-400 text-sm">
+                    <p className="font-semibold text-gray-400 text-base">
                       Debris Removal
                     </p>
                   </div>
@@ -281,7 +281,7 @@ export default function IntroBar() {
                         className="h-3"
                       />
                     </div>
-                    <p className="font-semibold text-gray-400 text-sm">
+                    <p className="font-semibold text-gray-400 text-base">
                       Mold Remediation
                     </p>
                   </div>
@@ -293,7 +293,7 @@ export default function IntroBar() {
                         className="h-3"
                       />
                     </div>
-                    <p className="font-semibold text-gray-400 text-sm">
+                    <p className="font-semibold text-gray-400 text-base">
                       Graffiti Removal
                     </p>
                   </div>

@@ -5,12 +5,9 @@ import BannerBar from "../../components/bannerBar";
 import FooterBar from "../../components/footerBar";
 import HeaderMenu from "../../components/layout/headerMenu";
 
-const Gabarito1 = Gabarito({
-  subsets: ["latin"],
-  weights: [400, 500, 600, 700, 800, 900, 1000],
-});
+const gabarito = Gabarito({ subsets: ["latin"] });
 
-const Shadows_Into_Light1 = Shadows_Into_Light({
+const shadows_Into_Light = Shadows_Into_Light({
   subsets: ["latin"],
   weight: ["400"],
 });
@@ -23,7 +20,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={Gabarito1.className}>
+      <body className={gabarito.className}>
         <BannerBar />
         <HeaderMenu />
         {children}

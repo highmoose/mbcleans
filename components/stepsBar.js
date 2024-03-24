@@ -31,7 +31,7 @@ export default function StepsBar() {
               <p className="text-lg text-theme2 text-center font-semibold lg:mb-2">
                 Provide us with your details
               </p>
-              <p className="text-sm text-center font-light text-gray-400 tracking-tight px-6 lg:px-6">
+              <p className="text-base text-center font-light text-gray-400 tracking-tight px-6 lg:px-6">
                 Call us, or use our online contact form to provide us with your
                 details and information
               </p>
@@ -46,7 +46,7 @@ export default function StepsBar() {
               <p className="text-lg text-theme2 text-center font-semibold lg:mb-2">
                 Arrange a visit from us
               </p>
-              <p className="text-sm text-center font-light text-gray-400 tracking-tight px-6 lg:px-6">
+              <p className="text-base text-center font-light text-gray-400 tracking-tight px-6 lg:px-6">
                 We come to you to discuss your requirements and provide a
                 competative quotation
               </p>
@@ -60,7 +60,7 @@ export default function StepsBar() {
               <p className="text-lg text-theme2 text-center font-semibold lg:mb-2">
                 Agree on time and frequency
               </p>
-              <p className="text-sm text-center font-light text-gray-400 tracking-tight px-6 lg:px-6">
+              <p className="text-base text-center font-light text-gray-400 tracking-tight px-6 lg:px-6">
                 Whether you need us once, or every week, we will create a
                 schedule that works around you
               </p>
@@ -74,7 +74,7 @@ export default function StepsBar() {
               <p className="text-lg text-theme2 text-center font-semibold lg:mb-2">
                 Sit back and relax
               </p>
-              <p className="text-sm text-center font-light text-gray-400 tracking-tight px-6 lg:px-6">
+              <p className="text-base text-center font-light text-gray-400 tracking-tight px-6 lg:px-6">
                 We will take care of the rest so you can enjoy your consistantly
                 clean and healthy environment
               </p>

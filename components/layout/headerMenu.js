@@ -158,8 +158,8 @@ export default function HeaderBar() {
             className="flex gap-x-1 items-center text-end tracking-tight font-bold text-theme3 w-full h-full"
           >
             <div>
-              <p className="text-[26px] sm:text-3xl">07710172363</p>
-              <p className="-mt-1.5 text-sm text-end text-black font-light italic ">
+              <p className="text-[26px]  sm:text-3xl">07710172363</p>
+              <p className="-mt-1.5 text-sm text-end text-black font-medium italic ">
                 Open Hours: 24/7&nbsp;&nbsp;
               </p>
             </div>
