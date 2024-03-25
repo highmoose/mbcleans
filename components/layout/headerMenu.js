@@ -177,7 +177,7 @@ export default function HeaderBar() {
   function ToggleMenu() {
     return (
       <div className="sm:hidden">
-        <button className="text-lg flex focus:outline-non">
+        <button className="text-lg text-white flex focus:outline-non">
           {menuOpen ? "Close Menu" : "Open Menu"}
         </button>
       </div>
