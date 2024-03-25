@@ -54,7 +54,7 @@ export default function FooterBar() {
       <div class="w-full px-8 xl:px-0 sm:flex items-center justify-center py-20 mx-auto max-w-6xl gap-x-8 ">
         <div class="max-w-6xl w-full text-white flex flex-col gap-x-2 ">
           <div class="w-full text-7xl font-bold">
-            <h1 class="w-full text-4xl md:text-4xl mb-1 text-theme2 text-center sm:text-start">
+            <h1 class="w-full text-4xl md:text-4xl mb-1 text-theme2 text-center tracking-tight sm:text-start">
               We&lsquo;re happy to help!
             </h1>
           </div>
@@ -65,7 +65,7 @@ export default function FooterBar() {
           </div>
         </div>
         <div onClick={backToTop} class="w-80 pt-6 md:pt-0 mx-auto sm:mx-0">
-          <a class="bg-theme3 cursor-pointer justify-center text-lg text-center rounded-lg shadow px-10 py-3 flex items-center">
+          <a class="bg-theme3 cursor-pointer justify-center text-lg font-bold text-center rounded-lg shadow px-10 py-3 flex items-center">
             Back to top
           </a>
         </div>

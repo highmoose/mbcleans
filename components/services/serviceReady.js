@@ -9,11 +9,11 @@ export default function ServiceReady({ body1, body2, question, button }) {
         </p>
 
         <div className="">
-          <p className="px-10 mb-4 text-4xl tracking-tighter font-bold text-center mx-auto">
+          <p className="px-10 mb-6 text-4xl tracking-tight font-bold text-center mx-auto">
             {question}
           </p>
           <div className="flex justify-center mb-6">
-            <button class="pt-6 md:pt-0 mx-auto sm:mx-0">
+            <button class="mx-auto sm:mx-0">
               <a class="bg-theme1 text-white cursor-pointer justify-center text-xl text-center rounded-lg shadow px-10 py-3 flex items-center">
                 {button}
               </a>
