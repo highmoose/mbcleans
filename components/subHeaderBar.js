@@ -18,7 +18,7 @@ export default function SubHeaderBar({ title, description, image }) {
         />
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full">
           <div className="max-w-6xl mx-auto px-10 xl:px-0">
-            <p className="text-4xl md:text-5xl font-bold leading-45 text-center">
+            <p className="text-4xl md:text-6xl font-bold leading-45 text-center">
               {title}
             </p>
             <p

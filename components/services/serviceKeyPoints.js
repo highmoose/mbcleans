@@ -22,7 +22,11 @@ export default function ServiceIntro({
       <div>
         <div class="gap-16 items-center py-16  mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-24 px-10 lg:px-6">
           <div class="grid gap-4">
-            <img class="w-full rounded-lg" src={image1} alt={alt1} />
+            <img
+              class="w-full hidden lg:block rounded-lg"
+              src={image1}
+              alt={alt1}
+            />
           </div>
           <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400 mt-10 lg:py-0">
             <h2 class="mb-4 text-4xl text-white tracking-tight font-extrabold text-theme text-center lg:text-start">

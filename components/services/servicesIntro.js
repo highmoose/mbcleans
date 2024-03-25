@@ -23,7 +23,7 @@ export default function ServiceIntro({
           <p class="mb-4 text-base leading-5">{body2}</p>
           <p class="mb-4 text-base leading-5">{body3}</p>
           <p class="mb-4 text-base leading-5">{body4}</p>
-          <button class="font-semibold pt-6 md:pt-0 mx-auto sm:mx-0">
+          <button class="font-semibold my-4 md:pt-0 mx-auto sm:mx-0">
             <a class="bg-theme1 text-white cursor-pointer justify-center text-xl text-center rounded-lg shadow px-10 py-3 flex items-center">
               {button}
             </a>
