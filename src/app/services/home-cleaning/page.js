@@ -21,24 +21,25 @@ export default function FAQ() {
   return (
     <div className="bg-slate-50">
       <SubHeaderBar
-        title={"Office Cleaning Services"}
+        title={"Home Cleaning Services"}
         description={"Why Choose Professional Office Cleaning Services?"}
         image={"/images/sub_banner_1.png"}
       />
       <ServicesIntro
-        title={"Elevate Your Home with Professional Home Cleaning Services"}
+        title={"Elevate Your Home with Professional Home Cleaning Services."}
         body1={
           "In today's busy world, maintaining a clean home can be challenging. Let us transform your space into a pristine sanctuary. Invest in professional home cleaning for a stress-free, healthier, and more enjoyable living space. Reclaim your time and experience the difference! Contact us today."
         }
-        body2={"Let us transform your space into a clean and tidy sanctuary."}
-        image1="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-2.png"
+        button={"Get in Touch"}
+        // body2={"Let us transform your space into a clean and tidy sanctuary."}
+        image1="/images/services/shower-soap-wiper.png"
         alt1={"Image 1 alt"}
-        image2="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-1.png"
+        image2="/images/services/duster-mirror.png"
         alt2={"Image 1 alt"}
       />
       <ServiceKeyPoints
-        title={"Key Benefits of Hiring a Home Cleaner:"}
-        image1={"/images/services/shower-soap-wiper.png"}
+        title={"Key Advantages of Hiring a Cleaner for Your Home:"}
+        image1={"/images/services/sink-sponge-glove.png"}
         alt1={"Home Cleaning Shower"}
         keyTitle1={"Time-Saving Convenience"}
         keyBody1={
@@ -69,11 +70,8 @@ export default function FAQ() {
         body1={
           "Invest in professional home cleaning for a stress-free, healthier, and more enjoyable living space. "
         }
-        body2={
-          "Reclaim your time and experience the difference! Contact us today."
-        }
         question={"Ready to get started?"}
-        button={"Book a Home Clean Now"}
+        button={"Get in Touch"}
       />
     </div>
   );

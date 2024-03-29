@@ -60,9 +60,6 @@ export default function HeaderBar() {
   function ServicesDropDown() {
     return (
       <div class="border-gray-200 shadow-xl bg-gray-50  border-y max-w-5xl rounded-b-md px-4 py-5">
-        <p className="text-xl px-3 pb-2 mb-4 md:px-8 text-theme2 font-semibold border-b-[1px]">
-          Services
-        </p>
         <div class="grid mx-auto text-gray-900  sm:grid-cols-2 md:px-6">
           <ul>
             <li>
@@ -88,7 +85,10 @@ export default function HeaderBar() {
               </a>
             </li>
             <li>
-              <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 ">
+              <a
+                href="/services/warehouse-cleaning"
+                class="block p-3 rounded-lg hover:bg-gray-100 "
+              >
                 <div class="font-semibold">Warehouse Cleaning</div>
                 <span class="text-sm text-gray-500 ">
                   Optimizing warehouse hygiene for smooth operations
@@ -98,7 +98,10 @@ export default function HeaderBar() {
           </ul>
           <ul>
             <li>
-              <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 ">
+              <a
+                href="/services/school-cleaning"
+                class="block p-3 rounded-lg hover:bg-gray-100 "
+              >
                 <div class="font-semibold">School Cleaning</div>
                 <span class="text-sm text-gray-500 ">
                   Promoting a clean and safe learning environment.
@@ -106,15 +109,21 @@ export default function HeaderBar() {
               </a>
             </li>
             <li>
-              <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 ">
-                <div class="font-semibold">Retail Store Cleaning</div>
+              <a
+                href="/services/retail-cleaning"
+                class="block p-3 rounded-lg hover:bg-gray-100 "
+              >
+                <div class="font-semibold">Retail Cleaning</div>
                 <span class="text-sm text-gray-500 ">
                   Keeping stores sparkling for seamless shopping.
                 </span>
               </a>
             </li>
             <li>
-              <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 ">
+              <a
+                href="/services/medical-facility-cleaning"
+                class="block p-3 rounded-lg hover:bg-gray-100 "
+              >
                 <div class="font-semibold">Medical Facility Cleaning</div>
                 <span class="text-sm text-gray-500 ">
                   Ensuring pristine hygiene in healthcare settings.

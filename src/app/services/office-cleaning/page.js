@@ -22,13 +22,15 @@ export default function FAQ() {
     <div className="bg-slate-50">
       <SubHeaderBar
         title={"Office Cleaning Services"}
-        description={"Why Choose Professional Office Cleaning Services?"}
+        description={"Hiring a professional office cleaner makes sense!"}
         image={"/images/sub_banner_1.png"}
       />
       <ServicesIntro
-        title={"Elevate Your Home with Professional Home Cleaning Services."}
+        title={
+          "Experience a Refreshing Office Environment with Professional Cleaning Services."
+        }
         body1={
-          "In today's busy world, maintaining a clean home can be challenging. Let us transform your space into a pristine sanctuary. Invest in professional home cleaning for a stress-free, healthier, and more enjoyable living space. Reclaim your time and experience the difference! Contact us today."
+          "In the fast-paced world of business, maintaining a clean and organized office environment is essential for productivity and professionalism. Our professional cleaning services are here to ensure your workspace is not just clean, but refreshed, revitalized, and ready to inspire success."
         }
         button={"Get in Touch"}
         // body2={"Let us transform your space into a clean and tidy sanctuary."}
@@ -38,37 +40,37 @@ export default function FAQ() {
         alt2={"Image 1 alt"}
       />
       <ServiceKeyPoints
-        title={"Key Benefits of Hiring a Home Cleaner:"}
+        title={"Key Advantages of Hiring an Office Cleaner for Your Business:"}
         image1={"/images/services/sink-sponge-glove.png"}
         alt1={"Home Cleaning Shower"}
-        keyTitle1={"Time-Saving Convenience"}
+        keyTitle1={"Boost Productivity"}
         keyBody1={
-          "Free up your time for what matters most. No more weekend cleaning sessions."
+          "Create an environment conducive to focused work. Eliminate clutter and distractions for enhanced efficiency."
         }
-        keyTitle2={"Expertise and Experience"}
+        keyTitle2={"Impress Clients and Visitors"}
         keyBody2={
-          " Skilled cleaners deliver superior results quickly. Industry-best practices ensure effectiveness."
+          "Make a positive first impression with a clean and welcoming office. Showcase your commitment to excellence and attention to detail."
         }
-        keyTitle3={"Customized Cleaning Plans"}
+        keyTitle3={"Promote Health and Safety"}
         keyBody3={
-          "Customized plans to fit your needs perfectly. From routine maintenance to deep cleaning, we've got you covered."
+          "Reduce the spread of germs and illnesses among your team. Maintain a safe, tidy & hygienic workplace for employee well-being."
         }
-        keyTitle4={"Consistent Quality and Reliability"}
+        keyTitle4={"Customized Cleaning Solutions"}
         keyBody4={
-          "Consistently clean and hygienic home. Every detail receives thorough attention."
+          "Tailor-made cleaning plans to suit your office's unique needs. From desks and conference rooms to communal areas, we've got you covered."
         }
-        keyTitle5={"Health and Well-being"}
+        keyTitle5={"Reliable and Consistent Service"}
         keyBody5={
-          "Eliminate dust, allergens, and germs for a healthier environment. Reduce the risk of respiratory problems and allergies."
+          "Count on our team to deliver reliable and consistent cleaning services. We pay meticulous attention to detail to ensure every corner of your office is spotless."
         }
-        keyTitle6={"Stress Reduction"}
+        keyTitle6={"Time and Cost Efficiency"}
         keyBody6={
-          " Bid farewell to cleaning stress. Enjoy peace of mind with expert care."
+          "Save valuable time and resources by outsourcing your office cleaning needs to professionals. Eliminate the hassle of managing in-house cleaning staff and focus on your core business activities."
         }
       />
       <ServiceReady
         body1={
-          "Invest in professional home cleaning for a stress-free, healthier, and more enjoyable living space. "
+          "Experience a refreshed and revitalized workspace that fosters productivity, impresses clients, and supports a healthier work environment."
         }
         question={"Ready to get started?"}
         button={"Get in Touch"}
