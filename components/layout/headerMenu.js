@@ -40,9 +40,9 @@ export default function HeaderBar() {
             Services
           </p>
         </MenuItem>
-        <MenuItem href="/" onClick={() => scrollToSection("aboutUs")}>
+        {/* <MenuItem href="/" onClick={() => scrollToSection("aboutUs")}>
           About Us
-        </MenuItem>
+        </MenuItem> */}
         <MenuItem href="/" onClick={() => scrollToSection("partners")}>
           Partners
         </MenuItem>
