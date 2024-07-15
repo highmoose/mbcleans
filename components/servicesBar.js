@@ -12,14 +12,14 @@ export default function ServicesBar() {
                 alt="house"
                 className=" w-20 mb-2 mx-auto md:mx-0 flex justify-center md:justify-start"
               />
-              <p className="text-theme2 text-base sm:text-lg font-semibold mb-1">
+              <h2 className="text-theme2 text-base sm:text-lg font-semibold mb-1">
                 House Cleaning
-              </p>
+              </h2>
               <div className="">
-                <p className="text-zinc-400 text-base leading-4 hidden md:block">
+                <h3 className="text-zinc-400 text-base leading-4 hidden md:block">
                   Routine cleaning: Dusting, vacuuming, mopping, and surface
                   cleaning in living spaces.
-                </p>
+                </h3>
               </div>
             </div>
           </div>
@@ -30,14 +30,14 @@ export default function ServicesBar() {
                 alt="office"
                 className=" w-20 mb-2 mx-auto md:mx-0 flex justify-center md:justify-start"
               />
-              <p className="text-theme2 text-base sm:text-lg font-semibold mb-1">
+              <h2 className="text-theme2 text-base sm:text-lg font-semibold mb-1">
                 Office Cleaning
-              </p>
+              </h2>
               <div className="">
-                <p className="text-zinc-400 text-base leading-4 hidden md:block">
+                <h3 className="text-zinc-400 text-base leading-4 hidden md:block">
                   Office cleaning: Maintaining clean workspaces, including
                   desks, restrooms, and more.
-                </p>
+                </h3>
               </div>
             </div>
           </div>
@@ -48,14 +48,14 @@ export default function ServicesBar() {
                 alt="commercial"
                 className=" w-20 mb-2 mx-auto md:mx-0 flex justify-center md:justify-start"
               />
-              <p className="text-theme2 text-base sm:text-lg font-semibold mb-1">
+              <h2 className="text-theme2 text-base sm:text-lg font-semibold mb-1">
                 Commercial Cleaning
-              </p>
+              </h2>
               <div className="">
-                <p className="text-zinc-400 text-base leading-4 hidden md:block">
+                <h3 className="text-zinc-400 text-base leading-4 hidden md:block">
                   Tailored cleaning for retail, restaurants, gyms, and
                   warehouses.
-                </p>
+                </h3>
               </div>
             </div>
           </div>
@@ -66,14 +66,14 @@ export default function ServicesBar() {
                 alt="bucket"
                 className=" w-20 mb-2 mx-auto md:mx-0 flex justify-center md:justify-start"
               />
-              <p className="text-theme2 text-base sm:text-lg font-semibold mb-1">
+              <h2 className="text-theme2 text-base sm:text-lg font-semibold mb-1">
                 Deep Cleaning
-              </p>
+              </h2>
               <div className="">
-                <p className="text-zinc-400 text-base leading-4 hidden md:block">
+                <h3 className="text-zinc-400 text-base leading-4 hidden md:block">
                   Deep cleaning: Targeting overlooked areas like baseboards and
                   light fixtures.
-                </p>
+                </h3>
               </div>
             </div>
           </div>
@@ -87,14 +87,14 @@ export default function ServicesBar() {
                 alt="truck"
                 className=" w-20 mb-2 mx-auto md:mx-0 flex justify-center md:justify-start"
               />
-              <p className="text-theme2 text-base sm:text-lg font-semibold mb-1">
+              <h2 className="text-theme2 text-base sm:text-lg font-semibold mb-1">
                 Move-In/Out Clean
-              </p>
+              </h2>
               <div className="">
-                <p className="text-zinc-400 text-base leading-4 hidden md:block">
+                <h3 className="text-zinc-400 text-base leading-4 hidden md:block">
                   Move-in/move-out cleaning for homes: Ensuring a fresh start or
                   prep for new occupants.
-                </p>
+                </h3>
               </div>
             </div>
           </div>
@@ -105,14 +105,14 @@ export default function ServicesBar() {
                 alt="bubbles"
                 className=" w-20 mb-2 mx-auto md:mx-0 flex justify-center md:justify-start"
               />
-              <p className="text-theme2 text-base sm:text-lg font-semibold mb-1">
+              <h2 className="text-theme2 text-base sm:text-lg font-semibold mb-1">
                 Eco-Friendly Cleaning{" "}
-              </p>
+              </h2>
               <div className="">
-                <p className="text-zinc-400 text-base leading-4 hidden md:block">
+                <h3 className="text-zinc-400 text-base leading-4 hidden md:block">
                   Eco-friendly cleaning: Non-toxic products and sustainable
                   methods for healthier spaces.
-                </p>
+                </h3>
               </div>
             </div>
           </div>
@@ -123,14 +123,14 @@ export default function ServicesBar() {
                 alt="window"
                 className=" w-20 mb-2 mx-auto md:mx-0 flex justify-center md:justify-start"
               />
-              <p className="text-theme2 text-base sm:text-lg font-semibold mb-1">
+              <h2 className="text-theme2 text-base sm:text-lg font-semibold mb-1">
                 Window Cleaning
-              </p>
+              </h2>
               <div className="">
-                <p className="text-zinc-400 text-base leading-4 hidden md:block">
+                <h3 className="text-zinc-400 text-base leading-4 hidden md:block">
                   Window washing: Professional services for streak-free windows,
                   inside and out.
-                </p>
+                </h3>
               </div>
             </div>
           </div>
@@ -142,14 +142,14 @@ export default function ServicesBar() {
                 alt="sofa"
                 className=" w-20 mb-2 mx-auto md:mx-0 flex justify-center md:justify-start"
               />
-              <p className="text-theme2 text-base sm:text-lg font-semibold mb-1">
-                Specialist Cleaning{" "}
-              </p>
+              <h2 className="text-theme2 text-base sm:text-lg font-semibold mb-1">
+                Specialist Cleaning
+              </h2>
               <div className="">
-                <p className="text-zinc-400 text-base leading-4 hidden md:block">
+                <h3 className="text-zinc-400 text-base leading-4 hidden md:block">
                   Floor care: Carpet, hardwood, tile, and grout cleaning for
                   lasting quality.
-                </p>
+                </h3>
               </div>
             </div>
           </div>

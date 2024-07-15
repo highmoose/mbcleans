@@ -24,7 +24,7 @@ const scrollToPlans = () => {
 
 export default function HeaderBar() {
   return (
-    <section class="flex bg-gray-900 w-full max-h-[550px] sm:max-h-[600px]  lg:max-h-[650px]">
+    <section class="flex bg-gray-900 w-full max-h-[550px] sm:max-h-[600px] lg:max-h-[650px]">
       <div className="absolute w-full h-full">
         <img
           alt="MBCleans cleaner hoovering floor"
@@ -39,9 +39,9 @@ export default function HeaderBar() {
           >
             Commercial & Domestic
           </p>
-          <p className="text-[55px] sm:text-[90px] mb-4 lg:mb-6 leading-[50px] sm:leading-[75px] font-semibold tracking-tight text-center lg:text-start ">
+          <h1 className="text-[55px] sm:text-[90px] mb-4 lg:mb-6 leading-[50px] sm:leading-[75px] font-semibold tracking-tight text-center lg:text-start ">
             Professional Cleaning Specialists.
-          </p>
+          </h1>
 
           <div className="flex gap-x-3 justify-center lg:justify-start">
             <p className="text-md font-se  mb-6 leading-5 text-center lg:text-start">

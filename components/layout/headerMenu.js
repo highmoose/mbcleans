@@ -22,7 +22,7 @@ export default function HeaderBar() {
 
   function Menu() {
     return (
-      <div className="sm:flex text-center sm:text-start items-center font-semibold text-black leading-9 sm:leading-none text-xl sm:text-lg sm:text-md gap-x-4 xl:gap-x-6">
+      <nav className="sm:flex text-center sm:text-start items-center font-semibold text-black leading-9 sm:leading-none text-xl sm:text-lg sm:text-md gap-x-4 xl:gap-x-6">
         <MenuItem href="/" onClick={() => scrollToSection("home")}>
           Home
         </MenuItem>
@@ -53,7 +53,7 @@ export default function HeaderBar() {
           Testimonials
         </MenuItem>
         <MenuItem href="/faq">FAQ&apos;s</MenuItem>
-      </div>
+      </nav>
     );
   }
 

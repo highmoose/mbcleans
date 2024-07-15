@@ -11,14 +11,14 @@ export default function StepsBar() {
     <div>
       <div className="text-black bg-slate-50 w-full text-4xl py-16 flex-col mx-auto px-10 lg:px-0">
         <div className=" max-w-6xl mx-auto gap-x-4 mb-10">
-          <p
+          <h3
             className={`text-theme3 text-center text-3xl mb-1 ${Shadows_Into_Light1.className}`}
           >
             See How It Works!
-          </p>
-          <p className="max-w-xl flex mx-auto text-4xl font-medium tracking-tight text-center text-theme2">
+          </h3>
+          <h3 className="max-w-xl flex mx-auto text-4xl font-medium tracking-tight text-center text-theme2">
             Easy steps for a clean and healthy environment
-          </p>
+          </h3>
         </div>
         <div className="w-full max-w-6xl px-6 2xl:p-0 mx-auto lg:mt-16">
           <div className="lg:flex gap-x-4">

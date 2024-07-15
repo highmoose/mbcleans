@@ -14,15 +14,15 @@ export default function IntroBar() {
       </div>
       <div className="text-black  w-full text-4xl pt-12 flex-col mx-auto">
         <div className=" max-w-6xl mx-auto gap-x-4 mb-10">
-          <p
+          <h2
             className={`text-theme3 text-center text-3xl mb-1 ${Shadows_Into_Light1.className}`}
           >
             Customised Cleaning Plans!
-          </p>
+          </h2>
           <div className="flex items-center">
-            <p className="flex mx-auto text-4xl text-center  font-medium tracking-tight text-theme2">
+            <h2 className="flex mx-auto text-4xl text-center  font-medium tracking-tight text-theme2">
               Tailored to fit your specific needs!
-            </p>
+            </h2>
           </div>
         </div>
         <div className="w-full max-w-6xl px-6 2xl:p-0 mx-auto mb-12">
