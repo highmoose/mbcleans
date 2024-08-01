@@ -60,8 +60,9 @@ export default function FooterBar() {
                     </div>
                     <div class="flex flex-col md:flex-row md:justify-between">
                         <p class="w-full md:w-2/3 text-xl text-gray-400  text-center sm:text-start">
-                            If you're in the Wellingborough, Northamptonshire
-                            and surrounding area, we want to work with you!
+                            If you&lsquo;re in the Wellingborough,
+                            Northamptonshire and surrounding area, we want to
+                            work with you!
                             <strong className="text-sky-600">
                                 Call us today!
                             </strong>
