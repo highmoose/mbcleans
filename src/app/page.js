@@ -9,17 +9,17 @@ import MapBar from "../../components/mapBar";
 import HeaderBar2 from "../../components/headerBar2";
 
 export default function Home() {
-  return (
-    <main className="flex min-h-screen flex-col  bg-gray-100">
-      <HeroBlock />
-      {/* <HeaderBar2 /> */}
-      {/* <ServicesBar /> */}
-      <Plans />
-      <PartnersBar2 />
-      <StepsBar />
-      <EstimateBar />
-      <MapBar />
-      <TestimonialsBar2 />
-    </main>
-  );
+    return (
+        <main className="flex min-h-screen flex-col  bg-gray-100">
+            <HeroBlock />
+            {/* <HeaderBar2 /> */}
+            <ServicesBar />
+            <Plans />
+            <PartnersBar2 />
+            <StepsBar />
+            <EstimateBar />
+            <MapBar />
+            <TestimonialsBar2 />
+        </main>
+    );
 }
