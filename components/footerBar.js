@@ -63,7 +63,7 @@ export default function FooterBar() {
                             If you&lsquo;re in the Wellingborough,
                             Northamptonshire and surrounding area, we want to
                             work with you!
-                            <strong className="text-sky-600">
+                            <strong className="text-sky-600 ml-2">
                                 Call us today!
                             </strong>
                         </p>
