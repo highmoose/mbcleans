@@ -1,3 +1,6 @@
+import { DefaultSeo } from "next-seo";
+import SEO from "./../../next-seo.config";
+
 import { Gabarito } from "next/font/google";
 import { Shadows_Into_Light } from "next/font/google";
 import "./globals.css";
@@ -8,24 +11,25 @@ import HeaderMenu from "../../components/layout/headerMenu";
 const gabarito = Gabarito({ subsets: ["latin"] });
 
 const shadows_Into_Light = Shadows_Into_Light({
-  subsets: ["latin"],
-  weight: ["400"],
+    subsets: ["latin"],
+    weight: ["400"],
 });
 
 export const metadata = {
-  title: "Welcome | MBCleans",
-  description: "Your one-stop solution for all your cleaning needs.",
+    title: "MBCleans",
+    description: "Cleaning Services In Wellingborough & Northamptonshire",
 };
 
 export default function RootLayout({ children }) {
-  return (
-    <html lang="en">
-      <body className={gabarito.className}>
-        <BannerBar />
-        <HeaderMenu />
-        {children}
-        <FooterBar />
-      </body>
-    </html>
-  );
+    return (
+        <html lang="en">
+            <DefaultSeo {...SEO} />
+            <body className={gabarito.className}>
+                <BannerBar />
+                <HeaderMenu />
+                {children}
+                <FooterBar />
+            </body>
+        </html>
+    );
 }

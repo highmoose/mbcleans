@@ -1,3 +1,5 @@
+import Head from "next/head";
+
 import HeroBlock from "../../components/heroBlock";
 import Plans from "../../components/plans";
 import PartnersBar2 from "../../components/partnersBar2";
@@ -10,16 +12,22 @@ import HeaderBar2 from "../../components/headerBar2";
 
 export default function Home() {
     return (
-        <main className="flex min-h-screen flex-col  bg-gray-100">
-            <HeroBlock />
-            {/* <HeaderBar2 /> */}
-            <ServicesBar />
-            <Plans />
-            <PartnersBar2 />
-            <StepsBar />
-            <EstimateBar />
-            <MapBar />
-            <TestimonialsBar2 />
-        </main>
+        <>
+            <Head
+                title="MBCleans"
+                description="Cleaning Services In Wellingborough & Northamptonshire"
+            />
+            <main className="flex min-h-screen flex-col  bg-gray-100">
+                <HeroBlock />
+                {/* <HeaderBar2 /> */}
+                <ServicesBar />
+                <Plans />
+                <PartnersBar2 />
+                <StepsBar />
+                <EstimateBar />
+                <MapBar />
+                <TestimonialsBar2 />
+            </main>
+        </>
     );
 }
