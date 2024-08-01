@@ -1,5 +1,5 @@
-import { DefaultSeo } from "next-seo";
-import SEO from "./../../next-seo.config";
+// import { DefaultSeo } from "next-seo";
+// import SEO from "./../../next-seo.config";
 
 import { Gabarito } from "next/font/google";
 import { Shadows_Into_Light } from "next/font/google";
@@ -23,7 +23,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="en">
-            <DefaultSeo {...SEO} />
+            {/* <DefaultSeo {...SEO} /> */}
             <body className={gabarito.className}>
                 <BannerBar />
                 <HeaderMenu />
