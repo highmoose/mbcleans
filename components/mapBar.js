@@ -140,7 +140,7 @@ export default function SimpleMap() {
                 layout: {},
                 paint: {
                     "fill-color": "#0080ff",
-                    "fill-opacity": 0.3,
+                    "fill-opacity": 0.2,
                 },
             });
 
@@ -166,7 +166,7 @@ export default function SimpleMap() {
                 layout: {},
                 paint: {
                     "fill-color": "#8bc4ff",
-                    "fill-opacity": 0.3,
+                    "fill-opacity": 0.2,
                 },
             });
             map.addSource("labels", {
