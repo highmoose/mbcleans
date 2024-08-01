@@ -20,6 +20,9 @@ export default function SimpleMap() {
             attributionControl: false,
         });
 
+        const nav = new mapboxgl.NavigationControl();
+        map.addControl(nav, "top-right");
+
         // Add GeoJSON data for the outline
         const geojson = {
             type: "Feature",
@@ -211,8 +214,6 @@ export default function SimpleMap() {
                 },
             });
         });
-
-        return () => map.remove();
     }, []);
 
     return (

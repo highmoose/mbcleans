@@ -59,9 +59,12 @@ export default function FooterBar() {
                         </p>
                     </div>
                     <div class="flex flex-col md:flex-row md:justify-between">
-                        <p class="w-full md:w-2/3 text-base text-gray-400  text-center sm:text-start">
-                            Need some assistance? The MBCleans team have you
-                            covered.
+                        <p class="w-full md:w-2/3 text-xl text-gray-400  text-center sm:text-start">
+                            If you're in the Wellingborough & Northamptonshire
+                            area, we want to work with you!{" "}
+                            <strong className="text-sky-600">
+                                Call us today!
+                            </strong>
                         </p>
                     </div>
                 </div>

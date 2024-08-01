@@ -1940,6 +1940,14 @@ video {
   --tw-text-opacity: 1;
   color: rgb(161 161 170 / var(--tw-text-opacity));
 }
+.text-blue-600 {
+  --tw-text-opacity: 1;
+  color: rgb(37 99 235 / var(--tw-text-opacity));
+}
+.text-sky-600 {
+  --tw-text-opacity: 1;
+  color: rgb(2 132 199 / var(--tw-text-opacity));
+}
 .underline {
   text-decoration-line: underline;
 }
@@ -2781,6 +2789,10 @@ body {
   }
 
   .md\:w-6\/12 {
+    width: 50%;
+  }
+
+  .md\:w-1\/2 {
     width: 50%;
   }
 
