@@ -46,7 +46,7 @@ export default function HeaderBar() {
                     <div className="flex gap-x-3 justify-center lg:justify-start pr-10">
                         <p className="text-2xl  mb-6 leading-6 tracking-tight text-center lg:text-start">
                             We work closely with clients around Wellingborough
-                            and the surrounding areas to finding the most cost
+                            and Northamptonshire to finding the most cost
                             effective & highest quality cleaning solutions.
                         </p>
                     </div>
