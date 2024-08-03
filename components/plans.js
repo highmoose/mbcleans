@@ -99,16 +99,28 @@ export default function IntroBar() {
         setShowEmergency(false);
     };
 
+    const closeResidential = () => {
+        setShowResidential(false);
+    };
+
     const openCommercial = () => {
         setShowResidential(false);
         setShowCommercial(true);
         setShowEmergency(false);
     };
 
+    const closeCommercial = () => {
+        setShowCommercial(false);
+    };
+
     const openEmergency = () => {
         setShowResidential(false);
         setShowCommercial(false);
         setShowEmergency(true);
+    };
+
+    const closeEmergency = () => {
+        setShowEmergency(false);
     };
 
     return (
@@ -148,7 +160,7 @@ export default function IntroBar() {
                                     extensive industry experience gives us the
                                     upperhand.
                                 </p>
-                                <div className="mb-8">
+                                <div className="mb-16">
                                     {residentialPlan
                                         .slice(0, showResidential ? 30 : 10)
                                         .map((task, index) => (
@@ -171,16 +183,21 @@ export default function IntroBar() {
                                             </div>
                                         ))}
                                 </div>
-                                <div class="absolute inset-x-0 bottom-0 h-[300px] bg-gradient-to-b from-transparent to-white">
-                                    <button
-                                        onClick={() => openResidential()}
-                                        className="absolute bottom-0 inset-x-0 h-12 w-full bg-theme2 text-white"
-                                    >
-                                        {showResidential
-                                            ? "Show Less"
-                                            : "Show More"}
-                                    </button>
-                                </div>
+                                {showResidential === false && (
+                                    <div class="absolute inset-x-0 bottom-0 h-[300px] bg-gradient-to-b from-transparent to-white" />
+                                )}
+                                <button
+                                    onClick={
+                                        showResidential
+                                            ? closeResidential
+                                            : openResidential
+                                    }
+                                    className="absolute bottom-0 inset-x-0 h-12 w-full bg-theme2 text-white"
+                                >
+                                    {showResidential
+                                        ? "Show Less"
+                                        : "Show More"}
+                                </button>
                             </div>
                         </div>
                         <div className=" md:w-1/3 hover:scale-105  transition duration-100 ease-in-out">
@@ -200,7 +217,7 @@ export default function IntroBar() {
                                     employees, we care about clean, and it shows
                                     in our work.
                                 </p>
-                                <div className="mb-8">
+                                <div className="mb-16">
                                     {commercialPlan
                                         .slice(0, showCommercial ? 30 : 10)
                                         .map((task, index) => (
@@ -223,16 +240,19 @@ export default function IntroBar() {
                                             </div>
                                         ))}
                                 </div>
-                                <div class="absolute inset-x-0 bottom-0 h-[300px] bg-gradient-to-b from-transparent to-white">
-                                    <button
-                                        onClick={() => openCommercial()}
-                                        className="absolute bottom-0 inset-x-0 h-12 w-full bg-theme2 text-white"
-                                    >
-                                        {showCommercial
-                                            ? "Show Less"
-                                            : "Show More"}
-                                    </button>
-                                </div>
+                                {showCommercial === false && (
+                                    <div class="absolute inset-x-0 bottom-0 h-[300px] bg-gradient-to-b from-transparent to-white" />
+                                )}
+                                <button
+                                    onClick={
+                                        showCommercial
+                                            ? closeCommercial
+                                            : openCommercial
+                                    }
+                                    className="absolute bottom-0 inset-x-0 h-12 w-full bg-theme2 text-white"
+                                >
+                                    {showCommercial ? "Show Less" : "Show More"}
+                                </button>
                             </div>
                         </div>
                         <div className="md:w-1/3 hover:scale-105  transition duration-100 ease-in-out">
@@ -252,7 +272,7 @@ export default function IntroBar() {
                                     chemicals and skills to provide the fast
                                     clean up you need.
                                 </p>
-                                <div className="mb-8">
+                                <div className="mb-16">
                                     {emergencyPlan
                                         .slice(0, showEmergency ? 30 : 10)
                                         .map((task, index) => (
@@ -275,27 +295,29 @@ export default function IntroBar() {
                                             </div>
                                         ))}
                                 </div>
-                                <div class="absolute inset-x-0 bottom-0 h-[300px] bg-gradient-to-b from-transparent to-white">
-                                    <button
-                                        onClick={() => openEmergency()}
-                                        className="absolute bottom-0 inset-x-0 h-12 w-full bg-theme2 text-white"
-                                    >
-                                        {showResidential
-                                            ? "Show Less"
-                                            : "Show More"}
-                                    </button>
-                                </div>
+                                {showEmergency === false && (
+                                    <div class="absolute inset-x-0 bottom-0 h-[300px] bg-gradient-to-b from-transparent to-white" />
+                                )}
+                                <button
+                                    onClick={
+                                        showEmergency
+                                            ? closeEmergency
+                                            : openEmergency
+                                    }
+                                    className="absolute bottom-0 inset-x-0 h-12 w-full bg-theme2 text-white"
+                                >
+                                    {showEmergency ? "Show Less" : "Show More"}
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <p className="max-w-2xl mb-20 flex mx-auto text-base leading-5  tracking-tight text-center text-theme2">
-                    For a clean that meets your highest standards, you need a
-                    dedicated team of trained specialists. We arrive at each
-                    visit with all supplies needed to thoroughly clean your
-                    premises.
-                </p>
             </div>
+            <p className="max-w-2xl mb-20 flex mx-auto text-base leading-5  tracking-tight text-center text-theme2">
+                For a clean that meets your highest standards, you need a
+                dedicated team of trained specialists. We arrive at each visit
+                with all supplies needed to thoroughly clean your premises.
+            </p>
         </div>
     );
 }
