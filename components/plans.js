@@ -151,8 +151,11 @@ export default function IntroBar() {
                                 <div className="mb-8">
                                     {residentialPlan
                                         .slice(0, showResidential ? 30 : 10)
-                                        .map((task) => (
-                                            <div className="text-base text-gray-400 mb-2 px-8">
+                                        .map((task, index) => (
+                                            <div
+                                                key={index}
+                                                className="text-base text-gray-400 mb-2 px-8"
+                                            >
                                                 <div className="flex item gap-x-2 items-center mb-1">
                                                     <div className="bg-theme2 w-4 h-4 flex items-center justify-center rounded-full ">
                                                         <img
@@ -200,8 +203,11 @@ export default function IntroBar() {
                                 <div className="mb-8">
                                     {commercialPlan
                                         .slice(0, showCommercial ? 30 : 10)
-                                        .map((task) => (
-                                            <div className="text-base text-gray-400 mb-2 px-8">
+                                        .map((task, index) => (
+                                            <div
+                                                key={index}
+                                                className="text-base text-gray-400 mb-2 px-8"
+                                            >
                                                 <div className="flex item gap-x-2 items-center mb-1">
                                                     <div className="bg-theme1 w-4 h-4 flex items-center justify-center rounded-full ">
                                                         <img
@@ -249,8 +255,11 @@ export default function IntroBar() {
                                 <div className="mb-8">
                                     {emergencyPlan
                                         .slice(0, showEmergency ? 30 : 10)
-                                        .map((task) => (
-                                            <div className="text-base text-gray-400 mb-2 px-8">
+                                        .map((task, index) => (
+                                            <div
+                                                key={index}
+                                                className="text-base text-gray-400 mb-2 px-8"
+                                            >
                                                 <div className="flex item gap-x-2 items-center mb-1">
                                                     <div className="bg-blue-300 w-4 h-4 flex items-center justify-center rounded-full ">
                                                         <img
