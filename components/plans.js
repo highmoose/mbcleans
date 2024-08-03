@@ -143,7 +143,7 @@ export default function IntroBar() {
                 </div>
                 <div className="w-full max-w-6xl px-6 2xl:p-0 mx-auto mb-12">
                     <div className="md:flex gap-x-4">
-                        <div className="relative md:w-1/3 hover:scale-105  transition duration-100 ease-in-out">
+                        <div className="relative md:w-1/3 pb-6 sm:pb-0 hover:scale-105  transition duration-100 ease-in-out">
                             <div className="flex-col h-fit rounded-md group relative inline-block overflow-hidden border-gray-100 bg-white pt-10 text-base font-medium   active:text-white">
                                 <span class="ease absolute left-0 top-0 h-0 w-0 border-t-[3px] border-[#009FE3] transition-all duration-200 group-hover:w-full"></span>{" "}
                                 <p
@@ -200,7 +200,7 @@ export default function IntroBar() {
                                 </button>
                             </div>
                         </div>
-                        <div className=" md:w-1/3 hover:scale-105  transition duration-100 ease-in-out">
+                        <div className=" md:w-1/3 pb-6 sm:pb-0 hover:scale-105  transition duration-100 ease-in-out">
                             <div className="flex-col h-fit rounded-md group relative inline-block overflow-hidden border-gray-100 bg-white pt-10 text-base font-medium   active:text-white">
                                 <span class="ease absolute left-0 top-0 h-0 w-0 border-t-[3px] border-[#009FE3] transition-all duration-200 group-hover:w-full"></span>{" "}
                                 <p
@@ -255,7 +255,7 @@ export default function IntroBar() {
                                 </button>
                             </div>
                         </div>
-                        <div className="md:w-1/3 hover:scale-105  transition duration-100 ease-in-out">
+                        <div className="md:w-1/3 pb-6 sm:pb-0 hover:scale-105  transition duration-100 ease-in-out">
                             <div className="flex-col h-fit rounded-md group relative inline-block overflow-hidden border-gray-100 bg-white  pt-10 text-base font-medium   active:text-white">
                                 <span class="ease absolute left-0 top-0 h-0 w-0 border-t-[3px] border-[#009FE3] transition-all duration-200 group-hover:w-full"></span>{" "}
                                 <p
