@@ -16,8 +16,9 @@ const shadows_Into_Light = Shadows_Into_Light({
 });
 
 export const metadata = {
-    title: "MBCleans",
-    description: "Cleaning Services In Wellingborough & Northamptonshire",
+    title: "MB Cleans | Commercial & Domestic Cleaning Services In Wellingborough & Northamptonshire",
+    description:
+        "Discover professional commercial and domestic cleaning services in Wellingborough and Northamptonshire with MB Cleans. Our expert team ensures spotless results for your home and business. Contact us today for a sparkling clean!",
 };
 
 export default function RootLayout({ children }) {
