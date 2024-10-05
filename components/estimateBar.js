@@ -32,7 +32,7 @@ export default function EstimateBar() {
 
     setFormData((prevData) => ({
       ...prevData,
-      [name]: newValue, // Use newValue instead of value ?????????????????????? im not sure
+      [name]: newValue,
     }));
   };
   const handleSubmit = async (e) => {

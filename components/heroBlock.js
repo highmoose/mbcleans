@@ -37,7 +37,7 @@ export default function HeaderBar() {
                     <p
                         className={`text-yellow-300 text-3xl sm:text-5xl mb-2 text-center lg:text-start ${shadows_Into_Light.className}`}
                     >
-                        Wellingboroughs Recommended
+                        Wellingborough's Recommended
                     </p>
                     <h1 className="text-[55px] sm:text-[90px] mb-4 lg:mb-6 leading-[50px] sm:leading-[75px] font-semibold tracking-tight text-center lg:text-start ">
                         Professional Cleaning Specialists.
@@ -46,8 +46,8 @@ export default function HeaderBar() {
                     <div className="flex gap-x-3 justify-center lg:justify-start pr-10">
                         <p className="text-2xl  mb-6 leading-6 tracking-tight text-center lg:text-start">
                             We work closely with clients around Wellingborough
-                            and Northamptonshire to finding the most cost
-                            effective & highest quality cleaning solutions.
+                            and Northamptonshire to provide cost effective &
+                            high quality cleaning solutions.
                         </p>
                     </div>
                     <div className="flex gap-x-3 justify-center lg:justify-start">
