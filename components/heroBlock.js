@@ -64,7 +64,7 @@ export default function HeaderBar() {
                         </div>
                         <div
                             onClick={scrollToContact}
-                            class="relative inline-flex  group"
+                            class="relative inline-flex group"
                         >
                             <div class="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#89beff] via-[#44f6ff] to-[#5eefff] rounded-md blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
                             <a
