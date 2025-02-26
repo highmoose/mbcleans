@@ -1,62 +1,68 @@
 "use client";
 
+import Image from "next/image";
 import { useState, useEffect } from "react";
 import React from "react";
 
 export default function CirclesAndRectangles() {
-  const [activeRectangle, setActiveRectangle] = useState("rectangle1");
-  const [fadeClass, setFadeClass] = useState("fade-in");
+    const [activeRectangle, setActiveRectangle] = useState("rectangle1");
+    const [fadeClass, setFadeClass] = useState("fade-in");
 
-  const handleCircleClick = (rectangle) => {
-    setFadeClass("fade-out");
-    setTimeout(() => {
-      setActiveRectangle(rectangle);
-      setFadeClass("fade-in");
-    }, 0); // Adjust this duration to match your CSS transition duration
-  };
+    const handleCircleClick = (rectangle) => {
+        setFadeClass("fade-out");
+        setTimeout(() => {
+            setActiveRectangle(rectangle);
+            setFadeClass("fade-in");
+        }, 0); // Adjust this duration to match your CSS transition duration
+    };
 
-  return (
-    <div
-      id="testimonials"
-      className="flex flex-col items-center justify-center"
-    >
-      <div className="mt-8 max-w-6xl px-8 lg:px-0">
-        <div className="flex items-center justify-center space-x-4 mt-8 lg:-mb-10">
-          <div
-            className={`w-6 h-6 bg-white rounded-full cursor-pointer ${
-              activeRectangle === "rectangle1" && "border-8 border-theme2"
-            }`}
-            onClick={() => handleCircleClick("rectangle1")}
-          />
-          <div
-            className={`w-6 h-6 bg-white rounded-full cursor-pointer ${
-              activeRectangle === "rectangle2" && "border-8 border-theme2"
-            }`}
-            onClick={() => handleCircleClick("rectangle2")}
-          />
-          <div
-            className={`w-6 h-6 bg-white rounded-full cursor-pointer ${
-              activeRectangle === "rectangle3" && "border-8 border-theme2"
-            }`}
-            onClick={() => handleCircleClick("rectangle3")}
-          />
-        </div>
+    return (
         <div
-          className={` rounded-lg overflow-hidden transition-opacity duration-500 ${fadeClass}`}
+            id="testimonials"
+            className="flex flex-col items-center justify-center"
         >
-          {activeRectangle === "rectangle1" && (
-            <div class="lg:grid lg:grid-cols-6 lg:gap-8 lg:items-center ">
-              <div class="hidden lg:block lg:col-span-2 ">
-                <img
-                  class="rounded-xl "
-                  src="/images/testimonials/testimonials-1.png"
-                  alt="Image Description"
-                />
-              </div>
+            <div className="mt-8 max-w-6xl px-8 lg:px-0">
+                <div className="flex items-center justify-center space-x-4 mt-8 lg:-mb-10">
+                    <div
+                        className={`w-6 h-6 bg-white rounded-full cursor-pointer ${
+                            activeRectangle === "rectangle1" &&
+                            "border-8 border-theme2"
+                        }`}
+                        onClick={() => handleCircleClick("rectangle1")}
+                    />
+                    <div
+                        className={`w-6 h-6 bg-white rounded-full cursor-pointer ${
+                            activeRectangle === "rectangle2" &&
+                            "border-8 border-theme2"
+                        }`}
+                        onClick={() => handleCircleClick("rectangle2")}
+                    />
+                    <div
+                        className={`w-6 h-6 bg-white rounded-full cursor-pointer ${
+                            activeRectangle === "rectangle3" &&
+                            "border-8 border-theme2"
+                        }`}
+                        onClick={() => handleCircleClick("rectangle3")}
+                    />
+                </div>
+                <div
+                    className={` rounded-lg overflow-hidden transition-opacity duration-500 ${fadeClass}`}
+                >
+                    {activeRectangle === "rectangle1" && (
+                        <div class="lg:grid lg:grid-cols-6 lg:gap-8 lg:items-center ">
+                            <div class="hidden lg:block lg:col-span-2 ">
+                                <Image
+                                    class="rounded-xl "
+                                    src="/images/testimonials/testimonials-1.png"
+                                    alt="Image Description"
+                                    width={500}
+                                    height={500}
+                                />
+                            </div>
 
-              <div class="lg:col-span-4 mt-16">
-                <blockquote>
-                  {/* <svg
+                            <div class="lg:col-span-4 mt-16">
+                                <blockquote>
+                                    {/* <svg
                     class="w-24 h-auto mb-4"
                     viewBox="-0.3 0 320.3999999999999 99.9"
                     xmlns="http://www.w3.org/2000/svg"
@@ -69,48 +75,54 @@ export default function CirclesAndRectangles() {
                     />
                   </svg> */}
 
-                  <p class="text-3xl font-medium text-gray-800 text-center lg:text-start ">
-                    &quot;I cannot recommend MB cleans enough. Melissa and Becki
-                    were impeccably professional, communicative and the standard
-                    was beyond excellent.&quot;
-                  </p>
+                                    <p class="text-3xl font-medium text-gray-800 text-center lg:text-start ">
+                                        &quot;I cannot recommend MB cleans
+                                        enough. Melissa and Becki were
+                                        impeccably professional, communicative
+                                        and the standard was beyond
+                                        excellent.&quot;
+                                    </p>
 
-                  <footer class="mt-6 mb-16">
-                    <div class="flex items-center justify-center  lg:justify-start">
-                      <div class="lg:hidden flex-shrink-0">
-                        <img
-                          class="h-24 w-24 rounded-full"
-                          src="/images/testimonials/testimonials-1.png"
-                          alt="Image Description"
-                        />
-                      </div>
-                      <div class="ms-4 lg:ms-0">
-                        <p class="font-medium text-lg text-gray-800">
-                          Kelly Jane
-                        </p>
-                        <p class="text-sm text-gray-600 ">
-                          Domestic Clean Client
-                        </p>
-                      </div>
-                    </div>
-                  </footer>
-                </blockquote>
-              </div>
-            </div>
-          )}
-          {activeRectangle === "rectangle2" && (
-            <div class="lg:grid lg:grid-cols-6 lg:gap-8 lg:items-center">
-              <div class="hidden lg:block lg:col-span-2">
-                <img
-                  class="rounded-xl"
-                  src="/images/testimonials/testimonials-2.png"
-                  alt="Image Description"
-                />
-              </div>
+                                    <footer class="mt-6 mb-16">
+                                        <div class="flex items-center justify-center  lg:justify-start">
+                                            <div class="lg:hidden flex-shrink-0">
+                                                <Image
+                                                    class="h-24 w-24 rounded-full"
+                                                    src="/images/testimonials/testimonials-1.png"
+                                                    alt="Image Description"
+                                                    width={600}
+                                                    height={600}
+                                                />
+                                            </div>
+                                            <div class="ms-4 lg:ms-0">
+                                                <p class="font-medium text-lg text-gray-800">
+                                                    Kelly Jane
+                                                </p>
+                                                <p class="text-sm text-gray-600 ">
+                                                    Domestic Clean Client
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    )}
+                    {activeRectangle === "rectangle2" && (
+                        <div class="lg:grid lg:grid-cols-6 lg:gap-8 lg:items-center">
+                            <div class="hidden lg:block lg:col-span-2">
+                                <Image
+                                    class="rounded-xl"
+                                    src="/images/testimonials/testimonials-2.png"
+                                    alt="Image Description"
+                                    width={600}
+                                    height={600}
+                                />
+                            </div>
 
-              <div class="lg:col-span-4 mt-16">
-                <blockquote>
-                  {/* <svg
+                            <div class="lg:col-span-4 mt-16">
+                                <blockquote>
+                                    {/* <svg
                     class="w-24 h-auto mb-4"
                     viewBox="-0.3 0 320.3999999999999 99.9"
                     xmlns="http://www.w3.org/2000/svg"
@@ -123,48 +135,53 @@ export default function CirclesAndRectangles() {
                     />
                   </svg> */}
 
-                  <p class="text-3xl font-medium text-gray-800 text-center lg:text-start ">
-                    &quot;MB Cleans is the secret weapon for turning your place
-                    into a sanctuary of cleanliness without any stress. Total
-                    game-changer&quot;
-                  </p>
+                                    <p class="text-3xl font-medium text-gray-800 text-center lg:text-start ">
+                                        &quot;MB Cleans is the secret weapon for
+                                        turning your place into a sanctuary of
+                                        cleanliness without any stress. Total
+                                        game-changer&quot;
+                                    </p>
 
-                  <footer class="mt-6 mb-16">
-                    <div class="flex items-center justify-center lg:justify-start">
-                      <div class="lg:hidden flex-shrink-0">
-                        <img
-                          class="h-24 w-24 rounded-full"
-                          src="/images/testimonials/testimonials-2.png"
-                          alt="Image Description"
-                        />
-                      </div>
-                      <div class="ms-4 lg:ms-0">
-                        <p class="font-medium text-lg text-gray-800">
-                          Jamie Bortman
-                        </p>
-                        <p class="text-sm text-gray-600 ">
-                          Commercial Clean Client
-                        </p>
-                      </div>
-                    </div>
-                  </footer>
-                </blockquote>
-              </div>
-            </div>
-          )}
-          {activeRectangle === "rectangle3" && (
-            <div class="lg:grid lg:grid-cols-6 lg:gap-8 lg:items-center">
-              <div class="hidden lg:block lg:col-span-2">
-                <img
-                  class="rounded-xl"
-                  src="/images/testimonials/testimonials-3.png"
-                  alt="Image Description"
-                />
-              </div>
+                                    <footer class="mt-6 mb-16">
+                                        <div class="flex items-center justify-center lg:justify-start">
+                                            <div class="lg:hidden flex-shrink-0">
+                                                <Image
+                                                    class="h-24 w-24 rounded-full"
+                                                    src="/images/testimonials/testimonials-2.png"
+                                                    alt="Image Description"
+                                                    width={1000}
+                                                    height={1000}
+                                                />
+                                            </div>
+                                            <div class="ms-4 lg:ms-0">
+                                                <p class="font-medium text-lg text-gray-800">
+                                                    Jamie Bortman
+                                                </p>
+                                                <p class="text-sm text-gray-600 ">
+                                                    Commercial Clean Client
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    )}
+                    {activeRectangle === "rectangle3" && (
+                        <div class="lg:grid lg:grid-cols-6 lg:gap-8 lg:items-center">
+                            <div class="hidden lg:block lg:col-span-2">
+                                <Image
+                                    class="rounded-xl"
+                                    src="/images/testimonials/testimonials-3.png"
+                                    alt="Image Description"
+                                    width={1000}
+                                    height={1000}
+                                />
+                            </div>
 
-              <div class="lg:col-span-4 mt-16">
-                <blockquote>
-                  {/* <svg
+                            <div class="lg:col-span-4 mt-16">
+                                <blockquote>
+                                    {/* <svg
                     class="w-24 h-auto mb-4"
                     viewBox="-0.3 0 320.3999999999999 99.9"
                     xmlns="http://www.w3.org/2000/svg"
@@ -177,37 +194,41 @@ export default function CirclesAndRectangles() {
                     />
                   </svg> */}
 
-                  <p class="text-3xl font-medium text-gray-800 text-center lg:text-start">
-                    &quot;A huge shoutout to MB Cleans for their outstanding
-                    service! Melissa and Becki&apos;s expertise and cheerful
-                    demeanor made the whole cleaning process a breeze.&quot;
-                  </p>
+                                    <p class="text-3xl font-medium text-gray-800 text-center lg:text-start">
+                                        &quot;A huge shoutout to MB Cleans for
+                                        their outstanding service! Melissa and
+                                        Becki&apos;s expertise and cheerful
+                                        demeanor made the whole cleaning process
+                                        a breeze.&quot;
+                                    </p>
 
-                  <footer class="mt-6 mb-16">
-                    <div class="flex items-center justify-center lg:justify-start">
-                      <div class="lg:hidden flex-shrink-0">
-                        <img
-                          class="h-24 w-24 rounded-full"
-                          src="/images/testimonials/testimonials-3.png"
-                          alt="Image Description"
-                        />
-                      </div>
-                      <div class="ms-4 lg:ms-0">
-                        <p class="font-medium text-lg text-gray-800">
-                          Claire Green
-                        </p>
-                        <p class="text-sm text-gray-600 ">
-                          Commercial Clean Client
-                        </p>
-                      </div>
-                    </div>
-                  </footer>
-                </blockquote>
-              </div>
+                                    <footer class="mt-6 mb-16">
+                                        <div class="flex items-center justify-center lg:justify-start">
+                                            <div class="lg:hidden flex-shrink-0">
+                                                <Image
+                                                    class="h-24 w-24 rounded-full"
+                                                    src="/images/testimonials/testimonials-3.png"
+                                                    alt="Image Description"
+                                                    width={1000}
+                                                    height={1000}
+                                                />
+                                            </div>
+                                            <div class="ms-4 lg:ms-0">
+                                                <p class="font-medium text-lg text-gray-800">
+                                                    Claire Green
+                                                </p>
+                                                <p class="text-sm text-gray-600 ">
+                                                    Commercial Clean Client
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    )}
+                </div>
             </div>
-          )}
         </div>
-      </div>
-    </div>
-  );
+    );
 }

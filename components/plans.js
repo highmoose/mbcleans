@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { Shadows_Into_Light } from "next/font/google";
+import Image from "next/image";
 
 const Shadows_Into_Light1 = Shadows_Into_Light({
     subsets: ["latin"],
@@ -170,10 +171,12 @@ export default function IntroBar() {
                                             >
                                                 <div className="flex item gap-x-2 items-center mb-1">
                                                     <div className="bg-theme2 w-4 h-4 flex items-center justify-center rounded-full ">
-                                                        <img
+                                                        <Image
                                                             src="/icons/check-white.svg"
                                                             alt="check"
                                                             className="h-3"
+                                                            width={100}
+                                                            height={100}
                                                         />
                                                     </div>
                                                     <p className="font-light text-gray-400 text-base">
@@ -227,10 +230,12 @@ export default function IntroBar() {
                                             >
                                                 <div className="flex item gap-x-2 items-center mb-1">
                                                     <div className="bg-theme1 w-4 h-4 flex items-center justify-center rounded-full ">
-                                                        <img
+                                                        <Image
                                                             src="/icons/check-white.svg"
                                                             alt="check"
                                                             className="h-3"
+                                                            width={100}
+                                                            height={100}
                                                         />
                                                     </div>
                                                     <p className="font-light text-gray-400 text-base">
@@ -282,10 +287,12 @@ export default function IntroBar() {
                                             >
                                                 <div className="flex item gap-x-2 items-center mb-1">
                                                     <div className="bg-blue-300 w-4 h-4 flex items-center justify-center rounded-full ">
-                                                        <img
+                                                        <Image
                                                             src="/icons/check-white.svg"
                                                             alt="check"
                                                             className="h-3"
+                                                            width={100}
+                                                            height={100}
                                                         />
                                                     </div>
                                                     <p className="font-light text-gray-400 text-base">
@@ -313,7 +320,7 @@ export default function IntroBar() {
                     </div>
                 </div>
             </div>
-            <p className="max-w-2xl mb-20 flex mx-auto text-base leading-5  tracking-tight text-center text-theme2">
+            <p className="max-w-2xl mb-20 flex mx-auto text-2xl leading-7 px-4 lg:px-0 tracking-tight text-center text-theme2">
                 For a clean that meets your highest standards, you need a
                 dedicated team of trained specialists. We arrive at each visit
                 with all supplies needed to thoroughly clean your premises.

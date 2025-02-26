@@ -9,17 +9,17 @@ import MapBar from "../../components/mapBar";
 import HeaderBar2 from "../../components/headerBar2";
 
 export default function Home() {
+    const locationName = "Wellingborough";
     return (
         <>
             <main className="flex min-h-screen flex-col  bg-gray-100">
-                <HeroBlock />
-                {/* <HeaderBar2 /> */}
+                <HeroBlock locationName={locationName} />
                 <ServicesBar />
                 <Plans />
-                <PartnersBar2 />
+                <PartnersBar2 locationName={locationName} />
                 <StepsBar />
                 <EstimateBar />
-                <MapBar />
+                {/* <MapBar /> */}
                 <TestimonialsBar2 />
             </main>
         </>
