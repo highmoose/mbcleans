@@ -1,34 +1,38 @@
-import { Gabarito } from "next/font/google";
+import HeaderMenu from "../../components/layout/headerMenu";
 import { Shadows_Into_Light } from "next/font/google";
-import "./globals.css";
 import BannerBar from "../../components/bannerBar";
 import FooterBar from "../../components/footerBar";
-import HeaderMenu from "../../components/layout/headerMenu";
+import { Gabarito } from "next/font/google";
+import Head from "next/head";
+import "./globals.css";
 
-const Gabarito1 = Gabarito({
-  subsets: ["latin"],
-  weights: [400, 500, 600, 700, 800, 900, 1000],
-});
+const gabarito = Gabarito({ subsets: ["latin"] });
 
-const Shadows_Into_Light1 = Shadows_Into_Light({
-  subsets: ["latin"],
-  weight: ["400"],
+const shadows_Into_Light = Shadows_Into_Light({
+    subsets: ["latin"],
+    weight: ["400"],
 });
 
 export const metadata = {
-  title: "Welcome | MBCleans",
-  description: "Your one-stop solution for all your cleaning needs.",
+    title: "MB Cleans | Professional Cleaning in Wellingborough & Northamptonshire",
+    description:
+        "Discover expert commercial and domestic cleaning in Wellingborough & Northamptonshire with MB Cleans. Our team ensures spotless results for your home and business. Contact us today!",
 };
 
 export default function RootLayout({ children }) {
-  return (
-    <html lang="en">
-      <body className={Gabarito1.className}>
-        <BannerBar />
-        <HeaderMenu />
-        {children}
-        <FooterBar />
-      </body>
-    </html>
-  );
+    return (
+        <html lang="en">
+            <Head>
+                <title>{metadata.title}</title>
+                <meta name="description" content={metadata.description} />
+                <link rel="canonical" href="https://www.mbcleans.co.uk/" />
+            </Head>
+            <body className={gabarito.className}>
+                <BannerBar />
+                <HeaderMenu />
+                {children}
+                <FooterBar />
+            </body>
+        </html>
+    );
 }

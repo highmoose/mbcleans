@@ -4,6 +4,8 @@ import React from "react";
 import { useState } from "react";
 import SubHeaderBar from "../../../../components/subHeaderBar";
 import ServicesIntro from "../../../../components/services/servicesIntro";
+import ServiceKeyPoints from "../../../../components/services/serviceKeyPoints";
+import ServiceReady from "../../../../components/services/serviceReady";
 
 export default function FAQ() {
   const [isOpen, setIsOpen] = useState(Array.from({ length: 10 }, () => false));
@@ -20,175 +22,59 @@ export default function FAQ() {
     <div className="bg-slate-50">
       <SubHeaderBar
         title={"Office Cleaning Services"}
-        description={"Why Choose Professional Office Cleaning Services?"}
+        description={"Hiring a professional office cleaner makes sense!"}
         image={"/images/sub_banner_1.png"}
       />
-      {/* <ServicesIntro
-        title={"Let us transform your space into a clean and tidy sanctuary."}
-        body1={"TLet us transform your space into a clean and tidy sanctuary."}
-        body2={"Let us transform your space into a clean and tidy sanctuary."}
-        image1="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-2.png"
+      <ServicesIntro
+        title={
+          "Experience a Refreshing Office Environment with Professional Cleaning Services."
+        }
+        body1={
+          "In the fast-paced world of business, maintaining a clean and organized office environment is essential for productivity and professionalism. Our professional cleaning services are here to ensure your workspace is not just clean, but refreshed, revitalized, and ready to inspire success."
+        }
+        button={"Get in Touch"}
+        // body2={"Let us transform your space into a clean and tidy sanctuary."}
+        image1="/images/services/shower-soap-wiper.png"
         alt1={"Image 1 alt"}
-        image2="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-1.png"
+        image2="/images/services/duster-mirror.png"
         alt2={"Image 1 alt"}
-      /> */}
-      {/* <div className="flex justify-between">
-        <div className="text-theme2 font-bold text-2xl max-w-6xl rounded-md mx-auto px-6 lg:px-10 py-16 ">
-          <p className="px-28 mb-16 text-5xl tracking-tighter leading-[40px] font-semibold text-center mx-auto">
-            Maintaining a clean home can be challenging. Let us transform your
-            space into a pristine sanctuary.
-          </p>
-          <div className="flex px-8 font-thin mb-16 w-full  gap-x-4 ">
-            <div className="w-auto bg-white p-8 rounded-md">
-              <p className="text-2xl mb-2 text-theme3 font-bold">
-                Key Benefits of Hiring a Home Cleaner:
-              </p>
-
-              <p className="text-lg text-theme2 font-semibold  ">
-                Time-Saving Convenience
-              </p>
-              <ul className="pl-4 mb-2">
-                <li className="text-base leading-5 mb-1">
-                  • Free up your time for what matters most.
-                </li>
-                <li className="text-base leading-5">
-                  • No more weekend cleaning sessions.
-                </li>
-              </ul>
-              <p className="text-lg text-theme2 font-semibold">
-                Expertise and Experience
-              </p>
-              <ul className="pl-4 mb-2">
-                <li className="text-base leading-5 mb-1">
-                  • Skilled cleaners deliver superior results quickly.
-                </li>
-                <li className="text-base leading-5">
-                  • Industry-best practices ensure effectiveness.
-                </li>
-              </ul>
-
-              <p className="text-lg text-theme2 font-semibold">
-                Customized Cleaning Plans
-              </p>
-              <ul className="pl-4 mb-2">
-                <li className="text-base leading-5 mb-1">
-                  • Customized plans to fit your needs perfectly.
-                </li>
-                <li className="text-base leading-5">
-                  • From routine maintenance to deep cleaning, we&apos;ve got
-                  you covered.
-                </li>
-              </ul>
-              <p className="text-lg text-theme2 font-semibold">
-                Consistent Quality and Reliability
-              </p>
-              <ul className="pl-4 mb-2">
-                <li className="text-base leading-5 mb-1">
-                  • Consistently clean and hygienic home.
-                </li>
-                <li className="text-base leading-5">
-                  • Every detail receives thorough attention.
-                </li>
-              </ul>
-              <p className="text-lg text-theme2 font-semibold">
-                Health and Well-being
-              </p>
-              <ul className="pl-4 mb-2">
-                <li className="text-base leading-5 mb-1">
-                  • Eliminate dust, allergens, and germs for a healthier
-                  environment.
-                </li>
-                <li className="text-base leading-5">
-                  • Reduce the risk of respiratory problems and allergies.
-                </li>
-              </ul>
-              <p className="text-lg text-theme2 font-semibold">
-                Stress Reduction
-              </p>
-              <ul className="pl-4 mb-2">
-                <li className="text-base leading-5 mb-1">
-                  • Bid farewell to cleaning stress.
-                </li>
-                <li className="text-base leading-5">
-                  • Enjoy peace of mind with expert care.
-                </li>
-              </ul>
-            </div>
-            <div className="w-auto">
-              <img
-                src="/images/services/shower-soap-wiper.png"
-                alt="home_cleaning"
-                className="rounded-md"
-              />
-            </div>
-          </div>
-          <div className="flex px-8 mb-16 gap-x-4">
-            <div className="w-auto">
-              <img
-                src="/images/services/bedroom-clean.png"
-                alt="home_cleaning"
-                className="rounded-md"
-              />
-            </div>
-            <div className="bg-white p-8 rounded-md font-thin">
-              <p className="text-2xl mb-2 text-theme3 font-bold">
-                Considerations:
-              </p>
-              <ul className="pl-4 mb-2">
-                <p className="text-lg text-theme2 font-semibold">
-                  Cost vs. Value
-                </p>
-                <ul className="pl-4 mb-2">
-                  <li className="text-base leading-5 mb-1">
-                    • Consider the investment in a professionally cleaned home.
-                  </li>
-                </ul>
-                <p className="text-lg text-theme2 font-semibold">
-                  Privacy and Security
-                </p>
-                <ul className="pl-4 mb-2">
-                  <li className="text-base leading-5 mb-1">
-                    • Trustworthy professionals with thorough background checks.{" "}
-                  </li>
-                </ul>
-                <p className="text-lg text-theme2 font-semibold">
-                  Personal Preferences
-                </p>
-                <ul className="pl-4 mb-2">
-                  <li className="text-base leading-5 mb-1">
-                    • Customize cleaning to your liking.{" "}
-                  </li>
-                </ul>
-                <p className="text-lg text-theme2 font-semibold">
-                  Environmental Consciousness
-                </p>
-                <ul className="pl-4 mb-2">
-                  <li className="text-base leading-5 mb-1">
-                    • Opt for eco-friendly options.{" "}
-                  </li>
-                </ul>
-              </ul>
-            </div>
-          </div>
-          <div className="">
-            <p className="px-8 mb-4 leading-7 text-center max-w-3xl mx-auto">
-              Invest in professional home cleaning for a stress-free, healthier,
-              and more enjoyable living space. Reclaim your time and experience
-              the difference! Contact us today.
-            </p>
-            <p className="px-10 mb-4 text-5xl tracking-tighter leading-[55px] font-semibold text-center mx-auto">
-              Ready to get started?
-            </p>
-            <div className="flex justify-center mb-6">
-              <button class="w-80 pt-6 md:pt-0 mx-auto sm:mx-0">
-                <a class="bg-theme1 text-white cursor-pointer justify-center text-xl text-center rounded-lg shadow px-10 py-3 flex items-center">
-                  Book a Home Clean Now
-                </a>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div> */}
+      />
+      <ServiceKeyPoints
+        title={"Key Advantages of Hiring an Office Cleaner for Your Business:"}
+        image1={"/images/services/sink-sponge-glove.png"}
+        alt1={"Home Cleaning Shower"}
+        keyTitle1={"Boost Productivity"}
+        keyBody1={
+          "Create an environment conducive to focused work. Eliminate clutter and distractions for enhanced efficiency."
+        }
+        keyTitle2={"Impress Clients and Visitors"}
+        keyBody2={
+          "Make a positive first impression with a clean and welcoming office. Showcase your commitment to excellence and attention to detail."
+        }
+        keyTitle3={"Promote Health and Safety"}
+        keyBody3={
+          "Reduce the spread of germs and illnesses among your team. Maintain a safe, tidy & hygienic workplace for employee well-being."
+        }
+        keyTitle4={"Customized Cleaning Solutions"}
+        keyBody4={
+          "Tailor-made cleaning plans to suit your office's unique needs. From desks and conference rooms to communal areas, we've got you covered."
+        }
+        keyTitle5={"Reliable and Consistent Service"}
+        keyBody5={
+          "Count on our team to deliver reliable and consistent cleaning services. We pay meticulous attention to detail to ensure every corner of your office is spotless."
+        }
+        keyTitle6={"Time and Cost Efficiency"}
+        keyBody6={
+          "Save valuable time and resources by outsourcing your office cleaning needs to professionals. Eliminate the hassle of managing in-house cleaning staff and focus on your core business activities."
+        }
+      />
+      <ServiceReady
+        body1={
+          "Experience a refreshed and revitalized workspace that fosters productivity, impresses clients, and supports a healthier work environment."
+        }
+        question={"Ready to get started?"}
+        button={"Get in Touch"}
+      />
     </div>
   );
 }
