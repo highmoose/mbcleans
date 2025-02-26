@@ -77,7 +77,7 @@ export default function HeaderBar() {
                                 <div class="font-semibold">Home Cleaning</div>
                                 <span class="text-sm text-gray-500 ">
                                     Bringing cleanliness and comfort to your
-                                    doorstep.
+                                    doorstep
                                 </span>
                             </a>
                         </li>
@@ -89,7 +89,7 @@ export default function HeaderBar() {
                                 <div class="font-semibold">Office Cleaning</div>
                                 <span class="text-sm text-gray-500 ">
                                     Boosting productivity with spotless
-                                    workspaces.
+                                    workspaces
                                 </span>
                             </a>
                         </li>
@@ -117,7 +117,7 @@ export default function HeaderBar() {
                                 <div class="font-semibold">School Cleaning</div>
                                 <span class="text-sm text-gray-500 ">
                                     Promoting a clean and safe learning
-                                    environment.
+                                    environment
                                 </span>
                             </a>
                         </li>
@@ -129,7 +129,7 @@ export default function HeaderBar() {
                                 <div class="font-semibold">Retail Cleaning</div>
                                 <span class="text-sm text-gray-500 ">
                                     Keeping stores sparkling for seamless
-                                    shopping.
+                                    shopping
                                 </span>
                             </a>
                         </li>
