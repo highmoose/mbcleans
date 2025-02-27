@@ -143,7 +143,7 @@ export default function HeaderBar() {
                                 </div>
                                 <span class="text-sm text-gray-500 ">
                                     Ensuring pristine hygiene in healthcare
-                                    settings.
+                                    settings
                                 </span>
                             </a>
                         </li>
