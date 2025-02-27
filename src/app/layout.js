@@ -14,9 +14,33 @@ const shadows_Into_Light = Shadows_Into_Light({
 });
 
 export const metadata = {
-    title: "MB Cleans | Professional Cleaning in Wellingborough & Northamptonshire",
+    title: "MB Cleans | Expert Cleaning Rushden & Wellingborough",
     description:
         "Discover expert commercial and domestic cleaning in Wellingborough & Northamptonshire with MB Cleans. Our team ensures spotless results for your home and business. Contact us today!",
+};
+
+// social meta tags
+const socialMetaTags = () => {
+    return (
+        <>
+            <meta
+                property="og:title"
+                content="MB Cleans | Professional Cleaning Service"
+            />
+            <meta
+                property="og:description"
+                content="Commercial & Domestic Cleaning Services in Rushden, Wellingborough and surrounding areas"
+            />
+            <meta
+                property="og:image"
+                content="https://www.mbcleans.co.uk/images/social/social-image.png"
+            />
+            <meta
+                property="og:url"
+                content="https://www.facebook.com/mbcleans"
+            />
+        </>
+    );
 };
 
 export default function RootLayout({ children }) {
@@ -26,6 +50,7 @@ export default function RootLayout({ children }) {
                 <title>{metadata.title}</title>
                 <meta name="description" content={metadata.description} />
                 <link rel="canonical" href="https://www.mbcleans.co.uk/" />
+                {socialMetaTags()}
             </Head>
             <body className={gabarito.className}>
                 <BannerBar />
