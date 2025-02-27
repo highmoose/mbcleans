@@ -110,14 +110,19 @@ export default function EstimateBar() {
                                 </div>
                             </div>
                         </a>
-                        <a>
+                        <div>
                             <p className="text-white text-base  text-center lg:text-start">
                                 Alternatively, you can email us at:
                             </p>
                             <p className="text-white text-3xl text-center lg:text-start">
-                                support@mbcleans.co.uk
+                                <a
+                                    href="mailto:support@mbcleans.co.uk"
+                                    className="hover:underline"
+                                >
+                                    support@mbcleans.co.uk
+                                </a>
                             </p>
-                        </a>
+                        </div>
                     </div>
                     {/* Estimate Form Section */}
                     <form

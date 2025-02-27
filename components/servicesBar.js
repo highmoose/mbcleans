@@ -15,9 +15,9 @@ export default function ServicesBar() {
                                 width={100}
                                 height={100}
                             />
-                            <h2 className="text-theme2 text-base sm:text-lg font-semibold mb-1">
+                            <p className="text-theme2 text-base sm:text-lg font-semibold mb-1">
                                 House Cleaning
-                            </h2>
+                            </p>
                             <div className="">
                                 <h3 className="text-zinc-400 text-base leading-4 hidden md:block">
                                     Routine cleaning: Dusting, vacuuming,
@@ -36,9 +36,9 @@ export default function ServicesBar() {
                                 width={100}
                                 height={100}
                             />
-                            <h2 className="text-theme2 text-base sm:text-lg font-semibold mb-1">
+                            <p className="text-theme2 text-base sm:text-lg font-semibold mb-1">
                                 Office Cleaning
-                            </h2>
+                            </p>
                             <div className="">
                                 <h3 className="text-zinc-400 text-base leading-4 hidden md:block">
                                     Office cleaning: Maintaining clean
@@ -57,9 +57,9 @@ export default function ServicesBar() {
                                 width={100}
                                 height={100}
                             />
-                            <h2 className="text-theme2 text-base sm:text-lg font-semibold mb-1">
+                            <p className="text-theme2 text-base sm:text-lg font-semibold mb-1">
                                 Commercial Cleaning
-                            </h2>
+                            </p>
                             <div className="">
                                 <h3 className="text-zinc-400 text-base leading-4 hidden md:block">
                                     Tailored cleaning for retail, restaurants,
@@ -77,9 +77,9 @@ export default function ServicesBar() {
                                 width={100}
                                 height={100}
                             />
-                            <h2 className="text-theme2 text-base sm:text-lg font-semibold mb-1">
+                            <p className="text-theme2 text-base sm:text-lg font-semibold mb-1">
                                 Deep Cleaning
-                            </h2>
+                            </p>
                             <div className="">
                                 <h3 className="text-zinc-400 text-base leading-4 hidden md:block">
                                     Deep cleaning: Targeting overlooked areas
@@ -100,9 +100,9 @@ export default function ServicesBar() {
                                 width={100}
                                 height={100}
                             />
-                            <h2 className="text-theme2 text-base sm:text-lg font-semibold mb-1">
+                            <p className="text-theme2 text-base sm:text-lg font-semibold mb-1">
                                 Move-In/Out Clean
-                            </h2>
+                            </p>
                             <div className="">
                                 <h3 className="text-zinc-400 text-base leading-4 hidden md:block">
                                     Move-in/move-out cleaning for homes:
@@ -121,9 +121,9 @@ export default function ServicesBar() {
                                 width={100}
                                 height={100}
                             />
-                            <h2 className="text-theme2 text-base sm:text-lg font-semibold mb-1">
+                            <p className="text-theme2 text-base sm:text-lg font-semibold mb-1">
                                 Eco-Friendly Cleaning{" "}
-                            </h2>
+                            </p>
                             <div className="">
                                 <h3 className="text-zinc-400 text-base leading-4 hidden md:block">
                                     Eco-friendly cleaning: Non-toxic products
@@ -142,9 +142,9 @@ export default function ServicesBar() {
                                 width={100}
                                 height={100}
                             />
-                            <h2 className="text-theme2 text-base sm:text-lg font-semibold mb-1">
+                            <p className="text-theme2 text-base sm:text-lg font-semibold mb-1">
                                 Window Cleaning
-                            </h2>
+                            </p>
                             <div className="">
                                 <h3 className="text-zinc-400 text-base leading-4 hidden md:block">
                                     Window washing: Professional services for
@@ -163,9 +163,9 @@ export default function ServicesBar() {
                                 width={100}
                                 height={100}
                             />
-                            <h2 className="text-theme2 text-base sm:text-lg font-semibold mb-1">
+                            <p className="text-theme2 text-base sm:text-lg font-semibold mb-1">
                                 Specialist Cleaning
-                            </h2>
+                            </p>
                             <div className="">
                                 <h3 className="text-zinc-400 text-base leading-4 hidden md:block">
                                     Floor care: Carpet, hardwood, tile, and

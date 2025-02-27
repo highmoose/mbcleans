@@ -90,14 +90,19 @@ export default function Contact() {
                                     </div>
                                 </div>
                             </a>
-                            <a>
+                            <div>
                                 <p className="text-sky-900 text-xl mb-2  text-center lg:text-start">
                                     Alternatively, you can email us at:
                                 </p>
                                 <p className="text-black text-3xl text-center lg:text-start">
-                                    support@mbcleans.co.uk
+                                    <a
+                                        href="mailto:support@mbcleans.co.uk"
+                                        className="hover:underline"
+                                    >
+                                        support@mbcleans.co.uk
+                                    </a>
                                 </p>
-                            </a>
+                            </div>
                         </div>
                         {/* Estimate Form Section */}
                         <form
