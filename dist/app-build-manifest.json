@@ -17,12 +17,14 @@
       "static/css/a62709880a4c7e72.css",
       "static/chunks/app/layout-6bb0419ee55ddc9f.js"
     ],
-    "/locations/page": [
+    "/faq/page": [
       "static/chunks/webpack-cacdd0fcbceeae45.js",
       "static/chunks/fd9d1056-a75fe3ba478e1b58.js",
       "static/chunks/938-99f8db49fa658888.js",
       "static/chunks/main-app-55c9755c261f6edf.js",
-      "static/chunks/app/locations/page-df0ec65fb6ce7113.js"
+      "static/chunks/986-a5415e32270b7097.js",
+      "static/css/6c47b3fd7d9da4b4.css",
+      "static/chunks/app/faq/page-dfa9554501cfb80d.js"
     ],
     "/contact/page": [
       "static/chunks/webpack-cacdd0fcbceeae45.js",
@@ -44,14 +46,21 @@
       "static/css/6c47b3fd7d9da4b4.css",
       "static/chunks/app/page-8719cf2b31b40bd9.js"
     ],
-    "/services/home-cleaning/page": [
+    "/services/office-cleaning/page": [
       "static/chunks/webpack-cacdd0fcbceeae45.js",
       "static/chunks/fd9d1056-a75fe3ba478e1b58.js",
       "static/chunks/938-99f8db49fa658888.js",
       "static/chunks/main-app-55c9755c261f6edf.js",
       "static/chunks/986-a5415e32270b7097.js",
       "static/css/6c47b3fd7d9da4b4.css",
-      "static/chunks/app/services/home-cleaning/page-fd6eee116e65ecec.js"
+      "static/chunks/app/services/office-cleaning/page-e4608bce196be96c.js"
+    ],
+    "/locations/page": [
+      "static/chunks/webpack-cacdd0fcbceeae45.js",
+      "static/chunks/fd9d1056-a75fe3ba478e1b58.js",
+      "static/chunks/938-99f8db49fa658888.js",
+      "static/chunks/main-app-55c9755c261f6edf.js",
+      "static/chunks/app/locations/page-df0ec65fb6ce7113.js"
     ],
     "/services/medical-facility-cleaning/page": [
       "static/chunks/webpack-cacdd0fcbceeae45.js",
@@ -62,23 +71,14 @@
       "static/css/6c47b3fd7d9da4b4.css",
       "static/chunks/app/services/medical-facility-cleaning/page-aba960fd5d71a73c.js"
     ],
-    "/services/retail-cleaning/page": [
+    "/services/home-cleaning/page": [
       "static/chunks/webpack-cacdd0fcbceeae45.js",
       "static/chunks/fd9d1056-a75fe3ba478e1b58.js",
       "static/chunks/938-99f8db49fa658888.js",
       "static/chunks/main-app-55c9755c261f6edf.js",
       "static/chunks/986-a5415e32270b7097.js",
       "static/css/6c47b3fd7d9da4b4.css",
-      "static/chunks/app/services/retail-cleaning/page-30ddcc43ecd0925d.js"
-    ],
-    "/services/office-cleaning/page": [
-      "static/chunks/webpack-cacdd0fcbceeae45.js",
-      "static/chunks/fd9d1056-a75fe3ba478e1b58.js",
-      "static/chunks/938-99f8db49fa658888.js",
-      "static/chunks/main-app-55c9755c261f6edf.js",
-      "static/chunks/986-a5415e32270b7097.js",
-      "static/css/6c47b3fd7d9da4b4.css",
-      "static/chunks/app/services/office-cleaning/page-e4608bce196be96c.js"
+      "static/chunks/app/services/home-cleaning/page-fd6eee116e65ecec.js"
     ],
     "/services/school-cleaning/page": [
       "static/chunks/webpack-cacdd0fcbceeae45.js",
@@ -89,15 +89,6 @@
       "static/css/6c47b3fd7d9da4b4.css",
       "static/chunks/app/services/school-cleaning/page-a9f7595fad48abe4.js"
     ],
-    "/faq/page": [
-      "static/chunks/webpack-cacdd0fcbceeae45.js",
-      "static/chunks/fd9d1056-a75fe3ba478e1b58.js",
-      "static/chunks/938-99f8db49fa658888.js",
-      "static/chunks/main-app-55c9755c261f6edf.js",
-      "static/chunks/986-a5415e32270b7097.js",
-      "static/css/6c47b3fd7d9da4b4.css",
-      "static/chunks/app/faq/page-dfa9554501cfb80d.js"
-    ],
     "/services/warehouse-cleaning/page": [
       "static/chunks/webpack-cacdd0fcbceeae45.js",
       "static/chunks/fd9d1056-a75fe3ba478e1b58.js",
@@ -106,6 +97,15 @@
       "static/chunks/986-a5415e32270b7097.js",
       "static/css/6c47b3fd7d9da4b4.css",
       "static/chunks/app/services/warehouse-cleaning/page-e2519b898cc745b7.js"
+    ],
+    "/services/retail-cleaning/page": [
+      "static/chunks/webpack-cacdd0fcbceeae45.js",
+      "static/chunks/fd9d1056-a75fe3ba478e1b58.js",
+      "static/chunks/938-99f8db49fa658888.js",
+      "static/chunks/main-app-55c9755c261f6edf.js",
+      "static/chunks/986-a5415e32270b7097.js",
+      "static/css/6c47b3fd7d9da4b4.css",
+      "static/chunks/app/services/retail-cleaning/page-30ddcc43ecd0925d.js"
     ],
     "/locations/[slug]/page": [
       "static/chunks/webpack-cacdd0fcbceeae45.js",
