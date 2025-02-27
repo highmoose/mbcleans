@@ -78,7 +78,6 @@ export default function FooterBar() {
                                 "plans",
                                 "aboutUs",
                                 "partners",
-                                "contact",
                                 "testimonials",
                             ].map((section) => (
                                 <button
@@ -89,6 +88,12 @@ export default function FooterBar() {
                                     {section.replace(/([A-Z])/g, " $1").trim()}
                                 </button>
                             ))}
+                            <Link
+                                href="/contact"
+                                className="hover:text-sky-500 transition-colors"
+                            >
+                                Contact
+                            </Link>
                             <Link
                                 href="/faq"
                                 className="hover:text-sky-500 transition-colors"

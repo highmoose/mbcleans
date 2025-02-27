@@ -3,6 +3,7 @@
 import React from "react";
 import { Shadows_Into_Light } from "next/font/google";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 const shadows_Into_Light = Shadows_Into_Light({
     subsets: ["latin"],
@@ -24,6 +25,8 @@ const scrollToPlans = () => {
 };
 
 export default function HeaderBar({ locationName }) {
+    const router = useRouter();
+
     return (
         <section class="flex relative bg-gray-900 w-full min-h-[550px] sm:max-h-[600px] lg:max-h-[650px] overflow-hidden">
             <div className="absolute w-full h-full ">
@@ -67,7 +70,7 @@ export default function HeaderBar({ locationName }) {
                             </a>
                         </div>
                         <div
-                            onClick={scrollToContact}
+                            onClick={() => router.push("/contact")}
                             class="relative inline-flex group"
                         >
                             <div class="absolute transition-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#d8d8d8] via-[#3ca7ffa3] to-[#e9e9e9] rounded-md blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
