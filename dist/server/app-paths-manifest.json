@@ -1,7 +1,16 @@
 {
+  "/_not-found": "app/_not-found.js",
+  "/api/send/route": "app/api/send/route.js",
+  "/locations/page": "app/locations/page.js",
+  "/contact/page": "app/contact/page.js",
   "/page": "app/page.js",
-  "/locations/[slug]/page": "app/locations/[slug]/page.js",
-  "/faq/page": "app/faq/page.js",
   "/services/home-cleaning/page": "app/services/home-cleaning/page.js",
-  "/contact/page": "app/contact/page.js"
+  "/services/medical-facility-cleaning/page": "app/services/medical-facility-cleaning/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/services/retail-cleaning/page": "app/services/retail-cleaning/page.js",
+  "/services/office-cleaning/page": "app/services/office-cleaning/page.js",
+  "/services/school-cleaning/page": "app/services/school-cleaning/page.js",
+  "/faq/page": "app/faq/page.js",
+  "/services/warehouse-cleaning/page": "app/services/warehouse-cleaning/page.js",
+  "/locations/[slug]/page": "app/locations/[slug]/page.js"
 }

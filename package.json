@@ -8,7 +8,7 @@
         "build": "next build",
         "start": "next start",
         "lint": "next lint",
-        "postbuild": "next-sitemap"
+        "postbuild": "node scripts/create-manifest.js && next-sitemap"
     },
     "dependencies": {
         "@react-email/components": "^0.0.15",
