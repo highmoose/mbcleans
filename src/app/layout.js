@@ -16,7 +16,7 @@ const shadows_Into_Light = Shadows_Into_Light({
 export const metadata = {
     title: "MB Cleans | Expert Cleaning Rushden & Wellingborough",
     description:
-        "Discover expert commercial and domestic cleaning in Wellingborough & Northamptonshire with MB Cleans. Our team ensures spotless results for your home and business. Contact us today!",
+        "Commercial and domestic cleaning in Wellingborough & Rushden | MB Cleans ensures spotless results for your home and business. Contact us today!",
 };
 
 // social meta tags

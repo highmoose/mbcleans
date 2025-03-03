@@ -48,7 +48,7 @@ export default function StepsBar() {
                             </p>
                             <p className="text-base text-center font-light text-gray-400 tracking-tight px-6 lg:px-6">
                                 We come to you to discuss your requirements and
-                                provide a competative quotation
+                                provide a competitive quotation
                             </p>
                         </div>
                         <div className="w-full sm:w-1/2 lg:w-1/4 rounded-md group relative inline-block border-gray-100 py-2  lg:py-8 font-medium   active:text-white  transition duration-100 ease-in-out">
@@ -76,7 +76,7 @@ export default function StepsBar() {
                             </p>
                             <p className="text-base text-center font-light text-gray-400 tracking-tight px-6 lg:px-6">
                                 We will take care of the rest so you can enjoy
-                                your consistantly clean and healthy environment
+                                your consisently clean and healthy environment
                             </p>
                         </div>
                     </div>

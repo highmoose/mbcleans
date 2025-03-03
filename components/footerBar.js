@@ -40,7 +40,7 @@ export default function FooterBar() {
             {/* Top Section */}
             <div className="w-full px-8 xl:px-0 sm:flex items-center justify-center py-20 mx-auto max-w-6xl gap-x-8">
                 <div className="flex-1">
-                    <h2 className="text-4xl md:text-4xl mb-1 text-theme2 text-center sm:text-start tracking-tight">
+                    <h2 className="text-4xl md:text-4xl mb-1 text-theme2 font-bold text-center sm:text-start tracking-tight">
                         We&apos;re happy to help!
                     </h2>
                     <p className="text-xl text-gray-400 text-center sm:text-start mt-4">
