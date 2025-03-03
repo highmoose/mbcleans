@@ -46,12 +46,12 @@ export default function SpringCleanBlog() {
                         The Ultimate Spring Cleaning Guide: Refresh Your Home
                     </h1>
                     <p className="mt-4">
-                        Spring cleaning is more than just tidying up—it's an
-                        opportunity to create a healthier and more comfortable
-                        living space. Over time, dust, allergens, and bacteria
-                        accumulate, impacting indoor air quality and overall
-                        well-being. A thorough deep clean can rejuvenate your
-                        home, making it feel fresh and new.
+                        Spring cleaning is more than just tidying up—it&apos;s
+                        an opportunity to create a healthier and more
+                        comfortable living space. Over time, dust, allergens,
+                        and bacteria accumulate, impacting indoor air quality
+                        and overall well-being. A thorough deep clean can
+                        rejuvenate your home, making it feel fresh and new.
                     </p>
 
                     <h2 className="text-2xl font-semibold mt-12">
@@ -141,10 +141,10 @@ export default function SpringCleanBlog() {
                             guests, making it a priority in your cleaning
                             routine. Dust and wipe all surfaces—including
                             shelves, tables, and skirting boards—to eliminate
-                            allergens and improve the room's overall ambiance.
-                            Regular vacuuming and steam cleaning of carpets and
-                            upholstery can revive fabrics and lift away hidden
-                            dirt.
+                            allergens and improve the room&apos;s overall
+                            ambiance. Regular vacuuming and steam cleaning of
+                            carpets and upholstery can revive fabrics and lift
+                            away hidden dirt.
                         </p>
                         <p className="mt-4">
                             Clean windows and window sills thoroughly to let in
