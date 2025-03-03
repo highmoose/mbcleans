@@ -15,7 +15,7 @@ export default function SubHeaderBar({ title, description, image }) {
                     layout="responsive"
                     alt="MBCleans cleaner hoovering floor"
                     src={image}
-                    className="w-full min-h-[200px] md:h-[130px] object-cover opacity-20"
+                    className="w-full min-h-[200px] md:h-[130px] object-cover opacity-20 "
                     width={1000}
                     height={1000}
                 />
