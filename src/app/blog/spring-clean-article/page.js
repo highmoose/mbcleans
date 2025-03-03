@@ -258,8 +258,8 @@ export default function SpringCleanBlog() {
                         home clutter-free.
                     </p>
 
-                    <div className="text-center mt-10">
-                        <h2 className="text-2xl font-semibold">
+                    <div className="text-center mt-10 ">
+                        <h2 className="text-2xl font-semibold ">
                             Need Help with Your Spring Cleaning?
                         </h2>
                         <p className="mt-4">
