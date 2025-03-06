@@ -54,7 +54,7 @@ export default function WinterCleaningBlog() {
                         and inviting throughout the season.
                     </p>
                     <p className="mt-4">
-                        Whether you're dealing with muddy footprints in
+                        Whether you&apos;re dealing with muddy footprints in
                         entryways, salt stains on floors, or damp issues causing
                         mold and mildew, having a winter cleaning plan in place
                         can help protect your indoor environment and maintain a

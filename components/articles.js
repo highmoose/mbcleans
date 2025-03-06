@@ -5,6 +5,7 @@ import React from "react";
 import { useState } from "react";
 import { Shadows_Into_Light } from "next/font/google";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 const Shadows_Into_Light1 = Shadows_Into_Light({
     subsets: ["latin"],
@@ -108,10 +109,11 @@ export default function Articles() {
                                         onClick={() => router.push(card.link)}
                                         className="flex flex-shrink-0 relative w-[200px] md:w-[340px] h-[440px] rounded-xl overflow-hidden cursor-pointer group "
                                     >
-                                        <img
+                                        <Image
                                             src={card.image}
                                             alt={card.title}
-                                            className="object-cover object-center w-full transition-transform duration-700 group-hover:scale-110 "
+                                            className="object-cover object-center w-full transition-transform duration-700 group-hover:scale-110"
+                                            fill
                                         />
                                         <div className="bg-gradient-to-t from-gray-800/40 to-transparent absolute w-full h-full p-6">
                                             <h2 className="lg:text-lg leading-4 text-base lg:leading-5 text-white dark:text-gray-900 bg-white/60 px-4 py-1 w-fit rounded-full">
