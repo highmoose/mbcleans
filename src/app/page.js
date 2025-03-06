@@ -7,6 +7,7 @@ import TestimonialsBar2 from "../../components/testimonialsBar2";
 import ServicesBar from "../../components/servicesBar";
 import MapBar from "../../components/mapBar";
 import HeaderBar2 from "../../components/headerBar2";
+import Articles from "../../components/articles";
 
 export default function Home() {
     const locationName = "Wellingborough";
@@ -19,6 +20,7 @@ export default function Home() {
                 <PartnersBar2 locationName={locationName} />
                 <StepsBar />
                 <EstimateBar />
+                <Articles />
                 {/* <MapBar /> */}
                 <TestimonialsBar2 />
             </main>

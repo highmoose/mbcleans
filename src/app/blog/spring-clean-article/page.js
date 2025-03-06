@@ -29,7 +29,7 @@ export default function SpringCleanBlog() {
                         objectFit="cover"
                         className="rounded-b-lg rounded-2xl"
                     />
-                    <div className="absolute inset-0 bg-black opacity-50 rounded-2xl"></div>
+                    <div className="absolute inset-0 bg-black opacity-20 rounded-2xl"></div>
                     <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4">
                         <h1 className="text-5xl md:text-7xl font-bold text-white w-2/3">
                             Spring Cleaning Made Simple
@@ -41,7 +41,7 @@ export default function SpringCleanBlog() {
                 </div>
 
                 {/* Content Section */}
-                <div className="p-6 text-black bg-white shadow-2xl shadow-black/5 rounded-2xl px-8 md:px-16 lg:px-28 p-20">
+                <div className="p-6 text-black bg-white shadow-2xl shadow-black/5 rounded-2xl px-8 md:px-16 lg:px-28 pb-20">
                     <h1 className="text-3xl font-bold">
                         The Ultimate Spring Cleaning Guide: Refresh Your Home
                     </h1>
