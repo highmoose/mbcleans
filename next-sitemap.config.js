@@ -1,9 +1,9 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-    siteUrl: "https://www.mbcleans.co.uk", // Change this to your domain
-    generateRobotsTxt: true, // Generates robots.txt
+    siteUrl: "https://www.mbcleans.co.uk",
+    generateRobotsTxt: true,
     sitemapSize: 5000,
-    exclude: ["/admin", "/dashboard"], // Pages to exclude
+    exclude: ["/admin", "/dashboard"],
     changefreq: "daily",
     priority: 0.7,
 };

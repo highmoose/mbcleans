@@ -19,7 +19,7 @@ export default function ServiceIntro({
     keyBody6,
 }) {
     return (
-        <section class="bg-slate-900 ">
+        <section class="bg-zinc-100 ">
             <div>
                 <div class="gap-16 items-center py-16  mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-24 px-10 lg:px-6">
                     <div class="grid gap-4">
@@ -32,51 +32,51 @@ export default function ServiceIntro({
                         />
                     </div>
                     <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400 mt-10 lg:py-0">
-                        <h2 class="mb-4 text-4xl text-white tracking-tight font-extrabold text-theme text-center lg:text-start">
+                        <h2 class="mb-4 text-4xl text-theme2 tracking-tight font-extrabold text-theme text-center lg:text-start">
                             {title}
                         </h2>
-                        <div className="py-2 border-b-[1px] border-theme2">
-                            <p class="text-xl text-white font-bold text-center lg:text-start">
+                        <div className="py-2 border-b-[1px] border-theme2/10">
+                            <p class="text-xl text-theme3  text-center lg:text-start">
                                 {keyTitle1}
                             </p>
                             <p class="leading-5 text-base text-center lg:text-start">
                                 {keyBody1}
                             </p>
                         </div>
-                        <div className="py-2 border-b-[1px] border-theme2">
-                            <p class="text-xl text-white font-bold text-center lg:text-start">
+                        <div className="py-2 border-b-[1px] border-theme2/10">
+                            <p class="text-xl text-theme3  text-center lg:text-start">
                                 {keyTitle2}
                             </p>
                             <p class="leading-5 text-base text-center lg:text-start">
                                 {keyBody2}
                             </p>
                         </div>
-                        <div className="py-2 border-b-[1px] border-theme2">
-                            <p class="text-xl text-white font-bold text-center lg:text-start">
+                        <div className="py-2 border-b-[1px] border-theme2/10">
+                            <p class="text-xl text-theme3  text-center lg:text-start">
                                 {keyTitle3}
                             </p>
                             <p class="leading-5 text-base text-center lg:text-start">
                                 {keyBody3}
                             </p>
                         </div>
-                        <div className="py-2 border-b-[1px] border-theme2">
-                            <p class="text-xl text-white font-bold text-center lg:text-start">
+                        <div className="py-2 border-b-[1px] border-theme2/10">
+                            <p class="text-xl text-theme3  text-center lg:text-start">
                                 {keyTitle4}
                             </p>
                             <p class="leading-5 text-base text-center lg:text-start">
                                 {keyBody4}
                             </p>
                         </div>
-                        <div className="py-2 border-b-[1px] border-theme2">
-                            <p class="text-xl text-white font-bold text-center lg:text-start">
+                        <div className="py-2 border-b-[1px] border-theme2/10">
+                            <p class="text-xl text-theme3  text-center lg:text-start">
                                 {keyTitle5}
                             </p>
                             <p class="leading-5 text-base text-center lg:text-start">
                                 {keyBody5}
                             </p>
                         </div>
-                        <div className="py-2 border-b-[1px] border-theme2">
-                            <p class="text-xl text-white font-bold text-center lg:text-start">
+                        <div className="py-2 border-b-[1px] border-theme2/10">
+                            <p class="text-xl text-theme3  text-center lg:text-start">
                                 {keyTitle6}
                             </p>
                             <p class="leading-5 text-base text-center lg:text-start">

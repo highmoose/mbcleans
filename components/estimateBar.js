@@ -416,7 +416,7 @@ export default function EstimateBar() {
                                 </div>
                             </div>
                             <div className="mb-2 font-semibold">
-                                Do you have the neccesary cleaning supplies? *
+                                Do you have the necessary cleaning supplies? *
                             </div>
                             <div
                                 class="control mb-4"
