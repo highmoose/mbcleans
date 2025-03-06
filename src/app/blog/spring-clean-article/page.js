@@ -14,9 +14,15 @@ export default function SpringCleanBlog() {
     const router = useRouter();
     return (
         <div className="w-full bg-zinc-50 pb-28">
-            <div className="w-full max-w-5xl  mx-auto ">
+            <div className="flex flex-col items-center w-full max-w-5xl mx-auto ">
+                <button
+                    className="w-fit px-4 mb-4 py-2 mt-6 rounded bg-theme1 text-white text-lg font-bold"
+                    onClick={() => router.push("/")}
+                >
+                    Back to home
+                </button>
                 <p
-                    className={`text-slate-900 text-2xl sm:text-4xl mb-2 text-center pt-16 mb-6 ${shadows_Into_Light.className}`}
+                    className={`text-slate-900 text-2xl sm:text-4xl  text-center pt-6 mb-4 ${shadows_Into_Light.className}`}
                 >
                     Blog Article
                 </p>
@@ -270,17 +276,23 @@ export default function SpringCleanBlog() {
                             and regular maintenance, so you can enjoy a pristine
                             environment without lifting a finger.
                         </p>
-                        <div className=" mt-10">
+                        <div className="flex flex-col items-center text-center mt-10">
                             <p className="mt-4 font-bold text-2xl">
-                                Book your spring clean today!{" "}
+                                Book your office cleaning today!
                             </p>
                             <span
                                 onClick={() => router.push("/contact")}
                                 className="text-theme3 hover:text-theme1 text-2xl font-bold cursor-pointer"
                             >
-                                <span className="underline"> Contact us</span>{" "}
+                                <span className="underline">Contact us</span>{" "}
                                 for a free quote.
                             </span>
+                            <button
+                                className=" w-fit px-4 py-2 mt-12 rounded bg-theme1 text-white text-lg font-bold"
+                                onClick={() => router.push("/")}
+                            >
+                                Back to home
+                            </button>
                         </div>
                     </div>
                 </div>

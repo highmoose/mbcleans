@@ -39,39 +39,45 @@ export default function Articles() {
     const cardData = [
         {
             image: "/images/blog/end-of-tenancy-clean.png",
-            catalog: "Article 1",
+            catalog: "Article 6",
             title: "End of Tenancy Cleaning",
             link: "/blog/end-of-tenancy-cleaning",
+            date: "2025‑03‑06",
         },
         {
             image: "/images/blog/spring-clean-article.png",
-            catalog: "Article 2",
+            catalog: "Article 5",
             title: "Spring Cleaning Made Simple",
             link: "/blog/spring-clean-article",
+            date: "2025‑02‑27",
         },
         {
             image: "/images/blog/warehouse-cleaning-article-2.png",
-            catalog: "Article 3",
+            catalog: "Article 4",
             title: "Office Cleaning Checklist",
             link: "/blog/office-cleaning-checklist",
+            date: "2025‑02‑20",
         },
         {
             image: "/images/blog/warehouse-cleaning-article.png",
-            catalog: "Article 4",
+            catalog: "Article 3",
             title: "Warehouse Cleaning Tips & Tricks",
             link: "/blog/warehouse-cleaning-tips",
+            date: "2025‑02‑13",
         },
         {
             image: "/images/blog/workplace-cleaning.png",
-            catalog: "Article 5",
+            catalog: "Article 2",
             title: "Why A Clean Workplace Boosts Productivity",
             link: "/blog/why-a-clean-workplace-boosts-productivity",
+            date: "2025‑02‑06",
         },
         {
             image: "/images/blog/home-cleaning.png",
-            catalog: "Article 6",
+            catalog: "Article 1",
             title: "Our Winter Cleaning Guide",
             link: "/blog/winter-cleaning-guide",
+            date: "2025‑01‑30",
         },
     ];
 
@@ -115,11 +121,14 @@ export default function Articles() {
                                             className="object-cover object-center w-full transition-transform duration-700 group-hover:scale-110"
                                             fill
                                         />
-                                        <div className="bg-gradient-to-t from-gray-800/40 to-transparent absolute w-full h-full p-6">
+                                        <div className="bg-gradient-to-t from-gray-800/0 to-transparent absolute w-full h-full p-6">
                                             <h2 className="lg:text-lg leading-4 text-base lg:leading-5 text-white dark:text-gray-900 bg-white/60 px-4 py-1 w-fit rounded-full">
                                                 {card.catalog}
                                             </h2>
-                                            <div className="flex h-full items-end pb-6">
+                                            <div className="flex flex-col h-full justify-end items-start pb-6">
+                                                <p className="text-lg text-yellow-400">
+                                                    {card.date}
+                                                </p>
                                                 <h3 className="font-bold text-4xl md:text-5xl leading-9 lg:leading-[40px] text-white">
                                                     {card.title}
                                                 </h3>

@@ -14,9 +14,15 @@ export default function WarehouseCleaningBlog() {
     const router = useRouter();
     return (
         <div className="w-full bg-zinc-50 pb-28">
-            <div className="w-full max-w-5xl mx-auto ">
+            <div className="flex flex-col items-center w-full max-w-5xl mx-auto ">
+                <button
+                    className="w-fit px-4 mb-4 py-2 mt-6 rounded bg-theme1 text-white text-lg font-bold"
+                    onClick={() => router.push("/")}
+                >
+                    Back to home
+                </button>
                 <p
-                    className={`text-slate-900 text-2xl sm:text-4xl mb-2 text-center pt-16 mb-6 ${shadows_Into_Light.className}`}
+                    className={`text-slate-900 text-2xl sm:text-4xl  text-center pt-6 mb-4 ${shadows_Into_Light.className}`}
                 >
                     Blog Article
                 </p>
@@ -226,9 +232,9 @@ export default function WarehouseCleaningBlog() {
                         high-traffic areas, we provide customized cleaning
                         solutions tailored to your needs.
                     </p>
-                    <div className="text-center mt-10">
+                    <div className="flex flex-col items-center text-center mt-10">
                         <p className="mt-4 font-bold text-2xl">
-                            Book your warehouse cleaning today!
+                            Book your office cleaning today!
                         </p>
                         <span
                             onClick={() => router.push("/contact")}
@@ -237,6 +243,12 @@ export default function WarehouseCleaningBlog() {
                             <span className="underline">Contact us</span> for a
                             free quote.
                         </span>
+                        <button
+                            className=" w-fit px-4 py-2 mt-12 rounded bg-theme1 text-white text-lg font-bold"
+                            onClick={() => router.push("/")}
+                        >
+                            Back to home
+                        </button>
                     </div>
                 </div>
             </div>
