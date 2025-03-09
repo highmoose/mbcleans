@@ -4,11 +4,42 @@ import React from "react";
 import { useState } from "react";
 import SubHeaderBar from "../../../components/subHeaderBar";
 import Image from "next/image";
+import Head from "next/head";
+import HeadMarkup from "../../../components/seo/headMarkup";
 
 export default function FAQ() {
     const [isOpen, setIsOpen] = useState(
         Array.from({ length: 10 }, () => false)
     );
+
+    const schemaMarkup = {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        name: "MB Cleans",
+        url: "https://www.mbcleans.co.uk/",
+        image: "https://www.mbcleans.co.uk/images/social/social.png",
+        logo: "https://www.mbcleans.co.uk/images/social/social.png",
+        description:
+            "MB Cleans offers professional cleaning services for homes and businesses, providing deep cleaning, regular maintenance, and specialized services.",
+        contactPoint: {
+            "@type": "ContactPoint",
+            telephone: "+447710172363",
+            contactType: "Customer Service",
+            areaServed: "Wellingborough",
+            availableLanguage: "English",
+        },
+        sameAs: [
+            "https://www.facebook.com/mbcleans",
+            // "https://twitter.com/mbcleans",
+            // "https://www.instagram.com/mbcleans",
+        ],
+        openingHours: "Mo-Su 08:00-18:00",
+        priceRange: "££",
+        serviceArea: {
+            "@type": "Place",
+            name: "Wellingborough",
+        },
+    };
 
     const questions = [
         {
@@ -92,6 +123,50 @@ export default function FAQ() {
 
     return (
         <div className="bg-slate-50">
+            <Head>
+                <title>Frequently Asked Questions | MB Cleans</title>
+                <meta
+                    name="description"
+                    content="Find answers to your cleaning service questions. Explore our FAQ for details on services, pricing, and more. We're here to help!"
+                />
+                <meta
+                    property="og:title"
+                    content="Frequently Asked Questions | MB Cleans"
+                />
+                <meta
+                    property="og:description"
+                    content="Find answers to your cleaning service questions. Explore our FAQ for details on services, pricing, and more. We're here to help!"
+                />
+                <meta
+                    property="og:image"
+                    content="https://www.mbcleans.co.uk/images/social/social.png"
+                />
+                <meta
+                    property="og:url"
+                    content="https://www.mbcleans.co.uk/faq"
+                />
+                <meta
+                    name="twitter:title"
+                    content="Frequently Asked Questions | MB Cleans"
+                />
+                <meta
+                    name="twitter:description"
+                    content="Find answers to your cleaning service questions. Explore our FAQ for details on services, pricing, and more. We're here to help!"
+                />
+                <meta
+                    name="twitter:image"
+                    content="https://www.mbcleans.co.uk/images/social/social.png"
+                />
+                <meta name="twitter:card" content="summary_large_image" />
+                <link rel="canonical" href="https://www.mbcleans.co.uk/faq" />
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify(schemaMarkup),
+                    }}
+                />
+            </Head>
+
             <SubHeaderBar
                 title={"Frequently Asked Questions (FAQ's)"}
                 description={

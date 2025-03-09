@@ -28,7 +28,7 @@ export default function HeaderBar({ locationName }) {
     const router = useRouter();
 
     return (
-        <section class="flex relative bg-gray-900 w-full min-h-[660px] sm:max-h-[660px] lg:max-h-[660px] overflow-hidden">
+        <section className="flex relative bg-gray-900 w-full min-h-[660px] sm:max-h-[660px] lg:max-h-[660px] overflow-hidden">
             <div className="absolute w-full h-full ">
                 <Image
                     alt="MBCleans cleaner hoovering floor"
@@ -58,12 +58,12 @@ export default function HeaderBar({ locationName }) {
                         </p>
                     </div>
                     <div className="flex gap-x-3 justify-center lg:justify-start">
-                        <div class="relative inline-flex group">
-                            <div class="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#d8d8d8] via-[#3ca7ffa3] to-[#e9e9e9] rounded-md blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
+                        <div className="relative inline-flex group">
+                            <div className="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#d8d8d8] via-[#3ca7ffa3] to-[#e9e9e9] rounded-md blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
                             <a
                                 onClick={scrollToPlans}
                                 title="Get quote now"
-                                class="relative inline-flex items-center justify-center px-5 p-3 sm:px-8 sm:py-4 text-lg font-bold text-white transition-all duration-200 bg-slate-900 font-pj rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+                                className="relative inline-flex items-center justify-center px-5 p-3 sm:px-8 sm:py-4 text-lg font-bold text-white transition-all duration-200 bg-slate-900 font-pj rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
                                 role="button"
                             >
                                 Our Services
@@ -71,12 +71,12 @@ export default function HeaderBar({ locationName }) {
                         </div>
                         <div
                             onClick={() => router.push("/contact")}
-                            class="relative inline-flex group"
+                            className="relative inline-flex group"
                         >
-                            <div class="absolute transition-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#d8d8d8] via-[#3ca7ffa3] to-[#e9e9e9] rounded-md blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
+                            <div className="absolute transition-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#d8d8d8] via-[#3ca7ffa3] to-[#e9e9e9] rounded-md blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
                             <a
                                 title="Get quote now"
-                                class="relative inline-flex items-center justify-center px-5 py-3 sm:px-8 sm:py-4 text-lg font-bold text-white transition-all duration-200 bg-slate-900 font-pj rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+                                className="relative inline-flex items-center justify-center px-5 py-3 sm:px-8 sm:py-4 text-lg font-bold text-white transition-all duration-200 bg-slate-900 font-pj rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
                                 role="button"
                             >
                                 Contact Us

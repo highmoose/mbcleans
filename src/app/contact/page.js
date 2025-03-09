@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { Shadows_Into_Light } from "next/font/google";
 import Image from "next/image";
+import Head from "next/head";
 
 const Shadows_Into_Light1 = Shadows_Into_Light({
     subsets: ["latin"],
@@ -57,8 +58,86 @@ export default function Contact() {
         }
     };
 
+    const schemaMarkup = {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        name: "MB Cleans",
+        url: "https://www.mbcleans.co.uk/",
+        image: "https://www.mbcleans.co.uk/images/social/social.png",
+        logo: "https://www.mbcleans.co.uk/images/social/social.png",
+        description:
+            "MB Cleans offers professional cleaning services for homes and businesses, providing deep cleaning, regular maintenance, and specialized services.",
+        contactPoint: {
+            "@type": "ContactPoint",
+            telephone: "+447710172363",
+            contactType: "Customer Service",
+            areaServed: "Wellingborough",
+            availableLanguage: "English",
+        },
+        sameAs: [
+            "https://www.facebook.com/mbcleans",
+            // "https://twitter.com/mbcleans",
+            // "https://www.instagram.com/mbcleans",
+        ],
+        openingHours: "Mo-Su 08:00-18:00",
+        priceRange: "££",
+        serviceArea: {
+            "@type": "Place",
+            name: "Wellingborough",
+        },
+    };
+
     return (
         <div className="relative w-full bg-zinc-100 overflow-hidden">
+            <Head>
+                <title>
+                    Contact MB Cleans | Get in Touch for Cleaning Services
+                </title>
+                <meta
+                    name="description"
+                    content="Contact MB Cleans for your cleaning needs. Request an estimate, ask about our services, or get in touch for a consultation. We are here to help!"
+                />
+                <meta
+                    property="og:title"
+                    content="Contact MB Cleans | Get in Touch for Cleaning Services"
+                />
+                <meta
+                    property="og:description"
+                    content="Contact MB Cleans for your cleaning needs. Request an estimate, ask about our services, or get in touch for a consultation. We are here to help!"
+                />
+                <meta
+                    property="og:image"
+                    content="https://www.mbcleans.co.uk/images/social/social.png"
+                />
+                <meta
+                    property="og:url"
+                    content="https://www.mbcleans.co.uk/contact"
+                />
+                <meta
+                    name="twitter:title"
+                    content="Contact MB Cleans | Get in Touch for Cleaning Services"
+                />
+                <meta
+                    name="twitter:description"
+                    content="Contact MB Cleans for your cleaning needs. Request an estimate, ask about our services, or get in touch for a consultation. We are here to help!"
+                />
+                <meta
+                    name="twitter:image"
+                    content="https://www.mbcleans.co.uk/images/social/social.png"
+                />
+                <meta name="twitter:card" content="summary_large_image" />
+                <link
+                    rel="canonical"
+                    href="https://www.mbcleans.co.uk/contact"
+                />
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify(schemaMarkup),
+                    }}
+                />
+            </Head>
+
             <div className="z-20 rounded-xl relative">
                 <div className=" relative flex my-16 md:my-20 lg:my-10 xl:my-20">
                     <div className="lg:flex gap-x-8  sm:px-8 md:px-10 max-w-6xl mx-auto bg-white py-10 rounded-xl">
@@ -121,7 +200,7 @@ export default function Contact() {
                                         <label
                                             for="names"
                                             q
-                                            class="block text-base font-medium text-gray-900 "
+                                            className="block text-base font-medium text-gray-900 "
                                         >
                                             Name: *
                                         </label>
@@ -134,13 +213,13 @@ export default function Contact() {
                                             onChange={handleChange}
                                             placeholder=""
                                             type="text"
-                                            class="mt-1.5 w-full p-2 h-14 bg-zinc-100 rounded-lg border-gray-300 text-gray-700 sm:text-base"
+                                            className="mt-1.5 w-full p-2 h-14 bg-zinc-100 rounded-lg border-gray-300 text-gray-700 sm:text-base"
                                         ></input>
                                     </div>
                                     <div className="w-1/2 ">
                                         <label
                                             for="name"
-                                            class="block text-base font-medium text-gray-900 "
+                                            className="block text-base font-medium text-gray-900 "
                                         >
                                             Email: *
                                         </label>
@@ -153,7 +232,7 @@ export default function Contact() {
                                             onChange={handleChange}
                                             placeholder=""
                                             type="email"
-                                            class="mt-1.5 w-full p-2 h-14 bg-zinc-100 rounded-lg border-gray-300 text-gray-700 sm:text-base"
+                                            className="mt-1.5 w-full p-2 h-14 bg-zinc-100 rounded-lg border-gray-300 text-gray-700 sm:text-base"
                                         ></input>
                                     </div>
                                 </div>
@@ -161,7 +240,7 @@ export default function Contact() {
                                     <div className="w-1/2 ">
                                         <label
                                             for="telephone"
-                                            class="block text-base font-medium text-gray-900 "
+                                            className="block text-base font-medium text-gray-900 "
                                         >
                                             Contact No. *
                                         </label>
@@ -174,13 +253,13 @@ export default function Contact() {
                                             onChange={handleChange}
                                             placeholder=""
                                             type="tel"
-                                            class="mt-1.5 w-full p-2 h-14 bg-zinc-100 rounded-lg border-gray-300 text-gray-700 sm:text-base"
+                                            className="mt-1.5 w-full p-2 h-14 bg-zinc-100 rounded-lg border-gray-300 text-gray-700 sm:text-base"
                                         ></input>
                                     </div>
                                     <div className="w-1/2">
                                         <label
                                             for="chooseService"
-                                            class="block text-base font-medium text-gray-900"
+                                            className="block text-base font-medium text-gray-900"
                                         >
                                             Choose service *
                                         </label>
@@ -191,7 +270,7 @@ export default function Contact() {
                                             id="chooseService"
                                             value={formData.chooseService}
                                             onChange={handleChange}
-                                            class="mt-1.5 w-full p-2 h-14 bg-zinc-100 rounded-lg border-gray-300 text-gray-700 sm:text-base"
+                                            className="mt-1.5 w-full p-2 h-14 bg-zinc-100 rounded-lg border-gray-300 text-gray-700 sm:text-base"
                                         >
                                             <option value="">
                                                 Please select
@@ -226,7 +305,7 @@ export default function Contact() {
                                         <div className="w-1/2 ">
                                             <label
                                                 for="typeOfClean"
-                                                class="block text-base font-medium text-gray-900 "
+                                                className="block text-base font-medium text-gray-900 "
                                             >
                                                 Type of clean *
                                             </label>
@@ -237,7 +316,7 @@ export default function Contact() {
                                                 id="typeOfClean"
                                                 value={formData.typeOfClean}
                                                 onChange={handleChange}
-                                                class="mt-1.5 w-full p-2 h-14 bg-zinc-100 rounded-lg border-gray-300 text-gray-700 sm:text-base"
+                                                className="mt-1.5 w-full p-2 h-14 bg-zinc-100 rounded-lg border-gray-300 text-gray-700 sm:text-base"
                                             >
                                                 <option value="">
                                                     Please select
@@ -256,7 +335,7 @@ export default function Contact() {
                                         <div className="w-1/2">
                                             <label
                                                 for="propertyType"
-                                                class="block text-base font-medium text-gray-900"
+                                                className="block text-base font-medium text-gray-900"
                                             >
                                                 Property type *
                                             </label>
@@ -267,7 +346,7 @@ export default function Contact() {
                                                 id="propertyType"
                                                 value={formData.propertyType}
                                                 onChange={handleChange}
-                                                class="mt-1.5 w-full p-2 h-14 bg-zinc-100 rounded-lg border-gray-300 text-gray-700 sm:text-base"
+                                                className="mt-1.5 w-full p-2 h-14 bg-zinc-100 rounded-lg border-gray-300 text-gray-700 sm:text-base"
                                             >
                                                 <option value="">
                                                     Please select
@@ -299,7 +378,7 @@ export default function Contact() {
                                         <div className="">
                                             <label
                                                 for="roomsSelect"
-                                                class="block text-base font-medium text-gray-900"
+                                                className="block text-base font-medium text-gray-900"
                                             >
                                                 Room(s)
                                             </label>
@@ -310,7 +389,7 @@ export default function Contact() {
                                                 id="roomsSelect"
                                                 value={formData.roomsSelect}
                                                 onChange={handleChange}
-                                                class="mt-1.5 w-full p-2 h-14 bg-zinc-100 rounded-lg border-gray-300 text-gray-700 sm:text-base"
+                                                className="mt-1.5 w-full p-2 h-14 bg-zinc-100 rounded-lg border-gray-300 text-gray-700 sm:text-base"
                                             >
                                                 <option value="0">0</option>
                                                 <option value="1">1</option>
@@ -330,7 +409,7 @@ export default function Contact() {
                                         <div className="">
                                             <label
                                                 for="bathroomSelect"
-                                                class="block text-base font-medium text-gray-900"
+                                                className="block text-base font-medium text-gray-900"
                                             >
                                                 Bathroom(s)
                                             </label>
@@ -340,7 +419,7 @@ export default function Contact() {
                                                 id="bathroomSelect"
                                                 value={formData.bathroomSelect}
                                                 onChange={handleChange}
-                                                class="mt-1.5 w-full p-2 h-14 bg-zinc-100 rounded-lg border-gray-300 text-gray-700 sm:text-base"
+                                                className="mt-1.5 w-full p-2 h-14 bg-zinc-100 rounded-lg border-gray-300 text-gray-700 sm:text-base"
                                             >
                                                 <option value="0">0</option>
                                                 <option value="1">1</option>
@@ -355,7 +434,7 @@ export default function Contact() {
                                         <div className="">
                                             <label
                                                 for="hallwaySelect"
-                                                class="block text-base font-medium text-gray-900"
+                                                className="block text-base font-medium text-gray-900"
                                             >
                                                 Hallway(s)
                                             </label>
@@ -366,7 +445,7 @@ export default function Contact() {
                                                 id="hallwaySelect"
                                                 value={formData.hallwaySelect}
                                                 onChange={handleChange}
-                                                class="mt-1.5 w-full p-2 h-14 bg-zinc-100 rounded-lg border-gray-300 text-gray-700 sm:text-base"
+                                                className="mt-1.5 w-full p-2 h-14 bg-zinc-100 rounded-lg border-gray-300 text-gray-700 sm:text-base"
                                             >
                                                 <option value="0">0</option>
                                                 <option value="1">1</option>
@@ -381,7 +460,7 @@ export default function Contact() {
                                         <div className="">
                                             <label
                                                 for="staircaseSelect"
-                                                class="block text-base font-medium text-gray-900"
+                                                className="block text-base font-medium text-gray-900"
                                             >
                                                 Staircase(s)
                                             </label>
@@ -391,7 +470,7 @@ export default function Contact() {
                                                 id="staircaseSelect"
                                                 value={formData.staircaseSelect}
                                                 onChange={handleChange}
-                                                class="mt-1.5 w-full p-2 h-14 bg-zinc-100 rounded-lg border-gray-300 text-gray-700 sm:text-base"
+                                                className="mt-1.5 w-full p-2 h-14 bg-zinc-100 rounded-lg border-gray-300 text-gray-700 sm:text-base"
                                             >
                                                 <option value="0">0</option>
                                                 <option value="1">1</option>
@@ -408,11 +487,11 @@ export default function Contact() {
                                     *
                                 </div>
                                 <div
-                                    class="control mb-4"
+                                    className="control mb-4"
                                     required
                                     onChange={handleChange}
                                 >
-                                    <label class="radio pr-4">
+                                    <label className="radio pr-4">
                                         <input
                                             type="radio"
                                             name="haveSupplies"
@@ -421,7 +500,7 @@ export default function Contact() {
                                         />
                                         Yes
                                     </label>
-                                    <label class="radio">
+                                    <label className="radio">
                                         <input
                                             type="radio"
                                             name="haveSupplies"

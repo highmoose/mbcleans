@@ -49,10 +49,10 @@ export default function CirclesAndRectangles() {
                     className={` rounded-lg overflow-hidden transition-opacity duration-500 ${fadeClass}`}
                 >
                     {activeRectangle === "rectangle1" && (
-                        <div class="lg:grid lg:grid-cols-6 lg:gap-8 lg:items-center ">
-                            <div class="hidden lg:block lg:col-span-2 ">
+                        <div className="lg:grid lg:grid-cols-6 lg:gap-8 lg:items-center ">
+                            <div className="hidden lg:block lg:col-span-2 ">
                                 <Image
-                                    class="rounded-xl "
+                                    className="rounded-xl "
                                     src="/images/testimonials/testimonials-1.png"
                                     alt="Image Description"
                                     width={500}
@@ -60,10 +60,10 @@ export default function CirclesAndRectangles() {
                                 />
                             </div>
 
-                            <div class="lg:col-span-4 mt-16">
+                            <div className="lg:col-span-4 mt-16">
                                 <blockquote>
                                     {/* <svg
-                    class="w-24 h-auto mb-4"
+                    className="w-24 h-auto mb-4"
                     viewBox="-0.3 0 320.3999999999999 99.9"
                     xmlns="http://www.w3.org/2000/svg"
                     width="2500"
@@ -75,7 +75,7 @@ export default function CirclesAndRectangles() {
                     />
                   </svg> */}
 
-                                    <p class="text-3xl font-medium text-gray-800 text-center lg:text-start ">
+                                    <p className="text-3xl font-medium text-gray-800 text-center lg:text-start ">
                                         &quot;I cannot recommend MB cleans
                                         enough. Melissa and Becki were
                                         impeccably professional, communicative
@@ -83,22 +83,22 @@ export default function CirclesAndRectangles() {
                                         excellent.&quot;
                                     </p>
 
-                                    <footer class="mt-6 mb-16">
-                                        <div class="flex items-center justify-center  lg:justify-start">
-                                            <div class="lg:hidden flex-shrink-0">
+                                    <footer className="mt-6 mb-16">
+                                        <div className="flex items-center justify-center  lg:justify-start">
+                                            <div className="lg:hidden flex-shrink-0">
                                                 <Image
-                                                    class="h-24 w-24 rounded-full"
+                                                    className="h-24 w-24 rounded-full"
                                                     src="/images/testimonials/testimonials-1.png"
                                                     alt="Image Description"
                                                     width={600}
                                                     height={600}
                                                 />
                                             </div>
-                                            <div class="ms-4 lg:ms-0">
-                                                <p class="font-medium text-lg text-gray-800">
+                                            <div className="ms-4 lg:ms-0">
+                                                <p className="font-medium text-lg text-gray-800">
                                                     Kelly Jane
                                                 </p>
-                                                <p class="text-sm text-gray-600 ">
+                                                <p className="text-sm text-gray-600 ">
                                                     Domestic Clean Client
                                                 </p>
                                             </div>
@@ -109,10 +109,10 @@ export default function CirclesAndRectangles() {
                         </div>
                     )}
                     {activeRectangle === "rectangle2" && (
-                        <div class="lg:grid lg:grid-cols-6 lg:gap-8 lg:items-center">
-                            <div class="hidden lg:block lg:col-span-2">
+                        <div className="lg:grid lg:grid-cols-6 lg:gap-8 lg:items-center">
+                            <div className="hidden lg:block lg:col-span-2">
                                 <Image
-                                    class="rounded-xl"
+                                    className="rounded-xl"
                                     src="/images/testimonials/testimonials-2.png"
                                     alt="Image Description"
                                     width={600}
@@ -120,10 +120,10 @@ export default function CirclesAndRectangles() {
                                 />
                             </div>
 
-                            <div class="lg:col-span-4 mt-16">
+                            <div className="lg:col-span-4 mt-16">
                                 <blockquote>
                                     {/* <svg
-                    class="w-24 h-auto mb-4"
+                    className="w-24 h-auto mb-4"
                     viewBox="-0.3 0 320.3999999999999 99.9"
                     xmlns="http://www.w3.org/2000/svg"
                     width="2500"
@@ -135,29 +135,29 @@ export default function CirclesAndRectangles() {
                     />
                   </svg> */}
 
-                                    <p class="text-3xl font-medium text-gray-800 text-center lg:text-start ">
+                                    <p className="text-3xl font-medium text-gray-800 text-center lg:text-start ">
                                         &quot;MB Cleans is the secret weapon for
                                         turning your place into a sanctuary of
                                         cleanliness without any stress. Total
                                         game-changer&quot;
                                     </p>
 
-                                    <footer class="mt-6 mb-16">
-                                        <div class="flex items-center justify-center lg:justify-start">
-                                            <div class="lg:hidden flex-shrink-0">
+                                    <footer className="mt-6 mb-16">
+                                        <div className="flex items-center justify-center lg:justify-start">
+                                            <div className="lg:hidden flex-shrink-0">
                                                 <Image
-                                                    class="h-24 w-24 rounded-full"
+                                                    className="h-24 w-24 rounded-full"
                                                     src="/images/testimonials/testimonials-2.png"
                                                     alt="Image Description"
                                                     width={1000}
                                                     height={1000}
                                                 />
                                             </div>
-                                            <div class="ms-4 lg:ms-0">
-                                                <p class="font-medium text-lg text-gray-800">
+                                            <div className="ms-4 lg:ms-0">
+                                                <p className="font-medium text-lg text-gray-800">
                                                     Jamie Bortman
                                                 </p>
-                                                <p class="text-sm text-gray-600 ">
+                                                <p className="text-sm text-gray-600 ">
                                                     Commercial Clean Client
                                                 </p>
                                             </div>
@@ -168,10 +168,10 @@ export default function CirclesAndRectangles() {
                         </div>
                     )}
                     {activeRectangle === "rectangle3" && (
-                        <div class="lg:grid lg:grid-cols-6 lg:gap-8 lg:items-center">
-                            <div class="hidden lg:block lg:col-span-2">
+                        <div className="lg:grid lg:grid-cols-6 lg:gap-8 lg:items-center">
+                            <div className="hidden lg:block lg:col-span-2">
                                 <Image
-                                    class="rounded-xl"
+                                    className="rounded-xl"
                                     src="/images/testimonials/testimonials-3.png"
                                     alt="Image Description"
                                     width={1000}
@@ -179,10 +179,10 @@ export default function CirclesAndRectangles() {
                                 />
                             </div>
 
-                            <div class="lg:col-span-4 mt-16">
+                            <div className="lg:col-span-4 mt-16">
                                 <blockquote>
                                     {/* <svg
-                    class="w-24 h-auto mb-4"
+                    className="w-24 h-auto mb-4"
                     viewBox="-0.3 0 320.3999999999999 99.9"
                     xmlns="http://www.w3.org/2000/svg"
                     width="2500"
@@ -194,7 +194,7 @@ export default function CirclesAndRectangles() {
                     />
                   </svg> */}
 
-                                    <p class="text-3xl font-medium text-gray-800 text-center lg:text-start">
+                                    <p className="text-3xl font-medium text-gray-800 text-center lg:text-start">
                                         &quot;A huge shoutout to MB Cleans for
                                         their outstanding service! Melissa and
                                         Becki&apos;s expertise and cheerful
@@ -202,22 +202,22 @@ export default function CirclesAndRectangles() {
                                         a breeze.&quot;
                                     </p>
 
-                                    <footer class="mt-6 mb-16">
-                                        <div class="flex items-center justify-center lg:justify-start">
-                                            <div class="lg:hidden flex-shrink-0">
+                                    <footer className="mt-6 mb-16">
+                                        <div className="flex items-center justify-center lg:justify-start">
+                                            <div className="lg:hidden flex-shrink-0">
                                                 <Image
-                                                    class="h-24 w-24 rounded-full"
+                                                    className="h-24 w-24 rounded-full"
                                                     src="/images/testimonials/testimonials-3.png"
                                                     alt="Image Description"
                                                     width={1000}
                                                     height={1000}
                                                 />
                                             </div>
-                                            <div class="ms-4 lg:ms-0">
-                                                <p class="font-medium text-lg text-gray-800">
+                                            <div className="ms-4 lg:ms-0">
+                                                <p className="font-medium text-lg text-gray-800">
                                                     Claire Green
                                                 </p>
-                                                <p class="text-sm text-gray-600 ">
+                                                <p className="text-sm text-gray-600 ">
                                                     Commercial Clean Client
                                                 </p>
                                             </div>

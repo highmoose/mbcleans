@@ -5,12 +5,12 @@ export default function PartnersBar2({ locationName }) {
     return (
         <div id="partners" className="w-full">
             <div>
-                <meta charset="utf-8" />
+                <meta charSet="utf-8" />
             </div>
 
-            <div class="relative font-inter antialiased">
-                <div class="relative max-h-[280px] flex flex-col justify-center bg-slate-900 overflow-hidden">
-                    <div class="w-full max-w-5xl mx-auto px-4 md:px-6 py-24">
+            <div className="relative font-inter antialiased">
+                <div className="relative max-h-[280px] flex flex-col justify-center bg-slate-900 overflow-hidden">
+                    <div className="w-full max-w-5xl mx-auto px-4 md:px-6 py-24">
                         <p className="text-center text-white text-xl ">
                             We work with amazing people around {locationName} &
                             Northamptonshire.
@@ -18,7 +18,7 @@ export default function PartnersBar2({ locationName }) {
                         <p className="text-center text-white text-xl mb-12">
                             Here are some you may already know...
                         </p>
-                        <div class="text-center">
+                        <div className="text-center">
                             <div
                                 x-data="{}"
                                 x-init="$nextTick(() => {
@@ -26,11 +26,11 @@ export default function PartnersBar2({ locationName }) {
                             ul.insertAdjacentHTML('afterend', ul.outerHTML);
                             ul.nextSibling.setAttribute('aria-hidden', 'true');
                         })"
-                                class="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]"
+                                className="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]"
                             >
                                 <ul
                                     x-ref="logos"
-                                    class="flex  items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll"
+                                    className="flex  items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll"
                                 >
                                     <li>
                                         <Image
@@ -107,7 +107,7 @@ export default function PartnersBar2({ locationName }) {
                                 </ul>
                                 <ul
                                     x-ref="logos"
-                                    class="flex  items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll"
+                                    className="flex  items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll"
                                 >
                                     <li>
                                         <Image

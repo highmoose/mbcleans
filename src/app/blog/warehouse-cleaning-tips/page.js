@@ -4,6 +4,8 @@ import Image from "next/image";
 import React from "react";
 import { Shadows_Into_Light } from "next/font/google";
 import { useRouter } from "next/navigation";
+import Head from "next/head";
+import HeadMarkup from "../../../../components/seo/headMarkup";
 
 const shadows_Into_Light = Shadows_Into_Light({
     subsets: ["latin"],
@@ -12,8 +14,87 @@ const shadows_Into_Light = Shadows_Into_Light({
 
 export default function WarehouseCleaningBlog() {
     const router = useRouter();
+
+    const schemaMarkup = {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        name: "MB Cleans",
+        url: "https://www.mbcleans.co.uk/",
+        image: "https://www.mbcleans.co.uk/images/social/social.png",
+        logo: "https://www.mbcleans.co.uk/images/social/social.png",
+        description:
+            "MB Cleans offers professional cleaning services for homes and businesses, providing deep cleaning, regular maintenance, and specialized services.",
+        contactPoint: {
+            "@type": "ContactPoint",
+            telephone: "+447710172363",
+            contactType: "Customer Service",
+            areaServed: "Wellingborough",
+            availableLanguage: "English",
+        },
+        sameAs: [
+            "https://www.facebook.com/mbcleans",
+            // "https://twitter.com/mbcleans",
+            // "https://www.instagram.com/mbcleans",
+        ],
+        openingHours: "Mo-Su 08:00-18:00",
+        priceRange: "££",
+        serviceArea: {
+            "@type": "Place",
+            name: "Wellingborough",
+        },
+    };
+
     return (
         <div className="w-full bg-zinc-50 pb-28">
+            <Head>
+                <title>
+                    Cleaning Tips for Warehouses & Industrial Spaces | MB Cleans
+                </title>
+                <meta
+                    name="description"
+                    content="Explore essential cleaning tips and routines for warehouses and industrial spaces to maintain safety, hygiene, and efficiency in large-scale environments."
+                />
+                <meta
+                    property="og:title"
+                    content="Cleaning Tips for Warehouses & Industrial Spaces | MB Cleans"
+                />
+                <meta
+                    property="og:description"
+                    content="Explore essential cleaning tips and routines for warehouses and industrial spaces to maintain safety, hygiene, and efficiency in large-scale environments."
+                />
+                <meta
+                    property="og:image"
+                    content="https://www.mbcleans.co.uk/images/social/social.png"
+                />
+                <meta
+                    property="og:url"
+                    content="https://www.mbcleans.co.uk/blog/warehouse-cleaning-tips"
+                />
+                <meta
+                    name="twitter:title"
+                    content="Cleaning Tips for Warehouses & Industrial Spaces | MB Cleans"
+                />
+                <meta
+                    name="twitter:description"
+                    content="Explore essential cleaning tips and routines for warehouses and industrial spaces to maintain safety, hygiene, and efficiency in large-scale environments."
+                />
+                <meta
+                    name="twitter:image"
+                    content="https://www.mbcleans.co.uk/images/social/social.png"
+                />
+                <meta name="twitter:card" content="summary_large_image" />
+                <link
+                    rel="canonical"
+                    href="https://www.mbcleans.co.uk/blog/warehouse-cleaning-tips"
+                />
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify(schemaMarkup),
+                    }}
+                />
+            </Head>
+
             <div className="flex flex-col items-center w-full max-w-5xl mx-auto ">
                 <button
                     className="w-fit px-4 mb-4 py-2 mt-6 rounded bg-theme1 text-white text-lg font-bold"
