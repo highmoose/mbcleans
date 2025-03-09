@@ -28,12 +28,12 @@ export default function HeaderBar({ locationName }) {
     const router = useRouter();
 
     return (
-        <section class="flex relative bg-gray-900 w-full min-h-[550px] sm:max-h-[600px] lg:max-h-[650px] overflow-hidden">
+        <section class="flex relative bg-gray-900 w-full min-h-[660px] sm:max-h-[660px] lg:max-h-[660px] overflow-hidden">
             <div className="absolute w-full h-full ">
                 <Image
                     alt="MBCleans cleaner hoovering floor"
                     src="/images/mbcleans_hero_image_3.png"
-                    className="object-cover w-full h-full max-h-[550px] sm:max-h-[600px] lg:max-h-[650px] opacity-100 "
+                    className="object-cover w-full h-full max-h-[660px] sm:max-h-[660px] lg:max-h-[660px] opacity-100 "
                     layout="fill"
                 />
 
