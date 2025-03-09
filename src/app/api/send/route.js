@@ -19,6 +19,7 @@ export async function POST(request) {
             bathroomSelect,
             hallwaySelect,
             staircaseSelect,
+            additionalInfo,
             haveSupplies,
         } = body;
         const data = await resend.emails.send({
@@ -36,6 +37,7 @@ export async function POST(request) {
                 bathroomSelect: bathroomSelect,
                 hallwaySelect: hallwaySelect,
                 staircaseSelect: staircaseSelect,
+                additionalInfo: additionalInfo,
                 haveSupplies: haveSupplies,
             }),
         });

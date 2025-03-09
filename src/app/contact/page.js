@@ -22,6 +22,7 @@ export default function Contact() {
         bathroomSelect: "",
         hallwaySelect: "",
         staircaseSelect: "",
+        additionalInfo: "",
     });
 
     const [emailSuccess, setEmailSuccess] = useState(false);
@@ -373,7 +374,7 @@ export default function Contact() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="flex text-black mb-6 gap-x-4">
+                                <div className="flex text-black mb-3 gap-x-4">
                                     <div className="w-1/4 ">
                                         <div className="">
                                             <label
@@ -482,8 +483,28 @@ export default function Contact() {
                                         </div>
                                     </div>
                                 </div>
+                                <div className="w-full mb-3 ">
+                                    <label
+                                        for="additionalInfo"
+                                        q
+                                        className="block text-base font-medium text-gray-900 "
+                                    >
+                                        Additional Information: *
+                                    </label>
+
+                                    <textarea
+                                        required
+                                        name="additionalInfo"
+                                        id="additionalInfo"
+                                        value={formData.additionalInfo}
+                                        onChange={handleChange}
+                                        placeholder=""
+                                        type="text"
+                                        className="mt-1.5 w-full p-2 h-14 bg-zinc-100 rounded-lg border-gray-300 text-gray-700 sm:text-base"
+                                    ></textarea>
+                                </div>
                                 <div className="mb-2 font-semibold">
-                                    Do you have the neccesary cleaning supplies?
+                                    Do you have the necessary cleaning supplies?
                                     *
                                 </div>
                                 <div
