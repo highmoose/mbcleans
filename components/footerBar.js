@@ -63,7 +63,7 @@ export default function FooterBar() {
             {/* Bottom Section */}
             <div className="bg-slate-900">
                 <div className="max-w-6xl mx-auto px-6 xl:px-0 py-10">
-                    <div className="flex flex-col md:flex-row justify-between mb-10 gap-8 border-b border-white/10 pb-10">
+                    <div className="flex flex-col md:flex-row items-center md:items-start justify-between mb-10 gap-8 border-b border-white/10 pb-10">
                         <Image
                             alt="MBCleans Logo"
                             src="/logo/mbcleans-logo-white.svg"
