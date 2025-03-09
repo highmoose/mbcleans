@@ -146,7 +146,7 @@ export default function IntroBar() {
                     <div className="md:flex gap-x-4">
                         <div className="relative md:w-1/3 pb-6 sm:pb-0 hover:scale-105  transition duration-100 ease-in-out">
                             <div className="flex-col h-fit rounded-md group relative inline-block overflow-hidden border-gray-100 bg-white pt-10 text-base font-medium   active:text-white">
-                                <span class="ease absolute left-0 top-0 h-0 w-0 border-t-[3px] border-[#009FE3] transition-all duration-200 group-hover:w-full"></span>{" "}
+                                <span className="ease absolute left-0 top-0 h-0 w-0 border-t-[3px] border-[#009FE3] transition-all duration-200 group-hover:w-full"></span>{" "}
                                 <p
                                     className={`text-theme2 text-center text-2xl mb-2 ${Shadows_Into_Light1.className}`}
                                 >
@@ -187,7 +187,7 @@ export default function IntroBar() {
                                         ))}
                                 </div>
                                 {showResidential === false && (
-                                    <div class="absolute inset-x-0 bottom-0 h-[300px] bg-gradient-to-b from-transparent to-white" />
+                                    <div className="absolute inset-x-0 bottom-0 h-[300px] bg-gradient-to-b from-transparent to-white" />
                                 )}
                                 <button
                                     onClick={
@@ -205,7 +205,7 @@ export default function IntroBar() {
                         </div>
                         <div className=" md:w-1/3 pb-6 sm:pb-0 hover:scale-105  transition duration-100 ease-in-out">
                             <div className="flex-col h-fit rounded-md group relative inline-block overflow-hidden border-gray-100 bg-white pt-10 text-base font-medium   active:text-white">
-                                <span class="ease absolute left-0 top-0 h-0 w-0 border-t-[3px] border-[#009FE3] transition-all duration-200 group-hover:w-full"></span>{" "}
+                                <span className="ease absolute left-0 top-0 h-0 w-0 border-t-[3px] border-[#009FE3] transition-all duration-200 group-hover:w-full"></span>{" "}
                                 <p
                                     className={`text-theme2 text-center text-2xl mb-2 ${Shadows_Into_Light1.className}`}
                                 >
@@ -246,7 +246,7 @@ export default function IntroBar() {
                                         ))}
                                 </div>
                                 {showCommercial === false && (
-                                    <div class="absolute inset-x-0 bottom-0 h-[300px] bg-gradient-to-b from-transparent to-white" />
+                                    <div className="absolute inset-x-0 bottom-0 h-[300px] bg-gradient-to-b from-transparent to-white" />
                                 )}
                                 <button
                                     onClick={
@@ -262,7 +262,7 @@ export default function IntroBar() {
                         </div>
                         <div className="md:w-1/3 pb-6 sm:pb-0 hover:scale-105  transition duration-100 ease-in-out">
                             <div className="flex-col h-fit rounded-md group relative inline-block overflow-hidden border-gray-100 bg-white  pt-10 text-base font-medium   active:text-white">
-                                <span class="ease absolute left-0 top-0 h-0 w-0 border-t-[3px] border-[#009FE3] transition-all duration-200 group-hover:w-full"></span>{" "}
+                                <span className="ease absolute left-0 top-0 h-0 w-0 border-t-[3px] border-[#009FE3] transition-all duration-200 group-hover:w-full"></span>{" "}
                                 <p
                                     className={`text-theme2 text-center text-2xl mb-2 ${Shadows_Into_Light1.className}`}
                                 >
@@ -303,7 +303,7 @@ export default function IntroBar() {
                                         ))}
                                 </div>
                                 {showEmergency === false && (
-                                    <div class="absolute inset-x-0 bottom-0 h-[300px] bg-gradient-to-b from-transparent to-white" />
+                                    <div className="absolute inset-x-0 bottom-0 h-[300px] bg-gradient-to-b from-transparent to-white" />
                                 )}
                                 <button
                                     onClick={

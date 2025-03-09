@@ -66,16 +66,18 @@ export default function HeaderBar() {
 
     function ServicesDropDown() {
         return (
-            <div class="border-gray-200 shadow-xl bg-gray-50  border-y max-w-5xl rounded-b-md px-4 py-5">
-                <div class="grid mx-auto text-gray-900 sm:grid-cols-2 md:px-6">
+            <div className="border-gray-200 shadow-xl bg-gray-50  border-y max-w-5xl rounded-b-md px-4 py-5">
+                <div className="grid mx-auto text-gray-900 sm:grid-cols-2 md:px-6">
                     <ul>
                         <li>
                             <a
                                 href="/services/home-cleaning"
-                                class="block p-3 rounded-lg hover:bg-gray-100"
+                                className="block p-3 rounded-lg hover:bg-gray-100"
                             >
-                                <div class="font-semibold">Home Cleaning</div>
-                                <span class="text-sm text-gray-500 ">
+                                <div className="font-semibold">
+                                    Home Cleaning
+                                </div>
+                                <span className="text-sm text-gray-500 ">
                                     Bringing cleanliness and comfort to your
                                     doorstep
                                 </span>
@@ -84,10 +86,12 @@ export default function HeaderBar() {
                         <li>
                             <a
                                 href="/services/office-cleaning"
-                                class="block p-3 rounded-lg hover:bg-gray-100"
+                                className="block p-3 rounded-lg hover:bg-gray-100"
                             >
-                                <div class="font-semibold">Office Cleaning</div>
-                                <span class="text-sm text-gray-500 ">
+                                <div className="font-semibold">
+                                    Office Cleaning
+                                </div>
+                                <span className="text-sm text-gray-500 ">
                                     Boosting productivity with spotless
                                     workspaces
                                 </span>
@@ -96,12 +100,12 @@ export default function HeaderBar() {
                         <li>
                             <a
                                 href="/services/warehouse-cleaning"
-                                class="block p-3 rounded-lg hover:bg-gray-100"
+                                className="block p-3 rounded-lg hover:bg-gray-100"
                             >
-                                <div class="font-semibold">
+                                <div className="font-semibold">
                                     Warehouse Cleaning
                                 </div>
-                                <span class="text-sm text-gray-500 ">
+                                <span className="text-sm text-gray-500 ">
                                     Optimizing warehouse hygiene for smooth
                                     operations
                                 </span>
@@ -112,10 +116,12 @@ export default function HeaderBar() {
                         <li>
                             <a
                                 href="/services/school-cleaning"
-                                class="block p-3 rounded-lg hover:bg-gray-100 "
+                                className="block p-3 rounded-lg hover:bg-gray-100 "
                             >
-                                <div class="font-semibold">School Cleaning</div>
-                                <span class="text-sm text-gray-500 ">
+                                <div className="font-semibold">
+                                    School Cleaning
+                                </div>
+                                <span className="text-sm text-gray-500 ">
                                     Promoting a clean and safe learning
                                     environment
                                 </span>
@@ -124,10 +130,12 @@ export default function HeaderBar() {
                         <li>
                             <a
                                 href="/services/retail-cleaning"
-                                class="block p-3 rounded-lg hover:bg-gray-100 "
+                                className="block p-3 rounded-lg hover:bg-gray-100 "
                             >
-                                <div class="font-semibold">Retail Cleaning</div>
-                                <span class="text-sm text-gray-500 ">
+                                <div className="font-semibold">
+                                    Retail Cleaning
+                                </div>
+                                <span className="text-sm text-gray-500 ">
                                     Keeping stores sparkling for seamless
                                     shopping
                                 </span>
@@ -136,12 +144,12 @@ export default function HeaderBar() {
                         <li>
                             <a
                                 href="/services/medical-facility-cleaning"
-                                class="block p-3 rounded-lg hover:bg-gray-100 "
+                                className="block p-3 rounded-lg hover:bg-gray-100 "
                             >
-                                <div class="font-semibold">
+                                <div className="font-semibold">
                                     Medical Facility Cleaning
                                 </div>
-                                <span class="text-sm text-gray-500 ">
+                                <span className="text-sm text-gray-500 ">
                                     Ensuring pristine hygiene in healthcare
                                     settings
                                 </span>

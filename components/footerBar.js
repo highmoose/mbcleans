@@ -115,7 +115,7 @@ export default function FooterBar() {
                                     height={26}
                                 />
                             </a>
-                            <a
+                            {/* <a
                                 href="https://www.instagram.com/mbcleans"
                                 target="_blank"
                                 rel="noreferrer"
@@ -126,7 +126,7 @@ export default function FooterBar() {
                                     width={26}
                                     height={26}
                                 />
-                            </a>
+                            </a> */}
                         </div>
                     </div>
 
