@@ -16,7 +16,7 @@ const shadows_Into_Light = Shadows_Into_Light({
 export const metadata = {
     title: "MB Cleans | Expert Cleaning Rushden & Wellingborough",
     description:
-        "Commercial and domestic cleaning in Wellingborough & Rushden | MB Cleans ensures spotless results for your home and business. Contact us today!",
+        "MB Cleans provides exceptional commercial and domestic cleaning services in Wellingborough & Rushden. Our expert team guarantees spotless, reliable results for both your home and business. Reach out today!",
 };
 
 // social meta tags
@@ -33,12 +33,26 @@ const socialMetaTags = () => {
             />
             <meta
                 property="og:image"
-                content="https://www.mbcleans.co.uk/images/social/social-image.png"
+                content="https://www.mbcleans.co.uk/images/social/social.png"
             />
             <meta
                 property="og:url"
                 content="https://www.facebook.com/mbcleans"
             />
+            <meta
+                name="twitter:title"
+                content="MB Cleans | Professional Cleaning Services"
+            />
+            <meta
+                name="twitter:description"
+                content="MB Cleans offers professional cleaning services for homes and businesses. We provide deep cleaning, regular maintenance, and specialized services to keep your spaces spotless."
+            />
+            <meta
+                name="twitter:image"
+                content="https://www.mbcleans.co.uk/images/social/social.png"
+            />
+            <meta name="twitter:card" content="summary_large_image" />
+            <link rel="canonical" href="https://www.mbcleans.co.uk/" />
         </>
     );
 };
