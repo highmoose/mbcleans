@@ -124,8 +124,7 @@ export const MBCleansSiteEmail = ({
                 </Section>
 
                 <Text>
-                    <div>Monday - Friday: 7:00 AM to 5:00 PM</div>
-                    <div>Saturday - Sunday: Closed</div>
+                    <div>Open Hours: 24/7</div>
                 </Text>
 
                 {/* <Section>
